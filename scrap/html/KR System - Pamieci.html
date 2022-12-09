@@ -1,0 +1,2410 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1, user-scalable=no">
+<meta charset="utf-8">
+<title>KR System - Pamięci</title>
+<meta name="Keywords" content="Pamięci" />
+<meta name="Description" content="Pamięci" />
+<style>
+body {opacity:1;transition: opacity .5s ease-in-out;} body.fade-out{opacity:0;transition: opacity .5s ease-in-out;}
+</style>
+<link rel="stylesheet" href="tpl/krsystem/css/bootstrap.min.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">	
+<link href="tpl/krsystem/css/style.css?6456546" rel="stylesheet" type="text/css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<!-- Ikony -->
+<link rel="shortcut icon" href="favicon.ico">
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-3207883-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script type="text/javascript">
+function recordOutboundLink(link, category, action) {
+  try {
+    var pageTracker=_gat._getTracker("UA-3207883-1");
+    pageTracker._trackEvent(category, action);
+    setTimeout('document.location = "' + link.href + '"', 100)
+  }catch(err){}
+}
+</script>
+</head>
+<body class="fade-out">
+<div class="main-kategorie-feader" style="width: 100%;height: 100%;background: black;opacity: 0.30;position: fixed;z-index: 1;display: none;cursor: pointer;">
+</div>
+<div class="main-kategorie-all container" style="max-height:100vh; overflow-y: auto; left:50vw;transform: translateX(-50%);background: rgba(255,255,255,.9);padding: 0 20px;padding-bottom: 40px;position: fixed;z-index: 1;display: none;">
+<div style="padding: 20px;text-align: center;">
+<div style="text-align: right;padding: 20px 0;">
+<div style="cursor: pointer;display: inline-block;" class="main-kategorie-zamknij"><img src="tpl/krsystem/img/modal-zamknij.png"
+width="27" height="27" alt=""> Zamknij</div>
+</div>
+<h1>Wybierz kategorię</h1>
+<div class="row">
+<div class="col-6 col-sm-3 col-md-2" onclick="location='laptopy-katid-1.html#start'">
+<div class="mainkat mainkat-laptopy"> </div>
+<div>Laptopy</div>
+</div>
+<div class="col-6 col-sm-3 col-md-2" onclick="location='komputery_gotowe-katid-327.html#start'">
+<div class="mainkat mainkat-komputery"> </div>
+<div>Komputery</div>
+</div>
+<div class="col-6 col-sm-3 col-md-2" onclick="location='podzespoly__akcesoria-katid-33.html#start'">
+<div class="mainkat mainkat-podzespoly"> </div>
+<div>Podzespoły</div>
+</div>
+<div class="col-6 col-sm-3 col-md-2" onclick="location='sieci-katid-94.html#start'">
+<div class="mainkat mainkat-sieci"> </div>
+<div>Sieci</div>
+</div>
+<div class="col-6 col-sm-3 col-md-2" onclick="location='konsole__gsm__gps-katid-23.html#start'">
+<div class="mainkat mainkat-telefony"> </div>
+<div>Telefony/GPS</div>
+</div>
+<div class="col-6 col-sm-3 col-md-2" onclick="location='rtv-katid-595.html#start'">
+<div class="mainkat mainkat-rtv"> </div>
+<div>RTV</div>
+</div>
+<div class="col-6 col-sm-3 col-md-2" onclick="location='drukarki__plotery__skanery-katid-31.html#start'">
+<div class="mainkat mainkat-drukarki"> </div>
+<div>Drukarki</div>
+</div>
+<div class="col-6 col-sm-3 col-md-2" onclick="location='oprogramowanie-katid-89.html#start'">
+<div class="mainkat mainkat-oprogramowanie"> </div>
+<div>Oprogramowanie</div>
+</div>
+<div class="col-6 col-sm-3 col-md-2" onclick="location='monitory-katid-910.html#start'">
+<div class="mainkat mainkat-monitory"> </div>
+<div>Monitory</div>
+</div>
+<div class="col-6 col-sm-3 col-md-2" onclick="location='aparaty__kamery-katid-88.html#start'">
+<div class="mainkat mainkat-aparaty"> </div>
+<div>Aparaty i kamery</div>
+</div>
+<div class="col-6 col-sm-3 col-md-2" onclick="location='uslugi-katid-106.html#start'">
+<div class="mainkat mainkat-uslugi"> </div>
+<div>Usługi</div>
+</div>
+<div class="col-6 col-sm-3 col-md-2" onclick="location='agd-katid-803.html#start'">
+<div class="mainkat mainkat-agd"> </div>
+<div>AGD</div>
+</div>
+<div class="col-6 col-sm-3 col-md-2" onclick="location='tablety-katid-806.html#start'">
+<div class="mainkat mainkat-tablety"> </div>
+<div>Tablety</div>
+</div>
+<div class="col-6 col-sm-3 col-md-2" onclick="location='art_biurowe__drukarki__eksploatacja-katid-623.html#start'">
+<div class="mainkat mainkat-biuro"> </div>
+<div>Biuro</div>
+</div>
+</div>
+</div>
+</div>
+<div id="header">
+<div class="container">
+<div class="row main opacity">
+<div class="col-md-12">
+<div class="row align-items-center">
+<div class="col-6 col-sm-6 col-md-3 col-lg-2">
+<a class="logo" href="index.html"><img src="tpl/krsystem/img/logo.png" alt="KR System - sklep internetowy"></a>
+</div>
+<div class="col-6 d-sm-none align-self-stretch">
+<div style="background: #3FBDE6;height: 100%;text-align: center;display: flex; ">
+<button class="toggle-mainmenu d-inline-block d-sm-none" style="width:100%">
+<i class="fa fa-bars"></i>
+MENU
+</button>
+</div>
+</div>
+<div class="col-sm-6 col-md-5 col-lg-6">
+<form action="index.php#start" method="get">
+<input class="" placeholder="Wpisz czego szukasz" id="" name="szukaj" value="" type=""><select class="select"
+id="wyszikiwanie" name="kat" style="vertical-align: middle;">
+<option label="Wszystkie" value="0">Wszystkie</option>
+<option label="Projektory i akcesoria" value="126">Projektory i akcesoria</option>
+<option label="Aparaty fotograficzne" value="88">Aparaty fotograficzne</option>
+<option label="Apple" value="1547">Apple</option>
+<option label="Laptopy" value="1">Laptopy</option>
+<option label="Komputery gotowe" value="327">Komputery gotowe</option>
+<option label="Konsole / GSM / GPS" value="23">Konsole / GSM / GPS</option>
+<option label="Podzespoły / akcesoria" value="33">Podzespoły / akcesoria</option>
+<option label="Sieci" value="94">Sieci</option>
+<option label="Oprogramowanie" value="89">Oprogramowanie</option>
+<option label="Art. biurowe / Drukarki / Eksploatacja" value="623">Art. biurowe / Drukarki / Eksploatacja</option>
+<option label="Drony" value="1489">Drony</option>
+<option label="Monitory" value="910">Monitory</option>
+<option label="MSI" value="1669">MSI</option>
+<option label="Urządzenia fiskalne" value="1482">Urządzenia fiskalne</option>
+<option label="Usługi" value="106">Usługi</option>
+<option label="RTV" value="595">RTV</option>
+<option label="TABLETY" value="806">TABLETY</option>
+<option label="Sterylizatory" value="1199">Sterylizatory</option>
+<option label="Pozostałe" value="1391">Pozostałe</option>
+<option label="Nintendo" value="1652">Nintendo</option>
+<option label="Xiaomi" value="1716">Xiaomi</option>
+</select><button class="button"> <i class="fa fa-search"></i> </button>
+<input type="hidden" name="go" value="szukanie" />
+</form>
+</div>
+<div class="col-sm-12 col-md-4">
+<div class="koszyk">
+<div class="koszykshow" >
+<i class="fa fa-shopping-basket"></i>
+<span
+class="ilosc ">0</span>
+<div class="koszykcontent shadow">
+<div>
+<h2 class="brak">Brak produktów w koszyku</h2>
+<h2 style="display: none;">Zawartość koszyka</h2>
+<table class="koszykzawartosc" style="display: none;">
+<tr>
+<td><button onclick="location='index.php?go=koszyk'">Pokaż koszyk</button></td>
+<td class="razem"><span class="razemvar">0</span> <small>zł</small></td>
+</tr>
+</table>
+</div>
+</div>
+<div class="koszykcontentadd"></div>
+</div>
+<div class="user">
+<a href="index.php?go=loginin" /><b>Zaloguj się</b></a><br>
+<a href="index.php?go=signin">Zarejestruj się</a>
+</div>
+</div>
+</div>
+</div>			
+</div>
+</div>
+<div class="row navigation opacity">
+<button class="toggle-mainmenu d-none  d-sm-inline-block d-lg-none" style="margin-left: 15px">
+<i class="fa fa-bars"></i>
+MENU
+</button>
+<div id="mainmenu" class="col-lg-10 col-md-9 col-sm-8 text-center text-lg-left">
+<button class="toggle-mainmenu d-inline-block d-lg-none">
+<i class="fa fa-bars"></i>
+MENU
+</button>
+<ul class="text-left">
+<li class="selectable"><a href="laptopy-katid-1.html">Komputery</a>
+<div class="container">
+<div class="row shadow">
+<div class="col-lg-3">
+<h2><a href="http://www.krsystem.pl/laptopy-katid-1.html#his,szukaj=&go=search&kat=&grupa=1&kadid=1&szukaj=&dostepne=1&cena_z_1=&cena_z_2=&prodsort=&wyswietl=&page=&tryb=ajax&promocje=&pckonfig=&t=0.7345007618050264#start">LAPTOPY</a></h2>
+<ul>
+<li><a href="http://www.krsystem.pl/index.php?szukaj=&go=lapsearch&grupa=1&kadid=1&szukaj=&dostepne=1&cena_z_1=&cena_z_2=&c_var_1_w[]=10%60%60&c_var_1_w[]=11%60%60-12%60%60&prodsort=&wyswietl=&page=&tryb=&promocje=#start">10-12 cali - netbooki</a></li>
+<li><a href="http://www.krsystem.pl/index.php?szukaj=&go=lapsearch&grupa=1&kadid=1&szukaj=&dostepne=1&cena_z_1=&cena_z_2=&c_var_1_w[]=13%60%60-14%60%60&prodsort=&wyswietl=&page=&tryb=&promocje=#start">13-14  cali</a></li>
+<li><a href="http://www.krsystem.pl/index.php?szukaj=&go=lapsearch&grupa=1&kadid=1&szukaj=&dostepne=1&cena_z_1=&cena_z_2=&c_var_1_w[]=15%60%60-16%60%60&prodsort=&wyswietl=&page=&tryb=&promocje=#start">15-16 cali</a></li>
+<li><a href="http://www.krsystem.pl/index.php?szukaj=&go=lapsearch&grupa=1&kadid=1&szukaj=&dostepne=1&cena_z_1=&cena_z_2=&c_var_1_w[]=17%60%60-18%60%60&c_var_1_w[]=18%60%60-19%60%60&c_var_1_w[]=20%60%60-21%60%60&c_var_1_w[]=22%60%60-23%60%60&c_var_1_w[]=24%60%60-25%60%60&prodsort=&wyswietl=&page=&tryb=&promocje=#start">17 cali i większe</a></li>
+</ul>
+<h2><a href="http://www.krsystem.pl/index.php?szukaj=ultrabook&go=lapsearch&grupa=1&kadid=1&szukaj=ultrabook&dostepne=1&cena_z_1=&cena_z_2=&prodsort=&wyswietl=&page=1&tryb=&promocje=#start">ULTRABOOKI</a></h2>
+<ul>
+<li><a href="http://www.krsystem.pl/index.php?szukaj=ultrabook&go=lapsearch&grupa=1&kadid=1&szukaj=ultrabook&dostepne=1&cena_z_1=&cena_z_2=&c_var_1_w[]=11%60%60-12%60%60&prodsort=&wyswietl=&page=1&tryb=&promocje=#start">11-12 cali</a></li>
+<li><a href="http://www.krsystem.pl/index.php?szukaj=ultrabook&go=lapsearch&grupa=1&kadid=1&szukaj=ultrabook&dostepne=1&cena_z_1=&cena_z_2=&c_var_1_w[]=13%60%60-14%60%60&prodsort=&wyswietl=&page=1&tryb=&promocje=#start">13-14 cali</a></li>
+<li><a href="http://www.krsystem.pl/index.php?szukaj=ultrabook&go=lapsearch&grupa=1&kadid=1&szukaj=ultrabook&dostepne=1&cena_z_1=&cena_z_2=&c_var_1_w[]=15%60%60-16%60%60&prodsort=&wyswietl=&page=1&tryb=&promocje=#start">15-16 cali</a></li>
+</ul>
+</div>
+<div class="col-lg-3">
+<h2><a href="http://www.krsystem.pl/komputery_gotowe-katid-327.html#start#start">KOMPUTERY</a></h2>
+<ul>
+<li><a href="http://www.krsystem.pl/kr_system-katid-1403.html#start">Stacje Robocze</a></li>
+<li><a href="http://www.krsystem.pl/komputery_gotowe-katid-327.html#start#start">Stacjonarne</a></li>
+<li><a href="http://www.krsystem.pl/index.php?go=search&szukaj=oferta%3D22664%2C19594%2C22018%2C22016%2C22012%2C20534%2C220541%3DMini+PC&kat=0&dostepne=1&cena_z_1=&cena_z_2=&prodsort=&wyswietl=&page=&tryb=&promocje=#start">Mini PC</a></li>
+<li><a href="http://www.krsystem.pl/allinone-katid-1392.html#start#start">All in One</a></li>
+</ul>
+<h2>SERWERY</h2>
+<ul>
+<li><a href="http://www.krsystem.pl/dell-katid-1620.html#start#start">Serwery Dell</a></li>
+<li><a href="http://www.krsystem.pl/lenovo-katid-1406.html#start#start">Serwery Lenovo</a></li>
+</ul>
+</div>
+<div class="col-lg-3">
+<h2>TABLETY</h2>
+<ul>
+<li><a href="http://www.krsystem.pl/index.php?go=search&szukaj=&kat=&kadid=807&dostepne=1&cena_z_1=&cena_z_2=&prodsort=&wyswietl=&page=&tryb=&promocje=#start">iOS</a></li>
+<li><a href="http://www.krsystem.pl/index.php?go=search&szukaj=&kat=&kadid=806&dostepne=1&cena_z_1=&cena_z_2=&producent[]=1&producent[]=3&producent[]=10&producent[]=121&producent[]=49&producent[]=54&producent[]=6&producent[]=118&producent[]=154&producent[]=62&producent[]=15&producent[]=11&producent[]=151&prodsort=&wyswietl=&page=&tryb=&promocje=#start">Android</a></li>
+<li><a href="http://www.krsystem.pl/index.php?go=search&szukaj=windows+8&kat=806&kadid=806&dostepne=1&cena_z_1=&cena_z_2=&prodsort=&wyswietl=&page=1&tryb=&promocje=#start">Windows</a></li>
+<li><a href="http://www.krsystem.pl/index.php?go=search&szukaj=&kat=&kadid=889&dostepne=1&cena_z_1=&cena_z_2=&prodsort=&wyswietl=&page=&tryb=&promocje=#start">Czytniki ebooków</a></li>
+</ul>
+</div>
+<div class="col-lg-3 pull-right d-none d-lg-block" style="padding: 10px">
+<img src="tpl/krsystem/img/swiateczne-promocje.png" width="200" height="120" alt="">
+<br><br>
+<a href="konfigurator_pc.html"><img src="tpl/krsystem/img/konfigurator_pc.png" width="200" height="170" alt=""></a>
+</div>
+</div>
+</div>
+</li>
+<li class="selectable"><a href="komputery_gotowe-katid-327.html">Sprzęt Komputerowy</a>
+<div class="container">
+<div class="row shadow">
+<div class="col-lg-3">
+<h2>PODZESPOŁY</h2>
+<ul>
+<li><a href="http://www.krsystem.pl/procesory_amd-katid-35.html#start">Procesory AMD</a></li>
+<li><a href="http://www.krsystem.pl/procesory_intel-katid-34.html#start">Procesory INTEL</a></li>
+<li><a href="http://www.krsystem.pl/plyty_glowne_amd-katid-38.html#start">Płyty główne AMD</a></li>
+<li><a href="http://www.krsystem.pl/plyty_glowne_intel-katid-39.html#start">Płyty główne INTEL</a></li>
+<li><a href="http://www.krsystem.pl/karty_graficzne-katid-47.html#start">Karty graficzne</a></li>
+<li><a href="http://www.krsystem.pl/hdd__ssd-katid-44.html#start">HDD / SSD</a></li>
+<li><a href="http://www.krsystem.pl/pamieci-katid-37.html#start">Pamięci</a></li>
+<li><a href="http://www.krsystem.pl/zasilacze-katid-58.html#start">Zasilacze</a></li>
+<li><a href="http://www.krsystem.pl/napedy-katid-56.html#start">Napędy</a></li>
+<li><a href="http://www.krsystem.pl/zasilacze-katid-58.html#start">Zasilacze</a></li>
+<li><a href="http://www.krsystem.pl/obudowy-katid-57.html#start">Obudowy</a></li>
+<li><a href="http://www.krsystem.pl/podzespoly__akcesoria-katid-33.html#start">więcej</a></li>
+</ul>
+</div>
+<div class="col-lg-3">
+<h2>DRUKARKI</h2>
+<ul>
+<li><a href="http://www.krsystem.pl/atramentowe-katid-148.html#start">Atramentowe</a></li>
+<li><a href="http://www.krsystem.pl/laserowe-katid-149.html#start">Laserowe</a></li>
+<li><a href="http://www.krsystem.pl/urzadzenia_wielofunkcyjne-katid-321.html#start">Urządzenia wielofunkcyjne</a></li>
+<li><a href="http://www.krsystem.pl/skanery-katid-280.html#start">Skanery</a></li>
+</ul>
+<h2>Sieci</h2>
+<ul>
+<li><a href="http://www.krsystem.pl/routery_bezprzewodowe-katid-119.html#start">Routery bezprzewodowe</a></li>
+<li><a href="http://www.krsystem.pl/routery_przewodowe-katid-120.html#start">Routery przewodowe</a></li>
+<li><a href="http://www.krsystem.pl/acces_point-katid-121.html#start">Acces pointy</a></li>
+<li><a href="http://www.krsystem.pl/karty_sieciowe-katid-122.html#start">Karty sieciowe</a></li>
+<li><a href="http://www.krsystem.pl/sieci-katid-94.html#start">więcej</a></li>
+</ul>
+</div>
+<div class="col-lg-3">
+<h2><a href="http://www.krsystem.pl/index.php?szukaj=&go=search&grupa=2&kadid=910#start">MONITORY</a></h2>
+<ul>
+<li><a href="http://www.krsystem.pl/index.php?szukaj=&go=search&kat=910&grupa=2&kadid=910&szukaj=&dostepne=1&cena_z_1=&cena_z_2=&c_var_7_w[]=19%2C5+i+mniej&prodsort=&wyswietl=&page=1&tryb=&promocje=&pckonfig=&t=0.4062645973372856#start">19,5 cala i mniej</a></li>
+<li><a href="http://www.krsystem.pl/index.php?szukaj=&go=search&kat=910&grupa=2&kadid=910&szukaj=&dostepne=1&cena_z_1=&cena_z_2=&c_var_7_w[]=20-22%2C5&prodsort=&wyswietl=&page=1&tryb=&promocje=&pckonfig=&t=0.6547656511241585#start">20-22,5 cala</a></li>
+<li><a href="http://www.krsystem.pl/index.php?szukaj=&go=search&kat=910&grupa=2&kadid=910&szukaj=&dostepne=1&cena_z_1=&cena_z_2=&c_var_7_w[]=23-25%2C5&prodsort=&wyswietl=&page=1&tryb=&promocje=&pckonfig=&t=0.8973653042479931#start">23-25,5 cala</a></li>
+<li><a href="http://www.krsystem.pl/index.php?szukaj=&go=search&kat=910&grupa=2&kadid=910&szukaj=&dostepne=1&cena_z_1=&cena_z_2=&c_var_7_w[]=26-28&prodsort=&wyswietl=&page=1&tryb=&promocje=&pckonfig=&t=0.8811283750538276#start">26-28 cala</a></li>
+<li><a href="http://www.krsystem.pl/index.php?szukaj=&go=search&kat=910&grupa=2&kadid=910&szukaj=&dostepne=1&cena_z_1=&cena_z_2=&c_var_7_w[]=29-31%2C5&prodsort=&wyswietl=&page=1&tryb=&promocje=&pckonfig=&t=0.336988911118419#start">29-31,5 cala</a></li>
+<li><a href="http://www.krsystem.pl/index.php?szukaj=&go=search&kat=910&grupa=2&kadid=910&szukaj=&dostepne=1&cena_z_1=&cena_z_2=&c_var_7_w[]=32+i+wi%C4%99cej&prodsort=&wyswietl=&page=1&tryb=&promocje=&pckonfig=&t=0.8985672102356024#start">32 cala i więcej</a></li>
+<li><a href="http://www.krsystem.pl/kalibracja_oslony_i_akcesoria-katid-1629.html#start#start">Kalibracja, osłony i akcesoria</a></li>
+</ul>
+</div>
+<div class="col-lg-3 pull-right d-none d-lg-block" style="padding: 10px">
+<img src="tpl/krsystem/img/swiateczne-promocje.png" width="200" height="120" alt="">
+<br><br>
+<a href="konfigurator_pc.html"><img src="tpl/krsystem/img/konfigurator_pc.png" width="200" height="170" alt=""></a>
+</div>
+</div>
+</div>
+</li>
+<li class="selectable"><a href="oprogramowanie-katid-89.html">Oprogramowanie</a>
+<div class="container">
+<div class="row shadow">
+<div class="col-lg-3">
+<h2><a href="http://www.krsystem.pl/index.php?go=search&szukaj=&kat=&kadid=175&dostepne=1&cena_z_1=&cena_z_2=&prodsort=&wyswietl=&page=&tryb=&promocje=#start">Antywirusowe</a></h2>
+<h2><a href="http://www.krsystem.pl/index.php?go=search&szukaj=&kat=174&kadid=174&dostepne=1&cena_z_1=&cena_z_2=&prodsort=&wyswietl=&page=&tryb=&promocje=#start">Biurowe</a></h2>
+<h2><a href="http://www.krsystem.pl/index.php?go=search&szukaj=&kat=&kadid=179&dostepne=1&cena_z_1=&cena_z_2=&prodsort=&wyswietl=&page=&tryb=&promocje=#start">Mapy GPS</a></h2>
+<h2><a href="http://www.krsystem.pl/index.php?go=search&szukaj=&kat=&kadid=178&dostepne=1&cena_z_1=&cena_z_2=&prodsort=&wyswietl=&page=&tryb=&promocje=#start">Graficzne</a></h2>
+<h2><a href="http://www.krsystem.pl/index.php?go=search&szukaj=insert&kat=89&kadid=89&dostepne=1&cena_z_1=&cena_z_2=&prodsort=&wyswietl=&page=&tryb=&promocje=#start">Sprzedaż / księgowość</a></h2>
+<h2><a href="http://www.krsystem.pl/index.php?go=search&szukaj=&kat=&kadid=171&dostepne=1&cena_z_1=&cena_z_2=&prodsort=&wyswietl=&page=&tryb=&promocje=#start">Systemy Operacyjne</a></h2>
+</div>
+<div class="col-lg-3 pull-right d-none d-lg-block" style="padding: 10px">
+<img src="tpl/krsystem/img/swiateczne-promocje.png" width="200" height="120" alt="">
+<br><br>
+<a href="konfigurator_pc.html"><img src="tpl/krsystem/img/konfigurator_pc.png" width="200" height="170" alt=""></a>
+</div>
+</div>
+</div>
+</li>
+<li class="selectable"><a href="#">Apple</a>
+<div class="container">
+<div class="row shadow">
+<div class="col-lg-3">
+<h2><a href="http://www.krsystem.pl/laptopy_macbook-katid-1553.html#start#start">laptopy MacBook</a></h2>
+<ul>
+<li><a href="http://www.krsystem.pl/macbook-katid-1549.html#start#start">MacBook</a></li>
+<li><a href="http://www.krsystem.pl/macbook_air-katid-1550.html#start#start">MacBook Air</a></li>
+<li><a href="http://www.krsystem.pl/macbook_pro-katid-1551.html#start#start">MacBook Pro</a></li>
+</ul>
+<h2><a href="http://www.krsystem.pl/komputery_mac-katid-1572.html#start#start">komputery Mac</a></h2>
+<ul>
+<li><a href="http://www.krsystem.pl/imac-katid-1552.html#start#start">iMac</a></li>
+<li><a href="http://www.krsystem.pl/imac_pro-katid-1677.html#start#start">iMac Pro</a></li>
+<li><a href="http://www.krsystem.pl/mac_pro-katid-1557.html#start#start">Mac Pro</a></li>
+<li><a href="http://www.krsystem.pl/mac_mini-katid-1558.html#start#start">Mac mini</a></li>
+</ul>
+<h2><a href="http://www.krsystem.pl/tablety_ipad-katid-1554.html#start#start">tablety iPad</a></h2>
+<ul>
+<li><a href="http://www.krsystem.pl/ipad_pro-katid-1560.html#start#start">iPad Pro</a></li>
+<li><a href="http://www.krsystem.pl/ipad-katid-1650.html#start#start">iPad</a></li>
+<li><a href="http://www.krsystem.pl/ipad_mini_4-katid-1562.html#start#start">iPad mini 4</a></li>
+</ul>
+</div>
+<div class="col-lg-3">
+<h2><a href="http://www.krsystem.pl/smartfony_iphone-katid-1555.html#start#start">smartfony iPhone</a></h2>
+<ul>
+<li><a href="http://www.krsystem.pl/iphone_x-katid-1678.html#start#start">iPhone X, XR, XS, XS Max</a></li>
+<li><a href="http://www.krsystem.pl/iphone_8-katid-1679.html#start#start">iPhone 8</a></li>
+<li><a href="http://www.krsystem.pl/iphone_7-katid-1618.html#start#start">iPhone 7</a></li>
+<li><a href="http://www.krsystem.pl/iphone_6s-katid-1565.html#start#start">iPhone 6s</a></li>
+<li><a href="http://www.krsystem.pl/iphone_se-katid-1567.html#start#start">iPhone SE</a></li>
+</ul>
+<h2><a href="http://www.krsystem.pl/smartwatche_watch-katid-1569.html#start#start">smartwatche Watch</a></h2>
+<ul>
+<li><a href="http://www.krsystem.pl/apple_watch_series_3-katid-1680.html#start#start">Apple Watch Series 3</a></li>
+<li><a href="http://www.krsystem.pl/apple_watch_nike-katid-1681.html#start#start">Apple Watch Nike+</a></li>
+<li><a href="http://www.krsystem.pl/apple_watch_series_1-katid-1682.html#start#start">Apple Watch Series 1</a></li>
+</ul>
+<h2><a href="http://www.krsystem.pl/odtwarzacze_tv-katid-1570.html#start#start">odtwarzacze TV</a></h2>
+<ul>
+<li><a href="http://www.krsystem.pl/apple_tv_4k-katid-1683.html#start#start">Apple TV 4K</a></li>
+<li><a href="http://www.krsystem.pl/apple_tv-katid-1684.html#start#start">Apple TV</a></li>
+</ul>
+</div>
+<div class="col-lg-3">
+<h2><a href="http://www.krsystem.pl/akcesoria_do_produktow_apple-katid-1556.html#start#start">akcesoria do produktów Apple</a></h2>
+<ul>
+<li><a href="http://www.krsystem.pl/laptopy_macbook-katid-1571.html#start#start">laptopy MacBook</a></li>
+<li><a href="http://www.krsystem.pl/komputery_mac-katid-1685.html#start#start">komputery Mac</a></li>
+<li><a href="http://www.krsystem.pl/tablety_ipad-katid-1686.html#start#start">tablety iPad</a></li>
+<li><a href="http://www.krsystem.pl/smartfony_iphone-katid-1687.html#start#start">smartfony iPhone</a></li>
+<li><a href="http://www.krsystem.pl/smartwatche_watch-katid-1688.html#start#start">smartwatche Watch</a></li>
+<li><a href="http://www.krsystem.pl/odtwarzacze_tv-katid-1689.html#start#start">odtwarzacze TV</a></li>
+</ul>
+</div>
+<div class="col-lg-3 pull-right d-none d-lg-block" style="padding: 10px">
+<img src="tpl/krsystem/img/swiateczne-promocje.png" width="200" height="120" alt="">
+<br><br>
+<a href="konfigurator_pc.html"><img src="tpl/krsystem/img/konfigurator_pc.png" width="200" height="170" alt=""></a>
+</div>
+</div>
+</div>
+</li>
+<li><a href="uslugi-katid-106.html">Usługi</a></li>
+<li class="selectable"><a href="uslugi-katid-1482.html">KASY FISKALNE</a>
+<div class="container">
+<div class="row shadow">
+<div class="col-lg-3">
+<h2><a href="http://www.krsystem.pl/kasy_fiskalne-katid-1573.html#start">Kasy fiskalne</a></h2>
+<ul>
+<li><a href="http://www.krsystem.pl/aclas-katid-1587.html#start">Aclas</a></li>
+<li><a href="http://www.krsystem.pl/elcom-katid-1630.html#start#start">Elcom</a></li>
+<li><a href="http://www.krsystem.pl/elzab-katid-1588.html#start">Elzab</a></li>
+<li><a href="http://www.krsystem.pl/farex-katid-1589.html#start">Farex</a></li>
+<li><a href="http://www.krsystem.pl/posnet-katid-1590.html#start">Posnet</a></li>
+</ul>
+<h2><a href="http://www.krsystem.pl/drukarki_fiskalne-katid-1574.html#start">Drukarki fiskalne</a></h2>
+<ul>
+<li><a href="http://www.krsystem.pl/elzab-katid-1584.html#start">Elzab</a></li>
+<li><a href="http://www.krsystem.pl/farex-katid-1585.html#start">Farex</a></li>
+<li><a href="http://www.krsystem.pl/posnet-katid-1586.html#start">Posnet</a></li>
+</ul>
+<h2><a href="http://www.krsystem.pl/drukarki_etykiet-katid-1601.html#start">Drukarki etykiet</a></h2>
+<ul>
+<li><a href="http://www.krsystem.pl/dymo-katid-1603.html#start#start">Dymo</a></li>
+<li><a href="http://www.krsystem.pl/zebra-katid-1604.html#start#start">Zebra</a></li>
+<li><a href="http://www.krsystem.pl/godex-katid-1617.html#start#start">Godex</a></li>
+</ul>
+</div>
+<div class="col-lg-3">
+<h2><a href="http://www.krsystem.pl/czytniki_kodow-katid-1576.html#start">Czytniki kodów</a></h2>
+<ul>
+<li><a href="http://www.krsystem.pl/aclas-katid-1596.html#start">Aclas</a></li>
+<li><a href="http://www.krsystem.pl/datalogic-katid-1597.html#start">Datalogic</a></li>
+<li><a href="http://www.krsystem.pl/motorola-katid-1598.html#start">Motorola</a></li>
+<li><a href="http://www.krsystem.pl/newland-katid-1612.html#start#start">Newland</a></li>
+<li><a href="http://www.krsystem.pl/zebex-katid-1605.html#start#start">Zebex</a></li>
+<li><a href="http://www.krsystem.pl/zebex-katid-1627.html#start#start">Symbol</a></li>
+</ul>
+<h2><a href="http://www.krsystem.pl/wagi-katid-1577.html#start">Wagi</a></h2>
+<ul>
+<li><a href="http://www.krsystem.pl/aclas-katid-1600.html#start">Aclas</a></li>
+<li><a href="##start">Elzab</a></li>
+<li><a href="##start">Posnet</a></li>
+</ul>
+<h2><a href="http://www.krsystem.pl/szuflady-katid-1575.html#start">Szuflady</a></h2>
+<ul>
+<li><a href="http://www.krsystem.pl/aclas-katid-1592.html#start">Aclas</a></li>
+<li><a href="http://www.krsystem.pl/elzab-katid-1591.html#start">Elzab</a></li>
+<li><a href="http://www.krsystem.pl/farex-katid-1593.html#start">Farex</a></li>
+<li><a href="http://www.krsystem.pl/posnet-katid-1594.html#start">Posnet</a></li>
+</ul>
+</div>
+<div class="col-md-6 pull-right d-none d-lg-block kasy-fiskalne">
+<div>
+<h3>Najtańsze kasy fiskalne oraz&nbsp;drukarki fiskalne</h3>
+<ul>
+<li>Pomagamy w uzyskaniu zwrotu z Urzędu Skarbowego.</li>
+<li>Fiskalizacja i szkolenie gratis.</li>
+<li>Dostawa do klienta gratis.</li>
+</ul>
+<p>Masz wątpliwości? Zadzwoń:</p>
+<h3 class="likeh3">
+<img width="12" height="20" alt="" src="tpl/krsystem/img/telefon.png">
+12 633 33 45
+</h3>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li><a href="kontakt.html">Kontakt</a></li>
+</ul>
+</div>
+<div class="col-lg-2 col-md-3 col-sm-4 telefon">
+<a href="tel:+48126333345">
+<img src="tpl/krsystem/img/telefon.png" width="12" height="20" alt="">
+12 633 33 45</a>
+</div>
+</div>
+</div> <!-- /container -->
+</div>
+<div class="container opacity">
+<div class="row">
+<div class="col-md-12 mybreadcrumb d-none d-md-block">
+<ul class="span12"><li class="home"><a href="index.html">&nbsp;</a></li><li><a href="podzespoly__akcesoria-katid-33.html#start">Podzespoły / akcesoria</a></li><li class="last">Pamięci</li></ul>
+</div>
+</div>
+</div>
+<div class="container produkt-list">
+<div class="row">
+<div class="col-lg-3 sidebar">
+<div class="naglowek " id="naglowek-size">
+<h1>Pamięci</h1>
+</div>
+<div class="naglowek " style="margin: 0px -15px">
+<div class="pointer filtry-switch">
+<i class="fa fa-filter" aria-hidden="true"></i>
+<span class="filtry-switch-item show">Pokaż więcej filtrów</span>
+<span class="filtry-switch-item">Ukryj filtry</span>
+</div>
+</div>
+<div class="filtry filtry-res">
+<form action="index.php" id="katwyszukiwanie" method="post" enctype="multipart/form-data">
+<div id="prodsearch"><input type="hidden" name="go" value="search"><input type="hidden" id="ajaxpager" value="1"><input type="hidden" name="szukaj" value=""><input type="hidden" name="kat" value="37"><input type="hidden" name="kadid" value="37" /><h2>Zakres cenowy</h2>
+<div class="">
+<input style="width: 95%;display: none;"  type="text" class="span2" value="" data-slider-min="0" data-slider-max="5658" data-slider-step="10" data-slider-value="[0,5658]" data-slider-tooltip="hide" id="sl1" >
+<div>
+<div class="sl_left"  style="width: 100px;float: left;"><span >0</span> zł</div>
+<div class="sl_right" style="width: 100px;float: right;text-align: right;"><span >5658</span> zł</div>
+</div>
+</div>
+<div  style="clear: both;">
+<input id="dostepne" name="dostepne"   value="1"  class="css-checkbox"   type="checkbox"><label class="css-label"  for="dostepne">Tylko dostępne</label>
+</div>
+<div >
+<input id="hity" name="hity"   value="1"  class="css-checkhit"   type="checkbox"><label class="css-labelhit"  for="hity" style="color: #FA412F">Tylko HIT</label>
+</div><input type="hidden" name="cena_z_1" 6 value="" /> 
+<input type="hidden" name="cena_z_2" 6 value="" /> 
+<h2>Producent:</h2><div class="filter_element"><div class="scrolable"><div class="filter_element_all">&#10003; Wszystkie</div><div class="filter_element_zero">&#935; Wyczyść</div><div ><input type="checkbox"  name="producent[]" value="132" class="css-checkbox"  id="wlproducent132"  /> 
+<label class="css-label" name="producent_lbl_132" for="wlproducent132">ADATA</label></div><div ><input type="checkbox"  name="producent[]" value="363" class="css-checkbox"  id="wlproducent363"  /> 
+<label class="css-label" name="producent_lbl_363" for="wlproducent363">APACER</label></div><div ><input type="checkbox"  name="producent[]" value="235" class="css-checkbox"  id="wlproducent235"  /> 
+<label class="css-label" name="producent_lbl_235" for="wlproducent235">Corsair</label></div><div ><input type="checkbox"  name="producent[]" value="236" class="css-checkbox"  id="wlproducent236"  /> 
+<label class="css-label" name="producent_lbl_236" for="wlproducent236">Crucial</label></div><div ><input type="checkbox"  name="producent[]" value="201" class="css-checkbox"  id="wlproducent201"  /> 
+<label class="css-label" name="producent_lbl_201" for="wlproducent201">G.SKILL</label></div><div ><input type="checkbox"  name="producent[]" value="36" class="css-checkbox"  id="wlproducent36"  /> 
+<label class="css-label" name="producent_lbl_36" for="wlproducent36">Geil</label></div><div ><input type="checkbox"  name="producent[]" value="21" class="css-checkbox"  id="wlproducent21"  /> 
+<label class="css-label" name="producent_lbl_21" for="wlproducent21">Gigabyte</label></div><div ><input type="checkbox"  name="producent[]" value="122" class="css-checkbox"  id="wlproducent122"  /> 
+<label class="css-label" name="producent_lbl_122" for="wlproducent122">GoodRam</label></div><div ><input type="checkbox"  name="producent[]" value="5" class="css-checkbox"  id="wlproducent5"  /> 
+<label class="css-label" name="producent_lbl_5" for="wlproducent5">HP</label></div><div ><input type="checkbox"  name="producent[]" value="237" class="css-checkbox"  id="wlproducent237"  /> 
+<label class="css-label" name="producent_lbl_237" for="wlproducent237">Integral</label></div><div ><input type="checkbox"  name="producent[]" value="60" class="css-checkbox"  id="wlproducent60"  /> 
+<label class="css-label" name="producent_lbl_60" for="wlproducent60">Kingston</label></div><div ><input type="checkbox"  name="producent[]" value="20" class="css-checkbox"  id="wlproducent20"  /> 
+<label class="css-label" name="producent_lbl_20" for="wlproducent20">Kingston</label></div><div ><input type="checkbox"  name="producent[]" value="126" class="css-checkbox"  id="wlproducent126"  /> 
+<label class="css-label" name="producent_lbl_126" for="wlproducent126">Patriot Memory</label></div><div ><input type="checkbox"  name="producent[]" value="181" class="css-checkbox"  id="wlproducent181"  /> 
+<label class="css-label" name="producent_lbl_181" for="wlproducent181">PNY</label></div><div ><input type="checkbox"  name="producent[]" value="15" class="css-checkbox"  id="wlproducent15"  /> 
+<label class="css-label" name="producent_lbl_15" for="wlproducent15">Samsung</label></div><div ><input type="checkbox"  name="producent[]" value="364" class="css-checkbox"  id="wlproducent364"  /> 
+<label class="css-label" name="producent_lbl_364" for="wlproducent364">TeamGroup</label></div><div ><input type="checkbox"  name="producent[]" value="32" class="css-checkbox"  id="wlproducent32"  /> 
+<label class="css-label" name="producent_lbl_32" for="wlproducent32">THERMALTAKE</label></div><div ><input type="checkbox"  name="producent[]" value="131" class="css-checkbox"  id="wlproducent131"  /> 
+<label class="css-label" name="producent_lbl_131" for="wlproducent131">Transcend</label></div></div></div></div>
+<input type="hidden" name="prodsort" id="prodsort">
+<input type="hidden" name="wyswietl" id="wyswietlilosc">
+<input type="hidden" name="page" id="searchpage" value="">
+<input type="hidden" name="tryb" id="searchtryb">
+<input type="hidden" name="promocje" id="promocje" value="">
+<input type="hidden" name="pckonfig" id="pckonfig" value="">
+<input type="hidden" name="t" id="t" value="1669040088">
+</form>
+</div>
+</div>
+<div class="col-lg-9 main">
+<div class="naglowek podkategorie">
+<ul>
+</ul>
+<ul>
+<li><a href="ddr5-katid-107.html#start">DDR5</a></li>
+<li><a href="ddr3-katid-108.html#start">DDR3</a></li>
+<li><a href="ddr4-katid-1352.html#start">DDR4</a></li>
+<li><a href="ddr4_sodimm-katid-1743.html#start">DDR4 SO-DIMM</a></li>
+</ul>
+</div>
+<div id="prodlist"> 
+<div class="row sortbox">
+<div class="col-md-4">
+<span>Sortuj:</span>
+<select name="sortowanie"    id="sortowanie"  size="1"> 
+<option  value="cenaros">Cena rosnąco </option> 
+<option  selected="selected"  value="cenamal">Cena malejąco </option> 
+<option  value="promocje">Promocje </option> 
+</select>
+</div>
+<div class="col-md-4">
+<span>Pokaż:</span>
+<span id="wyswietl"><a class="" rel="10" href="index.php?go=iloschanege&var=10">10</a>
+<a rel="50" class="" href="index.php?go=iloschanege&var=50">50</a>
+<a rel="100" class="selected" href="index.php?go=iloschanege&var=100">100</a></span>
+</div>
+<div class="col-md-4 pull-right cmspager">
+<ul><li class="prev"><a  rel="" href="pamieci-katid-37,.html">&nbsp;</a></li><li class="ashow"><span>1</span></li><li class="ashow"><a  rel="2" href="pamieci-katid-37,2.html">2</a></li><li class="ashow"><a  rel="3" href="pamieci-katid-37,3.html">3</a></li><li><a  rel="4" href="pamieci-katid-37,4.html">4</a></li><li><a  rel="5" href="pamieci-katid-37,5.html">5</a></li><li><a  rel="6" href="pamieci-katid-37,6.html">6</a></li><li><a  rel="7" href="pamieci-katid-37,7.html">7</a></li><li class="next"><a  rel="2" href="pamieci-katid-37,2.html">&nbsp;</a></li><li class="nextnext"><a  rel="7" href="7">&nbsp;</a></li></ul>					</div>
+</div>
+<div class=" product-horizontal" style="padding: 0">
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="Kingston Fury Renegade RGB 256GB (8x32GB) 3200MHz CL16 1,35V czarna" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_066703/PAKID45C01O0.jpg&amp;w=200');">
+<a href="kingston_fury_renegade_rgb_256gb_8x32gb_3200mhz_cl16_135v_czar-item-66703.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Kingston Fury Renegade RGB 256GB (8x32GB) 3200MHz CL16 1,35V czarna</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="kingston_fury_renegade_rgb_256gb_8x32gb_3200mhz_cl16_135v_czar-item-66703.html" >
+5 647,<small>85 zł</small></a>
+<button rel="66703" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row brakproduktu">
+<div class="col-md-2">
+<div title="Kingston Fury Renegade 128GB (4x32GB) 3600MHz CL18 1,35V czarna" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_066701/PAKID4AB01Q0.jpg&amp;w=200');">
+<a href="kingston_fury_renegade_128gb_4x32gb_3600mhz_cl18_135v_czarna-item-66701.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Kingston Fury Renegade 128GB (4x32GB) 3600MHz CL18 1,35V czarna</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+2 699,<small>04 zł</small>
+<div class="prodniedostepny">Chwilowo niedostępny</div>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="G.SKILL RipjawsV Pamięć DDR4 128GB 4x32GB 3200MHz CL16 1.35V XMP 2.0" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_065640/&amp;w=200');">
+<a href="g.skill_ripjawsv_pamiec_ddr4_128gb_4x32gb_3200mhz_cl16_1.35v_x-item-65640.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">G.SKILL RipjawsV Pamięć DDR4 128GB 4x32GB 3200MHz CL16 1.35V XMP 2.0</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="g.skill_ripjawsv_pamiec_ddr4_128gb_4x32gb_3200mhz_cl16_1.35v_x-item-65640.html" >
+2 428,<small>02 zł</small></a>
+<button rel="65640" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row brakproduktu">
+<div class="col-md-2">
+<div title="G.SKILL DDR4 128GB (4x32GB) Ripjaws V 3600MHz CL18 XMP2" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_065522/65522.jpg&amp;w=200');">
+<a href="g.skill_ddr4_128gb_4x32gb_ripjaws_v_3600mhz_cl18_xmp2-item-65522.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">G.SKILL DDR4 128GB (4x32GB) Ripjaws V 3600MHz CL18 XMP2</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+2 420,<small>64 zł</small>
+<div class="prodniedostepny">Chwilowo niedostępny</div>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row brakproduktu">
+<div class="col-md-2">
+<div title="Kingston Pamięć DDR4 FURY Renegade RGB 128GB(4*32GB)/3200 CL16" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_067909/67909.jpg&amp;w=200');">
+<a href="kingston_pamiec_ddr4_fury_renegade_rgb_128gb432gb3200_cl16-item-67909.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Kingston Pamięć DDR4 FURY Renegade RGB 128GB(4*32GB)/3200 CL16</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+2 373,<small>89 zł</small>
+<div class="prodniedostepny">Chwilowo niedostępny</div>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row brakproduktu">
+<div class="col-md-2">
+<div title="G.SKILL 64GB (2x32GB)  TridentZ Royal 4400MHz CL19 XMP2 " class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_066627/66627.jpg&amp;w=200');">
+<a href="g.skill_64gb_2x32gb__tridentz_royal_4400mhz_cl19_xmp2-item-66627.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">G.SKILL 64GB (2x32GB)  TridentZ Royal 4400MHz CL19 XMP2 </h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+2 157,<small>42 zł</small>
+<div class="prodniedostepny">Chwilowo niedostępny</div>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row brakproduktu">
+<div class="col-md-2">
+<div title="G.SKILL 64GB (2x32GB) TridentZ RGB 4400MHz CL19 XMP2 " class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_066626/66626.jpg&amp;w=200');">
+<a href="g.skill_64gb_2x32gb_tridentz_rgb_4400mhz_cl19_xmp2-item-66626.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">G.SKILL 64GB (2x32GB) TridentZ RGB 4400MHz CL19 XMP2 </h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+2 041,<small>80 zł</small>
+<div class="prodniedostepny">Chwilowo niedostępny</div>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="G.SKILL DDR4 64GB (2x32GB) RipjawsV 4400MHz CL19 XMP2 Black " class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_066279/66279.jpg&amp;w=200');">
+<a href="g.skill_ddr4_64gb_2x32gb_ripjawsv_4400mhz_cl19_xmp2_black-item-66279.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">G.SKILL DDR4 64GB (2x32GB) RipjawsV 4400MHz CL19 XMP2 Black </h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="g.skill_ddr4_64gb_2x32gb_ripjawsv_4400mhz_cl19_xmp2_black-item-66279.html" >
+1 905,<small>27 zł</small></a>
+<button rel="66279" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="G.SKILL Trident Z Royal Pamięć DDR4 16GB 2x8GB 4800MHz CL18 1.5V XMP Srebrna" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_062607/62607_f44800c18d16gtrs.png&amp;w=200');">
+<a href="g.skill_trident_z_royal_pamiec_ddr4_16gb_2x8gb_4800mhz_cl18_1.-item-62607.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">G.SKILL Trident Z Royal Pamięć DDR4 16GB 2x8GB 4800MHz CL18 1.5V XMP Srebrna</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="g.skill_trident_z_royal_pamiec_ddr4_16gb_2x8gb_4800mhz_cl18_1.-item-62607.html" >
+1 840,<small>57 zł</small></a>
+<button rel="62607" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row brakproduktu">
+<div class="col-md-2">
+<div title="G.SKILL DDR4 64GB (2x32GB) TridentZ RGB 4000MHz CL18 XMP2 " class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_065519/65519.jpg&amp;w=200');">
+<a href="g.skill_ddr4_64gb_2x32gb_tridentz_rgb_4000mhz_cl18_xmp2-item-65519.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">G.SKILL DDR4 64GB (2x32GB) TridentZ RGB 4000MHz CL18 XMP2 </h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+1 837,<small>62 zł</small>
+<div class="prodniedostepny">Chwilowo niedostępny</div>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="G.SKILL Trident Z5 RGB DDR5 32GB 2x16GB 6400MHz CL32 1.4V XMP 3.0 black" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_066999/&amp;w=200');">
+<a href="g.skill_trident_z5_rgb_ddr5_32gb_2x16gb_6400mhz_cl32_1.4v_xmp_-item-66999.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">G.SKILL Trident Z5 RGB DDR5 32GB 2x16GB 6400MHz CL32 1.4V XMP 3.0 black</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="g.skill_trident_z5_rgb_ddr5_32gb_2x16gb_6400mhz_cl32_1.4v_xmp_-item-66999.html" >
+1 799,<small>00 zł</small></a>
+<button rel="66999" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row brakproduktu">
+<div class="col-md-2">
+<div title="KINGSTON HX432C16FB3AK4/64 HyperX 64GB 3200MHz Fury RGB CL16 (4x16GB) NA MAGAZYNIE" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_062911/62911_hx432c16fb3ak464.jpg&amp;w=200');">
+<a href="kingston_hx432c16fb3ak464_hyperx_64gb_3200mhz_fury_rgb_cl16_4x-item-62911.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">KINGSTON HX432C16FB3AK4/64 HyperX 64GB 3200MHz Fury RGB CL16 (4x16GB) NA MAGAZYNIE</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+1 709,<small>00 zł</small>
+<div class="prodniedostepny">Chwilowo niedostępny</div>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row brakproduktu">
+<div class="col-md-2">
+<div title="Corsair Pamięć DDR5 Dominator Platinum RGB 64GB/5200(2*32GB)C40 " class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_068179/68179.jpg&amp;w=200');">
+<a href="corsair_pamiec_ddr5_dominator_platinum_rgb_64gb5200232gbc40-item-68179.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Corsair Pamięć DDR5 Dominator Platinum RGB 64GB/5200(2*32GB)C40 </h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+1 698,<small>32 zł</small>
+<div class="prodniedostepny">Chwilowo niedostępny</div>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row brakproduktu">
+<div class="col-md-2">
+<div title="G.SKILL Pamięć DDR5 32GB (2x16GB) Trident Z5 5600MHz CL36-36 XMP3 Czarna" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_068206/68206.jpg&amp;w=200');">
+<a href="g.skill_pamiec_ddr5_32gb_2x16gb_trident_z5_5600mhz_cl3636_xmp3-item-68206.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">G.SKILL Pamięć DDR5 32GB (2x16GB) Trident Z5 5600MHz CL36-36 XMP3 Czarna</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+1 696,<small>17 zł</small>
+<div class="prodniedostepny">Chwilowo niedostępny</div>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="G.SKILL - DDR4 64GB (2x32GB)  TridentZ RGB Neo AMD 4000MHz CL18 XMP2 Black " class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_066278/66278.jpg&amp;w=200');">
+<a href="g.skill__ddr4_64gb_2x32gb__tridentz_rgb_neo_amd_4000mhz_cl18_x-item-66278.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">G.SKILL - DDR4 64GB (2x32GB)  TridentZ RGB Neo AMD 4000MHz CL18 XMP2 Black </h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="g.skill__ddr4_64gb_2x32gb__tridentz_rgb_neo_amd_4000mhz_cl18_x-item-66278.html" >
+1 690,<small>02 zł</small></a>
+<button rel="66278" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title=" G.SKILL DDR4 64GB (2x32GB) RipjawsV 3200MHz CL14 XMP2 Czarna" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_065512/65512.jpg&amp;w=200');">
+<a href="g.skill_ddr4_64gb_2x32gb_ripjawsv_3200mhz_cl14_xmp2_czarna-item-65512.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2"> G.SKILL DDR4 64GB (2x32GB) RipjawsV 3200MHz CL14 XMP2 Czarna</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="g.skill_ddr4_64gb_2x32gb_ripjawsv_3200mhz_cl14_xmp2_czarna-item-65512.html" >
+1 670,<small>34 zł</small></a>
+<button rel="65512" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="Thermaltake DDR4 32GB (2x16GB)  ToughRAM RGB 3600MHz CL18 XMP2 Czarna" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_065505/65505.jpg&amp;w=200');">
+<a href="thermaltake_ddr4_32gb_2x16gb__toughram_rgb_3600mhz_cl18_xmp2_c-item-65505.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Thermaltake DDR4 32GB (2x16GB)  ToughRAM RGB 3600MHz CL18 XMP2 Czarna</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="thermaltake_ddr4_32gb_2x16gb__toughram_rgb_3600mhz_cl18_xmp2_c-item-65505.html" >
+1 592,<small>03 zł</small></a>
+<button rel="65505" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row brakproduktu">
+<div class="col-md-2">
+<div title="G.SKILL - DDR4 32GB (2x16GB) RipjawsV 3600MHz CL14 XMP2 Black " class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_066281/66281.jpg&amp;w=200');">
+<a href="g.skill__ddr4_32gb_2x16gb_ripjawsv_3600mhz_cl14_xmp2_black-item-66281.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">G.SKILL - DDR4 32GB (2x16GB) RipjawsV 3600MHz CL14 XMP2 Black </h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+1 591,<small>62 zł</small>
+<div class="prodniedostepny">Chwilowo niedostępny</div>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row brakproduktu">
+<div class="col-md-2">
+<div title="G.SKILL DDR4 64GB (4x16GB) RipjawsV 3600MHz CL16 XMP2 " class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_063846/63846.jpg&amp;w=200');">
+<a href="g.skill_ddr4_64gb_4x16gb_ripjawsv_3600mhz_cl16_xmp2-item-63846.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">G.SKILL DDR4 64GB (4x16GB) RipjawsV 3600MHz CL16 XMP2 </h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+1 585,<small>47 zł</small>
+<div class="prodniedostepny">Chwilowo niedostępny</div>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row brakproduktu">
+<div class="col-md-2">
+<div title="G.SKILL  DDR4 32GB (2x16GB) TridentZ RGB 4000MHz CL16-16-16XMP2 " class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_066280/66280.jpg&amp;w=200');">
+<a href="g.skill__ddr4_32gb_2x16gb_tridentz_rgb_4000mhz_cl161616xmp2-item-66280.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">G.SKILL  DDR4 32GB (2x16GB) TridentZ RGB 4000MHz CL16-16-16XMP2 </h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+1 573,<small>17 zł</small>
+<div class="prodniedostepny">Chwilowo niedostępny</div>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title=" G.SKILL  DDR4 64GB (2x32GB) RipjawsV 3600MHz CL16 XMP2 Black " class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_065516/65516.jpg&amp;w=200');">
+<a href="g.skill__ddr4_64gb_2x32gb_ripjawsv_3600mhz_cl16_xmp2_black-item-65516.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2"> G.SKILL  DDR4 64GB (2x32GB) RipjawsV 3600MHz CL16 XMP2 Black </h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="g.skill__ddr4_64gb_2x32gb_ripjawsv_3600mhz_cl16_xmp2_black-item-65516.html" >
+1 549,<small>80 zł</small></a>
+<button rel="65516" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row brakproduktu">
+<div class="col-md-2">
+<div title="PATRIOT SL Premium DDR4 4GB 2400MHz UDIMM with HS" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_064514/&amp;w=200');">
+<a href="patriot_sl_premium_ddr4_4gb_2400mhz_udimm_with_hs-item-64514.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">PATRIOT SL Premium DDR4 4GB 2400MHz UDIMM with HS</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+1 544,<small>14 zł</small>
+<div class="prodniedostepny">Chwilowo niedostępny</div>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row brakproduktu">
+<div class="col-md-2">
+<div title="G.SKILL DDR4 32GB (2x16GB) TridentZ Royal RGB 4000MHz CL16 XMP2.0 " class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_065509/65509.jpg&amp;w=200');">
+<a href="g.skill_ddr4_32gb_2x16gb_tridentz_royal_rgb_4000mhz_cl16_xmp2.-item-65509.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">G.SKILL DDR4 32GB (2x16GB) TridentZ Royal RGB 4000MHz CL16 XMP2.0 </h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+1 517,<small>03 zł</small>
+<div class="prodniedostepny">Chwilowo niedostępny</div>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="G.SKILL Trident Z RGB DDR4 64GB 2x32GB 4000MHz CL18 1.4V" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_063914/63914_f44000c18d64gtzr.png&amp;w=200');">
+<a href="g.skill_trident_z_rgb_ddr4_64gb_2x32gb_4000mhz_cl18_1.4v-item-63914.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">G.SKILL Trident Z RGB DDR4 64GB 2x32GB 4000MHz CL18 1.4V</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="g.skill_trident_z_rgb_ddr4_64gb_2x32gb_4000mhz_cl18_1.4v-item-63914.html" >
+1 511,<small>61 zł</small></a>
+<button rel="63914" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="G.Skill Trident Z Pamięć DDR4 32GB (2x16GB) 4000MHz CL19 1.35V XMP 2.0" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_061185/C2760232.jpg&amp;w=200');">
+<a href="g.skill_trident_z_pamiec_ddr4_32gb_2x16gb_4000mhz_cl19_1.35v_x-item-61185.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">G.Skill Trident Z Pamięć DDR4 32GB (2x16GB) 4000MHz CL19 1.35V XMP 2.0</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="g.skill_trident_z_pamiec_ddr4_32gb_2x16gb_4000mhz_cl19_1.35v_x-item-61185.html" >
+1 473,<small>65 zł</small></a>
+<button rel="61185" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row brakproduktu">
+<div class="col-md-2">
+<div title="Kingston Fury Renegade 16GB (2x8GB) 5333MHz CL20 1,6V czarna" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_066696/PAKID4O800D0.jpg&amp;w=200');">
+<a href="kingston_fury_renegade_16gb_2x8gb_5333mhz_cl20_16v_czarna-item-66696.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Kingston Fury Renegade 16GB (2x8GB) 5333MHz CL20 1,6V czarna</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+1 452,<small>64 zł</small>
+<div class="prodniedostepny">Chwilowo niedostępny</div>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row brakproduktu">
+<div class="col-md-2">
+<div title="Kingston DDR5  32GB(2*16GB)/4800 CL40 1Rx5 NA MAGAZNIE" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_066836/66836.jpg&amp;w=200');">
+<a href="kingston_ddr5__32gb216gb4800_cl40_1rx5_na_magaznie-item-66836.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Kingston DDR5  32GB(2*16GB)/4800 CL40 1Rx5 NA MAGAZNIE</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+1 444,<small>00 zł</small>
+<div class="prodniedostepny">Chwilowo niedostępny</div>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row brakproduktu">
+<div class="col-md-2">
+<div title="Kingston DDR5 Fury Beast Black  32GB(2*16GB)/4800  CL38 NA MAGAZYNIE" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_066835/66835.jpg&amp;w=200');">
+<a href="kingston_ddr5_fury_beast_black__32gb216gb4800__cl38_na_magazyn-item-66835.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Kingston DDR5 Fury Beast Black  32GB(2*16GB)/4800  CL38 NA MAGAZYNIE</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+1 444,<small>00 zł</small>
+<div class="prodniedostepny">Chwilowo niedostępny</div>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="Kingston DDR4 Fury Red 32GB/2666(2*16GB) CL16" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_048814/48814.jpg&amp;w=200');">
+<a href="kingston_ddr4_fury_red_32gb2666216gb_cl16-item-48814.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Kingston DDR4 Fury Red 32GB/2666(2*16GB) CL16</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="kingston_ddr4_fury_red_32gb2666216gb_cl16-item-48814.html" >
+1 403,<small>12 zł</small></a>
+<button rel="48814" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="G.Skill Trident Z RGB Pamięć DDR4 32GB (2x16GB) 4000MHz CL19 1.35V XMP 2.0" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_055476/C2760169.jpg&amp;w=200');">
+<a href="g.skill_trident_z_rgb_pamiec_ddr4_32gb_2x16gb_4000mhz_cl19_1.3-item-55476.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">G.Skill Trident Z RGB Pamięć DDR4 32GB (2x16GB) 4000MHz CL19 1.35V XMP 2.0</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="g.skill_trident_z_rgb_pamiec_ddr4_32gb_2x16gb_4000mhz_cl19_1.3-item-55476.html" >
+1 386,<small>06 zł</small></a>
+<button rel="55476" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="G.Skill Trident Z Neo (AMD) Pamięć DDR4 64GB (4x16GB) 3200MHz CL16 1.35V XMP 2.0" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_060926/_f43200c16q64gtzn.png&amp;w=200');">
+<a href="g.skill_trident_z_neo_amd_pamiec_ddr4_64gb_4x16gb_3200mhz_cl16-item-60926.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">G.Skill Trident Z Neo (AMD) Pamięć DDR4 64GB (4x16GB) 3200MHz CL16 1.35V XMP 2.0</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="g.skill_trident_z_neo_amd_pamiec_ddr4_64gb_4x16gb_3200mhz_cl16-item-60926.html" >
+1 367,<small>60 zł</small></a>
+<button rel="60926" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="Kingston Fury Renegade 64GB (2x32GB) 3600MHz CL18 1,35V czarna" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_066693/PAKID4AA01D0.jpg&amp;w=200');">
+<a href="kingston_fury_renegade_64gb_2x32gb_3600mhz_cl18_135v_czarna-item-66693.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Kingston Fury Renegade 64GB (2x32GB) 3600MHz CL18 1,35V czarna</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="kingston_fury_renegade_64gb_2x32gb_3600mhz_cl18_135v_czarna-item-66693.html" >
+1 353,<small>04 zł</small></a>
+<button rel="66693" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="G.Skill Trident Z Royal Pamięć DDR4 16GB (2x8GB) 4400MHz CL18 1.4V XMP Srebrna" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_061186/C2760191.jpg&amp;w=200');">
+<a href="g.skill_trident_z_royal_pamiec_ddr4_16gb_2x8gb_4400mhz_cl18_1.-item-61186.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">G.Skill Trident Z Royal Pamięć DDR4 16GB (2x8GB) 4400MHz CL18 1.4V XMP Srebrna</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="g.skill_trident_z_royal_pamiec_ddr4_16gb_2x8gb_4400mhz_cl18_1.-item-61186.html" >
+1 321,<small>52 zł</small></a>
+<button rel="61186" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="G.SKILL DDR4 64GB (2x32GB) TridentZ RGB 3600MHz CL18 XMP2" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_063842/63842.jpg&amp;w=200');">
+<a href="g.skill_ddr4_64gb_2x32gb_tridentz_rgb_3600mhz_cl18_xmp2-item-63842.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">G.SKILL DDR4 64GB (2x32GB) TridentZ RGB 3600MHz CL18 XMP2</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="g.skill_ddr4_64gb_2x32gb_tridentz_rgb_3600mhz_cl18_xmp2-item-63842.html" >
+1 308,<small>72 zł</small></a>
+<button rel="63842" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row brakproduktu">
+<div class="col-md-2">
+<div title="Kingston Fury Beast 64GB (4x16GB) 3200MHz CL16 1,35V czarna" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_066691/PAKID45A01Q0.jpg&amp;w=200');">
+<a href="kingston_fury_beast_64gb_4x16gb_3200mhz_cl16_135v_czarna-item-66691.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Kingston Fury Beast 64GB (4x16GB) 3200MHz CL16 1,35V czarna</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+1 299,<small>00 zł</small>
+<div class="prodniedostepny">Chwilowo niedostępny</div>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="TEAM GROUP T-Force XTREEM ARGB DDR4 64GB 2x32GB 3600MHz DIMM CL18 1.35V White" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_065625/&amp;w=200');">
+<a href="team_group_tforce_xtreem_argb_ddr4_64gb_2x32gb_3600mhz_dimm_cl-item-65625.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">TEAM GROUP T-Force XTREEM ARGB DDR4 64GB 2x32GB 3600MHz DIMM CL18 1.35V White</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="team_group_tforce_xtreem_argb_ddr4_64gb_2x32gb_3600mhz_dimm_cl-item-65625.html" >
+1 291,<small>93 zł</small></a>
+<button rel="65625" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row brakproduktu">
+<div class="col-md-2">
+<div title="Pamięć DDR4 FURY Renegade RGB 64GB(2*32GB)/3600 CL18" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_068046/68046.jpg&amp;w=200');">
+<a href="pamiec_ddr4_fury_renegade_rgb_64gb232gb3600_cl18-item-68046.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Pamięć DDR4 FURY Renegade RGB 64GB(2*32GB)/3600 CL18</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+1 284,<small>40 zł</small>
+<div class="prodniedostepny">Chwilowo niedostępny</div>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="Kingston Fury Beast RGB 64GB (4x16GB) 3200MHz CL16 1,35V czarna" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_066689/PAKID45A03Q0.jpg&amp;w=200');">
+<a href="kingston_fury_beast_rgb_64gb_4x16gb_3200mhz_cl16_135v_czarna-item-66689.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Kingston Fury Beast RGB 64GB (4x16GB) 3200MHz CL16 1,35V czarna</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="kingston_fury_beast_rgb_64gb_4x16gb_3200mhz_cl16_135v_czarna-item-66689.html" >
+1 266,<small>10 zł</small></a>
+<button rel="66689" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="Pamięć DDR4 Kingston Fury Beast 64GB (4x16GB) 3600MHz CL18 1,35V czarna" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_068062/68062_7777777777777777777777.jpg&amp;w=200');">
+<a href="pamiec_ddr4_kingston_fury_beast_64gb_4x16gb_3600mhz_cl18_135v_-item-68062.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Pamięć DDR4 Kingston Fury Beast 64GB (4x16GB) 3600MHz CL18 1,35V czarna</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="pamiec_ddr4_kingston_fury_beast_64gb_4x16gb_3600mhz_cl18_135v_-item-68062.html" >
+1 264,<small>50 zł</small></a>
+<button rel="68062" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="Kingston FURY Beast RGB 64GB(2*32GB)/3600 CL18" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_066625/66625.jpg&amp;w=200');">
+<a href="kingston_fury_beast_rgb_64gb232gb3600_cl18-item-66625.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Kingston FURY Beast RGB 64GB(2*32GB)/3600 CL18</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="kingston_fury_beast_rgb_64gb232gb3600_cl18-item-66625.html" >
+1 228,<small>19 zł</small></a>
+<button rel="66625" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row brakproduktu">
+<div class="col-md-2">
+<div title="CORSAIR DOMINATOR PLATINUM RGB Pamięć DDR4 32GB 4x8GB 3600MHz CL18 1.35V NA MAGAZYNIE" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_062578/_cmt32gx4m4c3600c18.png&amp;w=200');">
+<a href="corsair_dominator_platinum_rgb_pamiec_ddr4_32gb_4x8gb_3600mhz_-item-62578.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">CORSAIR DOMINATOR PLATINUM RGB Pamięć DDR4 32GB 4x8GB 3600MHz CL18 1.35V NA MAGAZYNIE</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+1 222,<small>00 zł</small>
+<div class="prodniedostepny">Chwilowo niedostępny</div>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="G.SKILL DDR4 32GB (2x16GB) TridentZ RGB 3600MHz CL16 XMP2" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_065499/65499.jpg&amp;w=200');">
+<a href="g.skill_ddr4_32gb_2x16gb_tridentz_rgb_3600mhz_cl16_xmp2-item-65499.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">G.SKILL DDR4 32GB (2x16GB) TridentZ RGB 3600MHz CL16 XMP2</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="g.skill_ddr4_32gb_2x16gb_tridentz_rgb_3600mhz_cl16_xmp2-item-65499.html" >
+1 202,<small>94 zł</small></a>
+<button rel="65499" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row brakproduktu">
+<div class="col-md-2">
+<div title="ADATA 8GB DDR4 3200MHz SO-DIMM 22-22-22 " class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_067963/67963_17171717.jpg&amp;w=200');">
+<a href="adata_8gb_ddr4_3200mhz_sodimm_222222-item-67963.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">ADATA 8GB DDR4 3200MHz SO-DIMM 22-22-22 </h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+1 187,<small>61 zł</small>
+<div class="prodniedostepny">Chwilowo niedostępny</div>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row brakproduktu">
+<div class="col-md-2">
+<div title="Kingston DDR5 Fury Beast 32GB(2*16GB)/6000 CL36 czarna" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_068962/68962.jpg&amp;w=200');">
+<a href="kingston_ddr5_fury_beast_32gb216gb6000_cl36_czarna-item-68962.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Kingston DDR5 Fury Beast 32GB(2*16GB)/6000 CL36 czarna</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+1 180,<small>00 zł</small>
+<div class="prodniedostepny">Chwilowo niedostępny</div>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row brakproduktu">
+<div class="col-md-2">
+<div title="G.SKILL Pamięć DDR5 32GB (2x16GB) Trident Z5 6000MHz CL36-36 XMP3 Czarna NA MAGAZYNIE" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_066998/_1.jpg&amp;w=200');">
+<a href="g.skill_pamiec_ddr5_32gb_2x16gb_trident_z5_6000mhz_cl3636_xmp3-item-66998.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">G.SKILL Pamięć DDR5 32GB (2x16GB) Trident Z5 6000MHz CL36-36 XMP3 Czarna NA MAGAZYNIE</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+1 180,<small>00 zł</small>
+<div class="prodniedostepny">Chwilowo niedostępny</div>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row brakproduktu">
+<div class="col-md-2">
+<div title="G.SKILL DDR5 6000 MT/s 2x16GB Flare X5 32-38-38-96 1.35V AMD EXPO " class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_068889/_f56000j3238f16gx2fx5.jpg&amp;w=200');">
+<a href="g.skill_ddr5_6000_mts_2x16gb_flare_x5_32383896_1.35v_amd_expo-item-68889.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">G.SKILL DDR5 6000 MT/s 2x16GB Flare X5 32-38-38-96 1.35V AMD EXPO </h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+1 179,<small>29 zł</small>
+<div class="prodniedostepny">Chwilowo niedostępny</div>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row brakproduktu">
+<div class="col-md-2">
+<div title="Corsair Pamięć DDR5 Vengeance 32GB/5200 (2*16GB) CL40 " class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_068172/68172.jpg&amp;w=200');">
+<a href="corsair_pamiec_ddr5_vengeance_32gb5200_216gb_cl40-item-68172.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Corsair Pamięć DDR5 Vengeance 32GB/5200 (2*16GB) CL40 </h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+1 173,<small>86 zł</small>
+<div class="prodniedostepny">Chwilowo niedostępny</div>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="G.SKILL DDR4 64GB (2x32GB) RipjawsV 3600MHz CL18 XMP2" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_065502/65502.jpg&amp;w=200');">
+<a href="g.skill_ddr4_64gb_2x32gb_ripjawsv_3600mhz_cl18_xmp2-item-65502.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">G.SKILL DDR4 64GB (2x32GB) RipjawsV 3600MHz CL18 XMP2</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="g.skill_ddr4_64gb_2x32gb_ripjawsv_3600mhz_cl18_xmp2-item-65502.html" >
+1 159,<small>95 zł</small></a>
+<button rel="65502" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="G.SKILL DDR4 64GB (4x16GB) RipjawsV 3600MHz CL18 XMP2 " class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_063845/63845.jpg&amp;w=200');">
+<a href="g.skill_ddr4_64gb_4x16gb_ripjawsv_3600mhz_cl18_xmp2-item-63845.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">G.SKILL DDR4 64GB (4x16GB) RipjawsV 3600MHz CL18 XMP2 </h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="g.skill_ddr4_64gb_4x16gb_ripjawsv_3600mhz_cl18_xmp2-item-63845.html" >
+1 154,<small>97 zł</small></a>
+<button rel="63845" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="G.Skill Trident Z RGB Pamięć DDR4 32GB (2x16GB) 3200MHz CL14 1.35V XMP 2.0" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_051768/C2760068.jpg&amp;w=200');">
+<a href="g.skill_trident_z_rgb_pamiec_ddr4_32gb_2x16gb_3200mhz_cl14_1.3-item-51768.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">G.Skill Trident Z RGB Pamięć DDR4 32GB (2x16GB) 3200MHz CL14 1.35V XMP 2.0</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="g.skill_trident_z_rgb_pamiec_ddr4_32gb_2x16gb_3200mhz_cl14_1.3-item-51768.html" >
+1 135,<small>43 zł</small></a>
+<button rel="51768" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="CORSAIR DDR4 2666MHz 64GB 2x32GB CL18 SODIMM 1.2V Black " class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_067971/67971_55555555555555555.jpg&amp;w=200');">
+<a href="corsair_ddr4_2666mhz_64gb_2x32gb_cl18_sodimm_1.2v_black-item-67971.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">CORSAIR DDR4 2666MHz 64GB 2x32GB CL18 SODIMM 1.2V Black </h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="corsair_ddr4_2666mhz_64gb_2x32gb_cl18_sodimm_1.2v_black-item-67971.html" >
+1 130,<small>73 zł</small></a>
+<button rel="67971" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="G.SKILL DDR4 64GB (2x32GB) RipjawsV 3200MHz CL16 XMP2 " class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_063510/63510.jpg&amp;w=200');">
+<a href="g.skill_ddr4_64gb_2x32gb_ripjawsv_3200mhz_cl16_xmp2-item-63510.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">G.SKILL DDR4 64GB (2x32GB) RipjawsV 3200MHz CL16 XMP2 </h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="g.skill_ddr4_64gb_2x32gb_ripjawsv_3200mhz_cl16_xmp2-item-63510.html" >
+1 118,<small>07 zł</small></a>
+<button rel="63510" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="G.Skill TridentZ DDR4 2x16GB 3200MHz CL14-14-14 XMP2 Black " class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_063010/63010.jpg&amp;w=200');">
+<a href="g.skill_tridentz_ddr4_2x16gb_3200mhz_cl141414_xmp2_black-item-63010.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">G.Skill TridentZ DDR4 2x16GB 3200MHz CL14-14-14 XMP2 Black </h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="g.skill_tridentz_ddr4_2x16gb_3200mhz_cl141414_xmp2_black-item-63010.html" >
+1 118,<small>07 zł</small></a>
+<button rel="63010" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row brakproduktu">
+<div class="col-md-2">
+<div title="PATRIOT Viper RGB 16GB 2x8GB DDR4 3200MHz DIMM CL16-16-18-20 1.35V KIT" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_065538/&amp;w=200');">
+<a href="patriot_viper_rgb_16gb_2x8gb_ddr4_3200mhz_dimm_cl16161820_1.35-item-65538.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">PATRIOT Viper RGB 16GB 2x8GB DDR4 3200MHz DIMM CL16-16-18-20 1.35V KIT</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+1 105,<small>22 zł</small>
+<div class="prodniedostepny">Chwilowo niedostępny</div>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row brakproduktu">
+<div class="col-md-2">
+<div title="G.SKILL- DDR4 32GB (2x16GB) TridentZ Royal RGB 3600MHz CL16 XMP2 Silver " class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_063717/63717.jpg&amp;w=200');">
+<a href="g.skill_ddr4_32gb_2x16gb_tridentz_royal_rgb_3600mhz_cl16_xmp2_-item-63717.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">G.SKILL- DDR4 32GB (2x16GB) TridentZ Royal RGB 3600MHz CL16 XMP2 Silver </h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+1 099,<small>62 zł</small>
+<div class="prodniedostepny">Chwilowo niedostępny</div>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="G.SKILL RipjawsV DDR4 64GB 2x32GB 2666Mhz DIMM CL19 1.2V" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_065628/&amp;w=200');">
+<a href="g.skill_ripjawsv_ddr4_64gb_2x32gb_2666mhz_dimm_cl19_1.2v-item-65628.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">G.SKILL RipjawsV DDR4 64GB 2x32GB 2666Mhz DIMM CL19 1.2V</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="g.skill_ripjawsv_ddr4_64gb_2x32gb_2666mhz_dimm_cl19_1.2v-item-65628.html" >
+1 085,<small>03 zł</small></a>
+<button rel="65628" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="Kingston Pamięć DDR5 Fury Beast Black  32GB(2*16GB)/6000  CL40 " class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_068223/68223.jpg&amp;w=200');">
+<a href="kingston_pamiec_ddr5_fury_beast_black__32gb216gb6000__cl40-item-68223.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Kingston Pamięć DDR5 Fury Beast Black  32GB(2*16GB)/6000  CL40 </h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="kingston_pamiec_ddr5_fury_beast_black__32gb216gb6000__cl40-item-68223.html" >
+1 080,<small>89 zł</small></a>
+<button rel="68223" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="G.Skill RipjawsV Pamięć DDR4 64GB (4x16GB) 3200MHz CL16 1.35V XMP 2.0" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_051777/C2760050.jpg&amp;w=200');">
+<a href="g.skill_ripjawsv_pamiec_ddr4_64gb_4x16gb_3200mhz_cl16_1.35v_xm-item-51777.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">G.Skill RipjawsV Pamięć DDR4 64GB (4x16GB) 3200MHz CL16 1.35V XMP 2.0</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="g.skill_ripjawsv_pamiec_ddr4_64gb_4x16gb_3200mhz_cl16_1.35v_xm-item-51777.html" >
+1 075,<small>02 zł</small></a>
+<button rel="51777" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="G.Skill Aegis Pamięć DDR4 64GB (4x16GB) 3200MHz CL16 1.35V XMP 2.0" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_061187/C2760273.jpg&amp;w=200');">
+<a href="g.skill_aegis_pamiec_ddr4_64gb_4x16gb_3200mhz_cl16_1.35v_xmp_2-item-61187.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">G.Skill Aegis Pamięć DDR4 64GB (4x16GB) 3200MHz CL16 1.35V XMP 2.0</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="g.skill_aegis_pamiec_ddr4_64gb_4x16gb_3200mhz_cl16_1.35v_xmp_2-item-61187.html" >
+1 061,<small>86 zł</small></a>
+<button rel="61187" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="G.Skill DDR4 32GB (2x16GB) FlareX AMD 3200MHz CL14-14-14 XMP2 " class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_063009/63009.jpg&amp;w=200');">
+<a href="g.skill_ddr4_32gb_2x16gb_flarex_amd_3200mhz_cl141414_xmp2-item-63009.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">G.Skill DDR4 32GB (2x16GB) FlareX AMD 3200MHz CL14-14-14 XMP2 </h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="g.skill_ddr4_32gb_2x16gb_flarex_amd_3200mhz_cl141414_xmp2-item-63009.html" >
+1 056,<small>57 zł</small></a>
+<button rel="63009" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row brakproduktu">
+<div class="col-md-2">
+<div title="ADATA DDR4 8GB SODIMM 2666MHz " class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_067962/67962_11ad4s26668g19sgn.jpg&amp;w=200');">
+<a href="adata_ddr4_8gb_sodimm_2666mhz-item-67962.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">ADATA DDR4 8GB SODIMM 2666MHz </h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+1 040,<small>62 zł</small>
+<div class="prodniedostepny">Chwilowo niedostępny</div>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="CORSAIR Vengeance LPX DDR4 64GB 4x16GB 3600MHz DIMM CL18 1.35V XMP 2.0" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_066483/&amp;w=200');">
+<a href="corsair_vengeance_lpx_ddr4_64gb_4x16gb_3600mhz_dimm_cl18_1.35v-item-66483.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">CORSAIR Vengeance LPX DDR4 64GB 4x16GB 3600MHz DIMM CL18 1.35V XMP 2.0</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="corsair_vengeance_lpx_ddr4_64gb_4x16gb_3600mhz_dimm_cl18_1.35v-item-66483.html" >
+1 037,<small>26 zł</small></a>
+<button rel="66483" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="KINGSTON KTL-TS424/32G Memory dedicated Kingston 32GB DDR4-2400MHz Reg ECC Module" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_062901/62901_ktlts42432g.jpg&amp;w=200');">
+<a href="kingston_ktlts42432g_memory_dedicated_kingston_32gb_ddr42400mh-item-62901.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">KINGSTON KTL-TS424/32G Memory dedicated Kingston 32GB DDR4-2400MHz Reg ECC Module</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="kingston_ktlts42432g_memory_dedicated_kingston_32gb_ddr42400mh-item-62901.html" >
+1 035,<small>49 zł</small></a>
+<button rel="62901" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row brakproduktu">
+<div class="col-md-2">
+<div title="G.SKILL  DDR4 32GB (2x16GB) TridentZ Royal RGB 4000MHz CL18 XMP2 " class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_065498/65498.jpg&amp;w=200');">
+<a href="g.skill__ddr4_32gb_2x16gb_tridentz_royal_rgb_4000mhz_cl18_xmp2-item-65498.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">G.SKILL  DDR4 32GB (2x16GB) TridentZ Royal RGB 4000MHz CL18 XMP2 </h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+1 013,<small>52 zł</small>
+<div class="prodniedostepny">Chwilowo niedostępny</div>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="Kingston Pamięć DDR4 FURY Beast RGB 64GB(2*32GB)/3200 CL16" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_067910/67910.jpg&amp;w=200');">
+<a href="kingston_pamiec_ddr4_fury_beast_rgb_64gb232gb3200_cl16-item-67910.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Kingston Pamięć DDR4 FURY Beast RGB 64GB(2*32GB)/3200 CL16</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="kingston_pamiec_ddr4_fury_beast_rgb_64gb232gb3200_cl16-item-67910.html" >
+1 012,<small>57 zł</small></a>
+<button rel="67910" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row brakproduktu">
+<div class="col-md-2">
+<div title="Kingston DDR5 Fury Beast Black  16GB(1*16GB)/5200  CL40 NA MAGAZYNIE" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_066837/66837.jpg&amp;w=200');">
+<a href="kingston_ddr5_fury_beast_black__16gb116gb5200__cl40_na_magazyn-item-66837.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Kingston DDR5 Fury Beast Black  16GB(1*16GB)/5200  CL40 NA MAGAZYNIE</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+999,<small>00 zł</small>
+<div class="prodniedostepny">Chwilowo niedostępny</div>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row brakproduktu">
+<div class="col-md-2">
+<div title="CORSAIR Vengeance LPX Pamięć DDR4 64GB 2x32GB 3200MHz CL16 1.35V XMP Czarna" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_066476/&amp;w=200');">
+<a href="corsair_vengeance_lpx_pamiec_ddr4_64gb_2x32gb_3200mhz_cl16_1.3-item-66476.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">CORSAIR Vengeance LPX Pamięć DDR4 64GB 2x32GB 3200MHz CL16 1.35V XMP Czarna</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+993,<small>18 zł</small>
+<div class="prodniedostepny">Chwilowo niedostępny</div>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row brakproduktu">
+<div class="col-md-2">
+<div title="TEAM GROUP T-Force Vulcan Z DDR4 64GB 2x32GB 3200MHz CL16 1.35V Red" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_065589/&amp;w=200');">
+<a href="team_group_tforce_vulcan_z_ddr4_64gb_2x32gb_3200mhz_cl16_1.35v-item-65589.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">TEAM GROUP T-Force Vulcan Z DDR4 64GB 2x32GB 3200MHz CL16 1.35V Red</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+980,<small>40 zł</small>
+<div class="prodniedostepny">Chwilowo niedostępny</div>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row brakproduktu">
+<div class="col-md-2">
+<div title="ADATA Pamięć XPG Lancer DDR5 6000 DIMM 32GB 2x16 CL40 RGB " class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_068163/68163.jpg&amp;w=200');">
+<a href="adata_pamiec_xpg_lancer_ddr5_6000_dimm_32gb_2x16_cl40_rgb-item-68163.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">ADATA Pamięć XPG Lancer DDR5 6000 DIMM 32GB 2x16 CL40 RGB </h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+973,<small>64 zł</small>
+<div class="prodniedostepny">Chwilowo niedostępny</div>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row brakproduktu">
+<div class="col-md-2">
+<div title="G.Skill RipjawsV Pamięć DDR4 32GB (2x16GB) 3200MHz CL14 1.35V XMP 2.0" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_055338/55338_f43200c14d32gvk.jpg&amp;w=200');">
+<a href="g.skill_ripjawsv_pamiec_ddr4_32gb_2x16gb_3200mhz_cl14_1.35v_xm-item-55338.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">G.Skill RipjawsV Pamięć DDR4 32GB (2x16GB) 3200MHz CL14 1.35V XMP 2.0</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+969,<small>22 zł</small>
+<div class="prodniedostepny">Chwilowo niedostępny</div>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="Kingston FURY Beast 64GB(2*32GB)/3200 CL16" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_066624/66624.jpg&amp;w=200');">
+<a href="kingston_fury_beast_64gb232gb3200_cl16-item-66624.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Kingston FURY Beast 64GB(2*32GB)/3200 CL16</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="kingston_fury_beast_64gb232gb3200_cl16-item-66624.html" >
+967,<small>27 zł</small></a>
+<button rel="66624" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row brakproduktu">
+<div class="col-md-2">
+<div title="PATRIOT Viper Blackout 64GB DDR4 3200MHz CL16 UDIMM KIT" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_063848/63848_pvb464g320c6k.jpg&amp;w=200');">
+<a href="patriot_viper_blackout_64gb_ddr4_3200mhz_cl16_udimm_kit-item-63848.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">PATRIOT Viper Blackout 64GB DDR4 3200MHz CL16 UDIMM KIT</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+964,<small>32 zł</small>
+<div class="prodniedostepny">Chwilowo niedostępny</div>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="TEAM GROUP Night Hawk RGB Pamięć DDR4 16GB 2x8GB 4000MHz CL18 1.35V Biała" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_062714/62714_tf2d416g4000hc18edc01.jpg&amp;w=200');">
+<a href="team_group_night_hawk_rgb_pamiec_ddr4_16gb_2x8gb_4000mhz_cl18_-item-62714.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">TEAM GROUP Night Hawk RGB Pamięć DDR4 16GB 2x8GB 4000MHz CL18 1.35V Biała</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="team_group_night_hawk_rgb_pamiec_ddr4_16gb_2x8gb_4000mhz_cl18_-item-62714.html" >
+960,<small>95 zł</small></a>
+<button rel="62714" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="G.Skill Trident Z Royal Pamięć DDR4 16GB (2x8GB) 4266MHz CL19 1.4V XMP Srebrna" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_061189/C2760180.jpg&amp;w=200');">
+<a href="g.skill_trident_z_royal_pamiec_ddr4_16gb_2x8gb_4266mhz_cl19_1.-item-61189.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">G.Skill Trident Z Royal Pamięć DDR4 16GB (2x8GB) 4266MHz CL19 1.4V XMP Srebrna</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="g.skill_trident_z_royal_pamiec_ddr4_16gb_2x8gb_4266mhz_cl19_1.-item-61189.html" >
+958,<small>85 zł</small></a>
+<button rel="61189" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row brakproduktu">
+<div class="col-md-2">
+<div title="G.Skill Trident Z Pamięć DDR4 32GB (2x16GB) 3200MHz CL14 1.35V XMP 2.0" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_051762/C2760082.jpg&amp;w=200');">
+<a href="g.skill_trident_z_pamiec_ddr4_32gb_2x16gb_3200mhz_cl14_1.35v_x-item-51762.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">G.Skill Trident Z Pamięć DDR4 32GB (2x16GB) 3200MHz CL14 1.35V XMP 2.0</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+951,<small>94 zł</small>
+<div class="prodniedostepny">Chwilowo niedostępny</div>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row brakproduktu">
+<div class="col-md-2">
+<div title="G.Skill Flare X (for AMD) Pamięć DDR4 32GB (2x16GB) 2400MHz CL15 1.2V XMP 2.0" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_060916/C2760203.jpg&amp;w=200');">
+<a href="g.skill_flare_x_for_amd_pamiec_ddr4_32gb_2x16gb_2400mhz_cl15_1-item-60916.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">G.Skill Flare X (for AMD) Pamięć DDR4 32GB (2x16GB) 2400MHz CL15 1.2V XMP 2.0</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+948,<small>50 zł</small>
+<div class="prodniedostepny">Chwilowo niedostępny</div>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="G.Skill Trident Z Neo (AMD) Pamięć DDR4 32GB (2x16GB) 3600MHz CL16 1.35V XMP 2.0 " class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_060914/_g.skilltridentzneoamd.png&amp;w=200');">
+<a href="g.skill_trident_z_neo_amd_pamiec_ddr4_32gb_2x16gb_3600mhz_cl16-item-60914.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">G.Skill Trident Z Neo (AMD) Pamięć DDR4 32GB (2x16GB) 3600MHz CL16 1.35V XMP 2.0 </h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="g.skill_trident_z_neo_amd_pamiec_ddr4_32gb_2x16gb_3600mhz_cl16-item-60914.html" >
+932,<small>34 zł</small></a>
+<button rel="60914" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="G.SKILL DDR4 32GB (2x16GB) TridentZ RGB 3600MHz CL16 XMP2 " class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_063715/63715.jpg&amp;w=200');">
+<a href="g.skill_ddr4_32gb_2x16gb_tridentz_rgb_3600mhz_cl16_xmp2-item-63715.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">G.SKILL DDR4 32GB (2x16GB) TridentZ RGB 3600MHz CL16 XMP2 </h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="g.skill_ddr4_32gb_2x16gb_tridentz_rgb_3600mhz_cl16_xmp2-item-63715.html" >
+927,<small>42 zł</small></a>
+<button rel="63715" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="Patriot Viper 4 Blackout 64GB/3600(2*32GB) CL18" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_065500/65500.jpg&amp;w=200');">
+<a href="patriot_viper_4_blackout_64gb3600232gb_cl18-item-65500.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Patriot Viper 4 Blackout 64GB/3600(2*32GB) CL18</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="patriot_viper_4_blackout_64gb3600232gb_cl18-item-65500.html" >
+925,<small>53 zł</small></a>
+<button rel="65500" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="G.SKILL DDR4 32GB (2x16GB) TridentZ RGB 4400MHz CL19 XMP2 " class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_066285/66285.jpg&amp;w=200');">
+<a href="g.skill_ddr4_32gb_2x16gb_tridentz_rgb_4400mhz_cl19_xmp2-item-66285.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">G.SKILL DDR4 32GB (2x16GB) TridentZ RGB 4400MHz CL19 XMP2 </h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="g.skill_ddr4_32gb_2x16gb_tridentz_rgb_4400mhz_cl19_xmp2-item-66285.html" >
+923,<small>80 zł</small></a>
+<button rel="66285" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row brakproduktu">
+<div class="col-md-2">
+<div title="ADATA Pamięć XPG Lancer DDR5 6000 DIMM 32GB (2x16) CL40 " class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_068161/68161.jpg&amp;w=200');">
+<a href="adata_pamiec_xpg_lancer_ddr5_6000_dimm_32gb_2x16_cl40-item-68161.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">ADATA Pamięć XPG Lancer DDR5 6000 DIMM 32GB (2x16) CL40 </h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+913,<small>91 zł</small>
+<div class="prodniedostepny">Chwilowo niedostępny</div>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="G.Skill- DDR4 64GB (2x32GB) RipjawsV 2666MHz CL18 XMP2 " class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_063713/63713.jpg&amp;w=200');">
+<a href="g.skill_ddr4_64gb_2x32gb_ripjawsv_2666mhz_cl18_xmp2-item-63713.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">G.Skill- DDR4 64GB (2x32GB) RipjawsV 2666MHz CL18 XMP2 </h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="g.skill_ddr4_64gb_2x32gb_ripjawsv_2666mhz_cl18_xmp2-item-63713.html" >
+913,<small>89 zł</small></a>
+<button rel="63713" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row brakproduktu">
+<div class="col-md-2">
+<div title="PATRIOT Viper Steel 64GB DDR4 3600MHz CL18 UDIMM KIT" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_065546/&amp;w=200');">
+<a href="patriot_viper_steel_64gb_ddr4_3600mhz_cl18_udimm_kit-item-65546.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">PATRIOT Viper Steel 64GB DDR4 3600MHz CL18 UDIMM KIT</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+908,<small>50 zł</small>
+<div class="prodniedostepny">Chwilowo niedostępny</div>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="Kingston DDR5 Fury Beast Black  32GB(2*16GB)/5600  CL40 " class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_068221/68221.jpg&amp;w=200');">
+<a href="kingston_ddr5_fury_beast_black__32gb216gb5600__cl40-item-68221.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Kingston DDR5 Fury Beast Black  32GB(2*16GB)/5600  CL40 </h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="kingston_ddr5_fury_beast_black__32gb216gb5600__cl40-item-68221.html" >
+898,<small>01 zł</small></a>
+<button rel="68221" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="PATRIOT Viper Steel 64GB DDR4 3200MHz CL16 UDIMM KIT" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_064522/&amp;w=200');">
+<a href="patriot_viper_steel_64gb_ddr4_3200mhz_cl16_udimm_kit-item-64522.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">PATRIOT Viper Steel 64GB DDR4 3200MHz CL16 UDIMM KIT</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="patriot_viper_steel_64gb_ddr4_3200mhz_cl16_udimm_kit-item-64522.html" >
+897,<small>00 zł</small></a>
+<button rel="64522" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row brakproduktu">
+<div class="col-md-2">
+<div title="Corsair Pamięć DDR5 Vengeance 32GB/5600 (2*16GB) CL36" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_068176/68176.jpg&amp;w=200');">
+<a href="corsair_pamiec_ddr5_vengeance_32gb5600_216gb_cl36-item-68176.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Corsair Pamięć DDR5 Vengeance 32GB/5600 (2*16GB) CL36</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+896,<small>53 zł</small>
+<div class="prodniedostepny">Chwilowo niedostępny</div>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="Kingston Pamięć DDR5 Fury Beast Black 32GB(1*32GB)/5600 CL40 " class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_068222/68222.jpg&amp;w=200');">
+<a href="kingston_pamiec_ddr5_fury_beast_black_32gb132gb5600_cl40-item-68222.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Kingston Pamięć DDR5 Fury Beast Black 32GB(1*32GB)/5600 CL40 </h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="kingston_pamiec_ddr5_fury_beast_black_32gb132gb5600_cl40-item-68222.html" >
+883,<small>90 zł</small></a>
+<button rel="68222" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="CORSAIR Vengeance RGB PRO Pamięć DDR4 32GB 4x8GB 3600MHz CL18 1.35V Biała" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_064510/&amp;w=200');">
+<a href="corsair_vengeance_rgb_pro_pamiec_ddr4_32gb_4x8gb_3600mhz_cl18_-item-64510.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">CORSAIR Vengeance RGB PRO Pamięć DDR4 32GB 4x8GB 3600MHz CL18 1.35V Biała</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="corsair_vengeance_rgb_pro_pamiec_ddr4_32gb_4x8gb_3600mhz_cl18_-item-64510.html" >
+875,<small>37 zł</small></a>
+<button rel="64510" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row brakproduktu">
+<div class="col-md-2">
+<div title=" G.SKILL DDR4 32GB (2x16GB) TridentZ RGB Neo AMD 4000MHz CL8 XMP2 " class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_065497/65497.jpg&amp;w=200');">
+<a href="g.skill_ddr4_32gb_2x16gb_tridentz_rgb_neo_amd_4000mhz_cl8_xmp2-item-65497.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2"> G.SKILL DDR4 32GB (2x16GB) TridentZ RGB Neo AMD 4000MHz CL8 XMP2 </h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+870,<small>84 zł</small>
+<div class="prodniedostepny">Chwilowo niedostępny</div>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row brakproduktu">
+<div class="col-md-2">
+<div title="Kingston DDR5 Fury Beast Black  32GB(2*16GB)/5200  CL40 NA MAGAZYNIE" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_066832/66832.jpg&amp;w=200');">
+<a href="kingston_ddr5_fury_beast_black__32gb216gb5200__cl40_na_magazyn-item-66832.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Kingston DDR5 Fury Beast Black  32GB(2*16GB)/5200  CL40 NA MAGAZYNIE</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+859,<small>00 zł</small>
+<div class="prodniedostepny">Chwilowo niedostępny</div>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="G.SKILL 32GB (2x16GB) TridentZ RGB 4000MHz CL18 XMP2 " class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_066623/66623.jpg&amp;w=200');">
+<a href="g.skill_32gb_2x16gb_tridentz_rgb_4000mhz_cl18_xmp2-item-66623.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">G.SKILL 32GB (2x16GB) TridentZ RGB 4000MHz CL18 XMP2 </h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="g.skill_32gb_2x16gb_tridentz_rgb_4000mhz_cl18_xmp2-item-66623.html" >
+856,<small>87 zł</small></a>
+<button rel="66623" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="Pamięć DDR4 Kingston Fury Beast RGB 32GB (4x8GB) 3000MHz CL15 1,35V czarna" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_068070/68070_99999999999999999999999999.jpg&amp;w=200');">
+<a href="pamiec_ddr4_kingston_fury_beast_rgb_32gb_4x8gb_3000mhz_cl15_13-item-68070.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Pamięć DDR4 Kingston Fury Beast RGB 32GB (4x8GB) 3000MHz CL15 1,35V czarna</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="pamiec_ddr4_kingston_fury_beast_rgb_32gb_4x8gb_3000mhz_cl15_13-item-68070.html" >
+845,<small>55 zł</small></a>
+<button rel="68070" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="Pamięć DDR4 Kingston Fury Renegade RGB 32GB (4x8GB) 3600MHz CL16 1,35V czarna" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_068058/68058_4444444444444444444444.jpg&amp;w=200');">
+<a href="pamiec_ddr4_kingston_fury_renegade_rgb_32gb_4x8gb_3600mhz_cl16-item-68058.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Pamięć DDR4 Kingston Fury Renegade RGB 32GB (4x8GB) 3600MHz CL16 1,35V czarna</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="pamiec_ddr4_kingston_fury_renegade_rgb_32gb_4x8gb_3600mhz_cl16-item-68058.html" >
+842,<small>72 zł</small></a>
+<button rel="68058" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="KINGSTON 32GB 3200MHz DDR4 CL16 DIMM XMP HyperX Predator" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_065630/&amp;w=200');">
+<a href="kingston_32gb_3200mhz_ddr4_cl16_dimm_xmp_hyperx_predator-item-65630.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">KINGSTON 32GB 3200MHz DDR4 CL16 DIMM XMP HyperX Predator</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="kingston_32gb_3200mhz_ddr4_cl16_dimm_xmp_hyperx_predator-item-65630.html" >
+838,<small>44 zł</small></a>
+<button rel="65630" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row brakproduktu">
+<div class="col-md-2">
+<div title="G.SKILL  DDR4 16GB (2x8GB) RipjawsV 5066MHz CL20 XMP2 Black " class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_066291/66291.jpg&amp;w=200');">
+<a href="g.skill__ddr4_16gb_2x8gb_ripjawsv_5066mhz_cl20_xmp2_black-item-66291.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">G.SKILL  DDR4 16GB (2x8GB) RipjawsV 5066MHz CL20 XMP2 Black </h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+836,<small>40 zł</small>
+<div class="prodniedostepny">Chwilowo niedostępny</div>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="G.Skill Trident Z RGB Pamięć DDR4 16GB (2x8GB) 4266MHz CL19 1.4V XMP 2.0" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_055474/C2760090.jpg&amp;w=200');">
+<a href="g.skill_trident_z_rgb_pamiec_ddr4_16gb_2x8gb_4266mhz_cl19_1.4v-item-55474.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">G.Skill Trident Z RGB Pamięć DDR4 16GB (2x8GB) 4266MHz CL19 1.4V XMP 2.0</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="g.skill_trident_z_rgb_pamiec_ddr4_16gb_2x8gb_4266mhz_cl19_1.4v-item-55474.html" >
+834,<small>31 zł</small></a>
+<button rel="55474" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="Kingston Fury Renegade RGB 32GB (4x8GB) 3200MHz CL16 1,35V czarna" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_066688/PAKID45905Q0.jpg&amp;w=200');">
+<a href="kingston_fury_renegade_rgb_32gb_4x8gb_3200mhz_cl16_135v_czarna-item-66688.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Kingston Fury Renegade RGB 32GB (4x8GB) 3200MHz CL16 1,35V czarna</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="kingston_fury_renegade_rgb_32gb_4x8gb_3200mhz_cl16_135v_czarna-item-66688.html" >
+831,<small>41 zł</small></a>
+<button rel="66688" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="Pamięć DDR4 G.SKILL Trident Z RGB 32GB (4x8GB) 3200MHz CL16 1.35V XMP 2.0 Podświetlenie LED" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_049644/PAGSD45901Q0.jpg&amp;w=200');">
+<a href="pamiec_ddr4_g.skill_trident_z_rgb_32gb_4x8gb_3200mhz_cl16_1.35-item-49644.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Pamięć DDR4 G.SKILL Trident Z RGB 32GB (4x8GB) 3200MHz CL16 1.35V XMP 2.0 Podświetlenie LED</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="pamiec_ddr4_g.skill_trident_z_rgb_32gb_4x8gb_3200mhz_cl16_1.35-item-49644.html" >
+825,<small>99 zł</small></a>
+<button rel="49644" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row brakproduktu">
+<div class="col-md-2">
+<div title="TEAM GROUP T-Force Vulcan Z DDR4 64GB 2x32GB 3200MHz CL16 1.35V Grey" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_065569/&amp;w=200');">
+<a href="team_group_tforce_vulcan_z_ddr4_64gb_2x32gb_3200mhz_cl16_1.35v-item-65569.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">TEAM GROUP T-Force Vulcan Z DDR4 64GB 2x32GB 3200MHz CL16 1.35V Grey</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+824,<small>81 zł</small>
+<div class="prodniedostepny">Chwilowo niedostępny</div>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row brakproduktu">
+<div class="col-md-2">
+<div title="DDR4 32GB (2x16GB) Thermaltake ToughRAM RGB 3600MHz CL18 XMP2 Czarna" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_065482/65482.jpg&amp;w=200');">
+<a href="ddr4_32gb_2x16gb_thermaltake_toughram_rgb_3600mhz_cl18_xmp2_cz-item-65482.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">DDR4 32GB (2x16GB) Thermaltake ToughRAM RGB 3600MHz CL18 XMP2 Czarna</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+819,<small>19 zł</small>
+<div class="prodniedostepny">Chwilowo niedostępny</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row sortbox  sortbox-down">
+<div class="col-md-8 pull-right cmspager">
+<ul><li class="prev"><a  rel="" href="pamieci-katid-37,.html">&nbsp;</a></li><li class="ashow"><span>1</span></li><li class="ashow"><a  rel="2" href="pamieci-katid-37,2.html">2</a></li><li class="ashow"><a  rel="3" href="pamieci-katid-37,3.html">3</a></li><li><a  rel="4" href="pamieci-katid-37,4.html">4</a></li><li><a  rel="5" href="pamieci-katid-37,5.html">5</a></li><li><a  rel="6" href="pamieci-katid-37,6.html">6</a></li><li><a  rel="7" href="pamieci-katid-37,7.html">7</a></li><li class="next"><a  rel="2" href="pamieci-katid-37,2.html">&nbsp;</a></li><li class="nextnext"><a  rel="7" href="7">&nbsp;</a></li></ul>					</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="container promocje" style="margin-top: 15px">
+<div class="row">
+<div class="col-sm-6 col-lg-3 promocja-sml" onclick="location='index.php?go=search&promocje=1#start'">
+<div class="verticalalign"><a href="index.php?go=search&promocje=1">
+<h2>Promocja</h2>
+<div class="element"></div>
+</a></div>
+</div>
+<div class="col-sm-6 col-lg-3 product-sml"><a href="kasa_fiskalna_farex_online_pro_300_lanwifi_fiskalizacja_i_szko-item-62246.html">
+<div title="KASA FISKALNA FAREX ONline PRO 300 LAN/WiFi FISKALIZACJA I SZKOLENIE GRATIS!!! " class="prodimg" style="background-image: url(inc/cms_img.php?img=../gfx/sklep/PR_062246/_farexpro300.jpg&amp;w=200)"></div>
+<h2>KASA FISKALNA FAREX ONline PRO 300 LAN/WiFi FISKALIZACJA I SZKOLENIE GRATIS!!! </h2>
+<div class="cena">1 499,<small>00 zł</small></div>
+<div class="gradient"></div>
+</a>
+</div>
+<div class="col-sm-6 col-lg-2 product-sml"><a href="corsair_cc9011174ww_corsair_icue_220t_rgb_airflow_mid_tower_at-item-62646.html">
+<div title="CORSAIR CC-9011174-WW Corsair iCUE 220T RGB Airflow Mid Tower ATX Smart Case, TG" class="prodimg" style="background-image: url(inc/cms_img.php?img=../gfx/sklep/PR_062646/62646_cc9011174ww.jpg&amp;w=200)"></div>
+<h2>CORSAIR CC-9011174-WW Corsair iCUE 220T RGB Airflow Mid Tower ATX Smart Case, TG</h2>
+<div class="cena">572,<small>02 zł</small></div>
+<div class="gradient"></div>
+</a>
+</div>
+<div class="col-sm-6 col-lg-2 product-sml"><a href="toner_do_brother_tn3380_tbtn3380n_bk_100_nowy-item-66107.html">
+<div title="Toner do Brother TN3380 TB-TN3380N BK 100% nowy" class="prodimg" style="background-image: url(inc/cms_img.php?img=../gfx/sklep/PR_066107/66107.jpg&amp;w=200)"></div>
+<h2>Toner do Brother TN3380 TB-TN3380N BK 100% nowy</h2>
+<div class="cena">51,<small>00 zł</small></div>
+<div class="gradient"></div>
+</a>
+</div>
+<div class="col-sm-6 col-lg-2 product-sml"><a href="gigabyte_x670_aorus_elite_ax-item-68815.html">
+<div title="Gigabyte X670 AORUS ELITE AX" class="prodimg" style="background-image: url(inc/cms_img.php?img=../gfx/sklep/PR_068815/68815_x670_aorus_elite_ax01.png&amp;w=200)"></div>
+<h2>Gigabyte X670 AORUS ELITE AX</h2>
+<div class="cena">1 511,<small>67 zł</small></div>
+<div class="gradient"></div>
+</a>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+	$(document).ready(function () {
+
+		$("#dostepne").prop("checked", true);
+		ajaxsearch();
+	});
+</script>
+<div id="footer">
+<div class="container">
+<div class="row">
+<div class="col-md-7">
+<h1>Informacje</h1>
+<div class="row">
+<div class="col-md-4">
+<ul>
+<li><a href="regulamin_sklepu.html" class="main">Regulamin sklepu</a></li>
+<li><a href="kgo.html" class="main">KGO</a></li>
+<li>O KR System</li>
+<li><a href="polityka_cookies_polityka_prywatnosci.html" class="main">Polityka Prywatności</a></li>
+</ul>
+</div>
+<div class="col-md-4">
+<ul>
+<li><a href="index.php?go=mobile" class="main">Aplikacje mobilne</a></li>
+<li><a href="raty.html" class="main">Zakupy na raty</a></li>
+<li><a href="zapytanie_ofertowe.html">Zapytania ofertowe</a></li>
+<li><a href="koszty_wysylki.html" class="main">Koszty transportu</a></li>
+</ul>
+</div>
+<div class="col-md-4">
+<ul>
+<li><a href="index.php?go=loginin" />Panel klienta</a></li>
+<li><a href="http://allegro.pl/listing/user/listing.php?us_id=22601130" class="main">Oferta Allegro</a></li>
+<li><a href="index.php?go=reklamacje">Reklamacje i zwroty</a></li>
+<li><a href="kontakt.html" class="main">Kontakt</a></li>
+</ul>
+</div>
+<div class="col-md-2">&nbsp;</div>
+</div>
+</div>
+<div class="col-md-5">
+<h2>Newsletter</h2>
+<p>Chcesz otrzymywać na adres e-mail informacje o nowościach, zapowiedziach, promocjach? Zamów bezpłatny
+newsletter!</p>
+<form action="">
+<input type="" placeholder="Twój adres e-mail" />
+<button>&nbsp;</button>
+</form>
+</div>
+</div>
+</div>
+<div style="border-top: 1px solid #EFECEA;margin-bottom: 20px"></div>
+<div class="container">
+<div class="row">
+<div class="col-md-2">
+<a class="logo" href="index.html"><img src="tpl/krsystem/img/logo.png" width="125" height="40" alt=""></a>
+</div>
+<div class="col-md-5">
+<div class="row">
+<div class="col-md-12 telefon">
+<img src="tpl/krsystem/img/telefon.png" width="12" height="20" alt="">
+<div style="margin-top: -30px;margin-left: 20px"><a style="color:inherit" href="tel:+48600763712"><small>600 763 712</small></a><br>
+<a style="color:inherit" href="tel:+48126333345">12 633 33 45</a></div>
+<div class="row">
+<div class="col-6">
+<p>e-mail: <a href="mailto:biuro@krsystem.pl">biuro@krsystem.pl</a><br>
+gg: <a href="gg:9284987">9284987</a></p>
+</div>
+<div class="col-6">
+<p><a style="color:inherit" href="https://goo.gl/maps/AfKvuMf29FvqTcpM6">Ul. Karmelicka 20<br>
+31-128 Kraków</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-5">
+<div class="row">
+<div class="col-6">
+<table cellpadding="0" cellspacing="0">
+<tr>
+<td><img src="tpl/krsystem/img/zegar.png" width="21" height="21" alt=""></td>
+<td>PN-PT</td>
+<td>10:00 - 18:00</td>
+</tr>
+</table>
+</div>
+<div class="col-6">
+<a href="https://ewniosek.credit-agricole.pl/eWniosek/procedure.jsp?PARAM_TYPE=RAT&PARAM_PROFILE=PSP0860599"
+class="window"><img src="https://ewniosek.credit-agricole.pl/eWniosek/res/CA_grafika/raty_120x44_duckblue.png"
+alt="">
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="footer2" class="container" style="margin: 20px auto">
+<div class="row">
+<div class="col-md-5 stopka">
+<img src="tpl/krsystem/img/platnosc.png" width="323" height="89" alt="">
+<div> <b>Wszelkie prawa zastrzeżone 2020 &copy; KR System</b><br />
+Realizacja: <a title="Tworzenie stron www,  Projektowanie stron internetowych, CMS, Zarządzanie Treścią." target="_blank"
+href="https://www.magnis.pl">magnis.pl</a></div>
+</div>
+<div class="col-md-7">
+<img class="eu" src="tpl/krsystem/img/unia2.png" width="540" height="74" alt="">
+<div style="border-bottom: 1px solid #B9B9B9;border-top: 1px solid #B9B9B9;text-align: center;padding: 3px;margin: 5px 0;font-size: 12px">
+&#8222;Dotacje na innowacje &#8211; Inwestujemy w waszą przyszłość&#8221;
+</div>
+</div>
+</div>
+</div>
+<div id="facebook_div">
+<div class="fb_btn"><i class="fa fa-facebook"></i></div>
+<div class="fb_container">
+<div><div id="fb-root"></div>
+<script src="https://connect.facebook.net/pl_PL/all.js#xfbml=1"></script>
+<fb:like-box href="https://facebook.com/Kr-System-sklep-komputerowy-104190811384893/" width="295" show_faces="true" border_color="" stream="false" header="true"></fb:like-box>
+</div>
+</div>
+</div>
+<div id="cook">
+<div style="padding: 10px 0;margin: 0 auto;width: calc(100% - 30px);text-align: left;padding-right: 100px;position: relative;">Używamy
+cookies i podobnych technologii m.in. w celach: sprzedaży, reklamy, statystyk. Korzystanie z witryny bez zmiany
+ustawień Twojej przeglądarki oznacza, że będą one umieszczane w Twoim urządzeniu końcowym. Pamiętaj, że zawsze
+możesz zmienić te ustawienia. Szczegóły znajdziesz w <a href="polityka_cookies_polityka_prywatnosci.html"><u>Polityce
+Prywatności</u></a>.<div id="closecook" style="position: absolute;left: calc(100% - 80px);top: 10px;background: #434343;color:white;padding: 3px 10px;cursor:pointer"><b>ZAMKNIJ</b></div>
+</div>
+</div>
+<!-- JavaScript  -->
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.1/jquery-ui.min.js"></script>
+<script src="https://maps.google.com/maps/api/js?v=3&amp;key=AIzaSyDhwq94bZJVAIxPXsX1zZJy-4M-vcjO8Kw&amp;libraries=places"></script>
+<script src="tpl/krsystem/js/app.js?6464564"></script>
+<script type="text/javascript">
+		
+
+		function PoliczRate(koszyk) {
+			window.open(
+				'https://wniosek.eraty.pl/symulator/oblicz/numerSklepu/15705/typProduktu/0/wartoscTowarow/' +
+				koszyk, 'Policz_rate',
+				'width=680,height=500,directories=no,location=no,menubar=no,resizable=yes,scrollbars=yes,status=no,toolbar=no');
+		} 
+	</script>
+</body>
+</html>

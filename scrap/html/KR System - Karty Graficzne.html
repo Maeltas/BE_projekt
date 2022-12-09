@@ -1,0 +1,2408 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1, user-scalable=no">
+<meta charset="utf-8">
+<title>KR System - Karty Graficzne</title>
+<meta name="Keywords" content="Karty Graficzne" />
+<meta name="Description" content="Karty Graficzne" />
+<style>
+body {opacity:1;transition: opacity .5s ease-in-out;} body.fade-out{opacity:0;transition: opacity .5s ease-in-out;}
+</style>
+<link rel="stylesheet" href="tpl/krsystem/css/bootstrap.min.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">	
+<link href="tpl/krsystem/css/style.css?6456546" rel="stylesheet" type="text/css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<!-- Ikony -->
+<link rel="shortcut icon" href="favicon.ico">
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-3207883-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script type="text/javascript">
+function recordOutboundLink(link, category, action) {
+  try {
+    var pageTracker=_gat._getTracker("UA-3207883-1");
+    pageTracker._trackEvent(category, action);
+    setTimeout('document.location = "' + link.href + '"', 100)
+  }catch(err){}
+}
+</script>
+</head>
+<body class="fade-out">
+<div class="main-kategorie-feader" style="width: 100%;height: 100%;background: black;opacity: 0.30;position: fixed;z-index: 1;display: none;cursor: pointer;">
+</div>
+<div class="main-kategorie-all container" style="max-height:100vh; overflow-y: auto; left:50vw;transform: translateX(-50%);background: rgba(255,255,255,.9);padding: 0 20px;padding-bottom: 40px;position: fixed;z-index: 1;display: none;">
+<div style="padding: 20px;text-align: center;">
+<div style="text-align: right;padding: 20px 0;">
+<div style="cursor: pointer;display: inline-block;" class="main-kategorie-zamknij"><img src="tpl/krsystem/img/modal-zamknij.png"
+width="27" height="27" alt=""> Zamknij</div>
+</div>
+<h1>Wybierz kategorię</h1>
+<div class="row">
+<div class="col-6 col-sm-3 col-md-2" onclick="location='laptopy-katid-1.html#start'">
+<div class="mainkat mainkat-laptopy"> </div>
+<div>Laptopy</div>
+</div>
+<div class="col-6 col-sm-3 col-md-2" onclick="location='komputery_gotowe-katid-327.html#start'">
+<div class="mainkat mainkat-komputery"> </div>
+<div>Komputery</div>
+</div>
+<div class="col-6 col-sm-3 col-md-2" onclick="location='podzespoly__akcesoria-katid-33.html#start'">
+<div class="mainkat mainkat-podzespoly"> </div>
+<div>Podzespoły</div>
+</div>
+<div class="col-6 col-sm-3 col-md-2" onclick="location='sieci-katid-94.html#start'">
+<div class="mainkat mainkat-sieci"> </div>
+<div>Sieci</div>
+</div>
+<div class="col-6 col-sm-3 col-md-2" onclick="location='konsole__gsm__gps-katid-23.html#start'">
+<div class="mainkat mainkat-telefony"> </div>
+<div>Telefony/GPS</div>
+</div>
+<div class="col-6 col-sm-3 col-md-2" onclick="location='rtv-katid-595.html#start'">
+<div class="mainkat mainkat-rtv"> </div>
+<div>RTV</div>
+</div>
+<div class="col-6 col-sm-3 col-md-2" onclick="location='drukarki__plotery__skanery-katid-31.html#start'">
+<div class="mainkat mainkat-drukarki"> </div>
+<div>Drukarki</div>
+</div>
+<div class="col-6 col-sm-3 col-md-2" onclick="location='oprogramowanie-katid-89.html#start'">
+<div class="mainkat mainkat-oprogramowanie"> </div>
+<div>Oprogramowanie</div>
+</div>
+<div class="col-6 col-sm-3 col-md-2" onclick="location='monitory-katid-910.html#start'">
+<div class="mainkat mainkat-monitory"> </div>
+<div>Monitory</div>
+</div>
+<div class="col-6 col-sm-3 col-md-2" onclick="location='aparaty__kamery-katid-88.html#start'">
+<div class="mainkat mainkat-aparaty"> </div>
+<div>Aparaty i kamery</div>
+</div>
+<div class="col-6 col-sm-3 col-md-2" onclick="location='uslugi-katid-106.html#start'">
+<div class="mainkat mainkat-uslugi"> </div>
+<div>Usługi</div>
+</div>
+<div class="col-6 col-sm-3 col-md-2" onclick="location='agd-katid-803.html#start'">
+<div class="mainkat mainkat-agd"> </div>
+<div>AGD</div>
+</div>
+<div class="col-6 col-sm-3 col-md-2" onclick="location='tablety-katid-806.html#start'">
+<div class="mainkat mainkat-tablety"> </div>
+<div>Tablety</div>
+</div>
+<div class="col-6 col-sm-3 col-md-2" onclick="location='art_biurowe__drukarki__eksploatacja-katid-623.html#start'">
+<div class="mainkat mainkat-biuro"> </div>
+<div>Biuro</div>
+</div>
+</div>
+</div>
+</div>
+<div id="header">
+<div class="container">
+<div class="row main opacity">
+<div class="col-md-12">
+<div class="row align-items-center">
+<div class="col-6 col-sm-6 col-md-3 col-lg-2">
+<a class="logo" href="index.html"><img src="tpl/krsystem/img/logo.png" alt="KR System - sklep internetowy"></a>
+</div>
+<div class="col-6 d-sm-none align-self-stretch">
+<div style="background: #3FBDE6;height: 100%;text-align: center;display: flex; ">
+<button class="toggle-mainmenu d-inline-block d-sm-none" style="width:100%">
+<i class="fa fa-bars"></i>
+MENU
+</button>
+</div>
+</div>
+<div class="col-sm-6 col-md-5 col-lg-6">
+<form action="index.php#start" method="get">
+<input class="" placeholder="Wpisz czego szukasz" id="" name="szukaj" value="" type=""><select class="select"
+id="wyszikiwanie" name="kat" style="vertical-align: middle;">
+<option label="Wszystkie" value="0">Wszystkie</option>
+<option label="Projektory i akcesoria" value="126">Projektory i akcesoria</option>
+<option label="Aparaty fotograficzne" value="88">Aparaty fotograficzne</option>
+<option label="Apple" value="1547">Apple</option>
+<option label="Laptopy" value="1">Laptopy</option>
+<option label="Komputery gotowe" value="327">Komputery gotowe</option>
+<option label="Konsole / GSM / GPS" value="23">Konsole / GSM / GPS</option>
+<option label="Podzespoły / akcesoria" value="33">Podzespoły / akcesoria</option>
+<option label="Sieci" value="94">Sieci</option>
+<option label="Oprogramowanie" value="89">Oprogramowanie</option>
+<option label="Art. biurowe / Drukarki / Eksploatacja" value="623">Art. biurowe / Drukarki / Eksploatacja</option>
+<option label="Drony" value="1489">Drony</option>
+<option label="Monitory" value="910">Monitory</option>
+<option label="MSI" value="1669">MSI</option>
+<option label="Urządzenia fiskalne" value="1482">Urządzenia fiskalne</option>
+<option label="Usługi" value="106">Usługi</option>
+<option label="RTV" value="595">RTV</option>
+<option label="TABLETY" value="806">TABLETY</option>
+<option label="Sterylizatory" value="1199">Sterylizatory</option>
+<option label="Pozostałe" value="1391">Pozostałe</option>
+<option label="Nintendo" value="1652">Nintendo</option>
+<option label="Xiaomi" value="1716">Xiaomi</option>
+</select><button class="button"> <i class="fa fa-search"></i> </button>
+<input type="hidden" name="go" value="szukanie" />
+</form>
+</div>
+<div class="col-sm-12 col-md-4">
+<div class="koszyk">
+<div class="koszykshow" >
+<i class="fa fa-shopping-basket"></i>
+<span
+class="ilosc ">0</span>
+<div class="koszykcontent shadow">
+<div>
+<h2 class="brak">Brak produktów w koszyku</h2>
+<h2 style="display: none;">Zawartość koszyka</h2>
+<table class="koszykzawartosc" style="display: none;">
+<tr>
+<td><button onclick="location='index.php?go=koszyk'">Pokaż koszyk</button></td>
+<td class="razem"><span class="razemvar">0</span> <small>zł</small></td>
+</tr>
+</table>
+</div>
+</div>
+<div class="koszykcontentadd"></div>
+</div>
+<div class="user">
+<a href="index.php?go=loginin" /><b>Zaloguj się</b></a><br>
+<a href="index.php?go=signin">Zarejestruj się</a>
+</div>
+</div>
+</div>
+</div>			
+</div>
+</div>
+<div class="row navigation opacity">
+<button class="toggle-mainmenu d-none  d-sm-inline-block d-lg-none" style="margin-left: 15px">
+<i class="fa fa-bars"></i>
+MENU
+</button>
+<div id="mainmenu" class="col-lg-10 col-md-9 col-sm-8 text-center text-lg-left">
+<button class="toggle-mainmenu d-inline-block d-lg-none">
+<i class="fa fa-bars"></i>
+MENU
+</button>
+<ul class="text-left">
+<li class="selectable"><a href="laptopy-katid-1.html">Komputery</a>
+<div class="container">
+<div class="row shadow">
+<div class="col-lg-3">
+<h2><a href="http://www.krsystem.pl/laptopy-katid-1.html#his,szukaj=&go=search&kat=&grupa=1&kadid=1&szukaj=&dostepne=1&cena_z_1=&cena_z_2=&prodsort=&wyswietl=&page=&tryb=ajax&promocje=&pckonfig=&t=0.7345007618050264#start">LAPTOPY</a></h2>
+<ul>
+<li><a href="http://www.krsystem.pl/index.php?szukaj=&go=lapsearch&grupa=1&kadid=1&szukaj=&dostepne=1&cena_z_1=&cena_z_2=&c_var_1_w[]=10%60%60&c_var_1_w[]=11%60%60-12%60%60&prodsort=&wyswietl=&page=&tryb=&promocje=#start">10-12 cali - netbooki</a></li>
+<li><a href="http://www.krsystem.pl/index.php?szukaj=&go=lapsearch&grupa=1&kadid=1&szukaj=&dostepne=1&cena_z_1=&cena_z_2=&c_var_1_w[]=13%60%60-14%60%60&prodsort=&wyswietl=&page=&tryb=&promocje=#start">13-14  cali</a></li>
+<li><a href="http://www.krsystem.pl/index.php?szukaj=&go=lapsearch&grupa=1&kadid=1&szukaj=&dostepne=1&cena_z_1=&cena_z_2=&c_var_1_w[]=15%60%60-16%60%60&prodsort=&wyswietl=&page=&tryb=&promocje=#start">15-16 cali</a></li>
+<li><a href="http://www.krsystem.pl/index.php?szukaj=&go=lapsearch&grupa=1&kadid=1&szukaj=&dostepne=1&cena_z_1=&cena_z_2=&c_var_1_w[]=17%60%60-18%60%60&c_var_1_w[]=18%60%60-19%60%60&c_var_1_w[]=20%60%60-21%60%60&c_var_1_w[]=22%60%60-23%60%60&c_var_1_w[]=24%60%60-25%60%60&prodsort=&wyswietl=&page=&tryb=&promocje=#start">17 cali i większe</a></li>
+</ul>
+<h2><a href="http://www.krsystem.pl/index.php?szukaj=ultrabook&go=lapsearch&grupa=1&kadid=1&szukaj=ultrabook&dostepne=1&cena_z_1=&cena_z_2=&prodsort=&wyswietl=&page=1&tryb=&promocje=#start">ULTRABOOKI</a></h2>
+<ul>
+<li><a href="http://www.krsystem.pl/index.php?szukaj=ultrabook&go=lapsearch&grupa=1&kadid=1&szukaj=ultrabook&dostepne=1&cena_z_1=&cena_z_2=&c_var_1_w[]=11%60%60-12%60%60&prodsort=&wyswietl=&page=1&tryb=&promocje=#start">11-12 cali</a></li>
+<li><a href="http://www.krsystem.pl/index.php?szukaj=ultrabook&go=lapsearch&grupa=1&kadid=1&szukaj=ultrabook&dostepne=1&cena_z_1=&cena_z_2=&c_var_1_w[]=13%60%60-14%60%60&prodsort=&wyswietl=&page=1&tryb=&promocje=#start">13-14 cali</a></li>
+<li><a href="http://www.krsystem.pl/index.php?szukaj=ultrabook&go=lapsearch&grupa=1&kadid=1&szukaj=ultrabook&dostepne=1&cena_z_1=&cena_z_2=&c_var_1_w[]=15%60%60-16%60%60&prodsort=&wyswietl=&page=1&tryb=&promocje=#start">15-16 cali</a></li>
+</ul>
+</div>
+<div class="col-lg-3">
+<h2><a href="http://www.krsystem.pl/komputery_gotowe-katid-327.html#start#start">KOMPUTERY</a></h2>
+<ul>
+<li><a href="http://www.krsystem.pl/kr_system-katid-1403.html#start">Stacje Robocze</a></li>
+<li><a href="http://www.krsystem.pl/komputery_gotowe-katid-327.html#start#start">Stacjonarne</a></li>
+<li><a href="http://www.krsystem.pl/index.php?go=search&szukaj=oferta%3D22664%2C19594%2C22018%2C22016%2C22012%2C20534%2C220541%3DMini+PC&kat=0&dostepne=1&cena_z_1=&cena_z_2=&prodsort=&wyswietl=&page=&tryb=&promocje=#start">Mini PC</a></li>
+<li><a href="http://www.krsystem.pl/allinone-katid-1392.html#start#start">All in One</a></li>
+</ul>
+<h2>SERWERY</h2>
+<ul>
+<li><a href="http://www.krsystem.pl/dell-katid-1620.html#start#start">Serwery Dell</a></li>
+<li><a href="http://www.krsystem.pl/lenovo-katid-1406.html#start#start">Serwery Lenovo</a></li>
+</ul>
+</div>
+<div class="col-lg-3">
+<h2>TABLETY</h2>
+<ul>
+<li><a href="http://www.krsystem.pl/index.php?go=search&szukaj=&kat=&kadid=807&dostepne=1&cena_z_1=&cena_z_2=&prodsort=&wyswietl=&page=&tryb=&promocje=#start">iOS</a></li>
+<li><a href="http://www.krsystem.pl/index.php?go=search&szukaj=&kat=&kadid=806&dostepne=1&cena_z_1=&cena_z_2=&producent[]=1&producent[]=3&producent[]=10&producent[]=121&producent[]=49&producent[]=54&producent[]=6&producent[]=118&producent[]=154&producent[]=62&producent[]=15&producent[]=11&producent[]=151&prodsort=&wyswietl=&page=&tryb=&promocje=#start">Android</a></li>
+<li><a href="http://www.krsystem.pl/index.php?go=search&szukaj=windows+8&kat=806&kadid=806&dostepne=1&cena_z_1=&cena_z_2=&prodsort=&wyswietl=&page=1&tryb=&promocje=#start">Windows</a></li>
+<li><a href="http://www.krsystem.pl/index.php?go=search&szukaj=&kat=&kadid=889&dostepne=1&cena_z_1=&cena_z_2=&prodsort=&wyswietl=&page=&tryb=&promocje=#start">Czytniki ebooków</a></li>
+</ul>
+</div>
+<div class="col-lg-3 pull-right d-none d-lg-block" style="padding: 10px">
+<img src="tpl/krsystem/img/swiateczne-promocje.png" width="200" height="120" alt="">
+<br><br>
+<a href="konfigurator_pc.html"><img src="tpl/krsystem/img/konfigurator_pc.png" width="200" height="170" alt=""></a>
+</div>
+</div>
+</div>
+</li>
+<li class="selectable"><a href="komputery_gotowe-katid-327.html">Sprzęt Komputerowy</a>
+<div class="container">
+<div class="row shadow">
+<div class="col-lg-3">
+<h2>PODZESPOŁY</h2>
+<ul>
+<li><a href="http://www.krsystem.pl/procesory_amd-katid-35.html#start">Procesory AMD</a></li>
+<li><a href="http://www.krsystem.pl/procesory_intel-katid-34.html#start">Procesory INTEL</a></li>
+<li><a href="http://www.krsystem.pl/plyty_glowne_amd-katid-38.html#start">Płyty główne AMD</a></li>
+<li><a href="http://www.krsystem.pl/plyty_glowne_intel-katid-39.html#start">Płyty główne INTEL</a></li>
+<li><a href="http://www.krsystem.pl/karty_graficzne-katid-47.html#start">Karty graficzne</a></li>
+<li><a href="http://www.krsystem.pl/hdd__ssd-katid-44.html#start">HDD / SSD</a></li>
+<li><a href="http://www.krsystem.pl/pamieci-katid-37.html#start">Pamięci</a></li>
+<li><a href="http://www.krsystem.pl/zasilacze-katid-58.html#start">Zasilacze</a></li>
+<li><a href="http://www.krsystem.pl/napedy-katid-56.html#start">Napędy</a></li>
+<li><a href="http://www.krsystem.pl/zasilacze-katid-58.html#start">Zasilacze</a></li>
+<li><a href="http://www.krsystem.pl/obudowy-katid-57.html#start">Obudowy</a></li>
+<li><a href="http://www.krsystem.pl/podzespoly__akcesoria-katid-33.html#start">więcej</a></li>
+</ul>
+</div>
+<div class="col-lg-3">
+<h2>DRUKARKI</h2>
+<ul>
+<li><a href="http://www.krsystem.pl/atramentowe-katid-148.html#start">Atramentowe</a></li>
+<li><a href="http://www.krsystem.pl/laserowe-katid-149.html#start">Laserowe</a></li>
+<li><a href="http://www.krsystem.pl/urzadzenia_wielofunkcyjne-katid-321.html#start">Urządzenia wielofunkcyjne</a></li>
+<li><a href="http://www.krsystem.pl/skanery-katid-280.html#start">Skanery</a></li>
+</ul>
+<h2>Sieci</h2>
+<ul>
+<li><a href="http://www.krsystem.pl/routery_bezprzewodowe-katid-119.html#start">Routery bezprzewodowe</a></li>
+<li><a href="http://www.krsystem.pl/routery_przewodowe-katid-120.html#start">Routery przewodowe</a></li>
+<li><a href="http://www.krsystem.pl/acces_point-katid-121.html#start">Acces pointy</a></li>
+<li><a href="http://www.krsystem.pl/karty_sieciowe-katid-122.html#start">Karty sieciowe</a></li>
+<li><a href="http://www.krsystem.pl/sieci-katid-94.html#start">więcej</a></li>
+</ul>
+</div>
+<div class="col-lg-3">
+<h2><a href="http://www.krsystem.pl/index.php?szukaj=&go=search&grupa=2&kadid=910#start">MONITORY</a></h2>
+<ul>
+<li><a href="http://www.krsystem.pl/index.php?szukaj=&go=search&kat=910&grupa=2&kadid=910&szukaj=&dostepne=1&cena_z_1=&cena_z_2=&c_var_7_w[]=19%2C5+i+mniej&prodsort=&wyswietl=&page=1&tryb=&promocje=&pckonfig=&t=0.4062645973372856#start">19,5 cala i mniej</a></li>
+<li><a href="http://www.krsystem.pl/index.php?szukaj=&go=search&kat=910&grupa=2&kadid=910&szukaj=&dostepne=1&cena_z_1=&cena_z_2=&c_var_7_w[]=20-22%2C5&prodsort=&wyswietl=&page=1&tryb=&promocje=&pckonfig=&t=0.6547656511241585#start">20-22,5 cala</a></li>
+<li><a href="http://www.krsystem.pl/index.php?szukaj=&go=search&kat=910&grupa=2&kadid=910&szukaj=&dostepne=1&cena_z_1=&cena_z_2=&c_var_7_w[]=23-25%2C5&prodsort=&wyswietl=&page=1&tryb=&promocje=&pckonfig=&t=0.8973653042479931#start">23-25,5 cala</a></li>
+<li><a href="http://www.krsystem.pl/index.php?szukaj=&go=search&kat=910&grupa=2&kadid=910&szukaj=&dostepne=1&cena_z_1=&cena_z_2=&c_var_7_w[]=26-28&prodsort=&wyswietl=&page=1&tryb=&promocje=&pckonfig=&t=0.8811283750538276#start">26-28 cala</a></li>
+<li><a href="http://www.krsystem.pl/index.php?szukaj=&go=search&kat=910&grupa=2&kadid=910&szukaj=&dostepne=1&cena_z_1=&cena_z_2=&c_var_7_w[]=29-31%2C5&prodsort=&wyswietl=&page=1&tryb=&promocje=&pckonfig=&t=0.336988911118419#start">29-31,5 cala</a></li>
+<li><a href="http://www.krsystem.pl/index.php?szukaj=&go=search&kat=910&grupa=2&kadid=910&szukaj=&dostepne=1&cena_z_1=&cena_z_2=&c_var_7_w[]=32+i+wi%C4%99cej&prodsort=&wyswietl=&page=1&tryb=&promocje=&pckonfig=&t=0.8985672102356024#start">32 cala i więcej</a></li>
+<li><a href="http://www.krsystem.pl/kalibracja_oslony_i_akcesoria-katid-1629.html#start#start">Kalibracja, osłony i akcesoria</a></li>
+</ul>
+</div>
+<div class="col-lg-3 pull-right d-none d-lg-block" style="padding: 10px">
+<img src="tpl/krsystem/img/swiateczne-promocje.png" width="200" height="120" alt="">
+<br><br>
+<a href="konfigurator_pc.html"><img src="tpl/krsystem/img/konfigurator_pc.png" width="200" height="170" alt=""></a>
+</div>
+</div>
+</div>
+</li>
+<li class="selectable"><a href="oprogramowanie-katid-89.html">Oprogramowanie</a>
+<div class="container">
+<div class="row shadow">
+<div class="col-lg-3">
+<h2><a href="http://www.krsystem.pl/index.php?go=search&szukaj=&kat=&kadid=175&dostepne=1&cena_z_1=&cena_z_2=&prodsort=&wyswietl=&page=&tryb=&promocje=#start">Antywirusowe</a></h2>
+<h2><a href="http://www.krsystem.pl/index.php?go=search&szukaj=&kat=174&kadid=174&dostepne=1&cena_z_1=&cena_z_2=&prodsort=&wyswietl=&page=&tryb=&promocje=#start">Biurowe</a></h2>
+<h2><a href="http://www.krsystem.pl/index.php?go=search&szukaj=&kat=&kadid=179&dostepne=1&cena_z_1=&cena_z_2=&prodsort=&wyswietl=&page=&tryb=&promocje=#start">Mapy GPS</a></h2>
+<h2><a href="http://www.krsystem.pl/index.php?go=search&szukaj=&kat=&kadid=178&dostepne=1&cena_z_1=&cena_z_2=&prodsort=&wyswietl=&page=&tryb=&promocje=#start">Graficzne</a></h2>
+<h2><a href="http://www.krsystem.pl/index.php?go=search&szukaj=insert&kat=89&kadid=89&dostepne=1&cena_z_1=&cena_z_2=&prodsort=&wyswietl=&page=&tryb=&promocje=#start">Sprzedaż / księgowość</a></h2>
+<h2><a href="http://www.krsystem.pl/index.php?go=search&szukaj=&kat=&kadid=171&dostepne=1&cena_z_1=&cena_z_2=&prodsort=&wyswietl=&page=&tryb=&promocje=#start">Systemy Operacyjne</a></h2>
+</div>
+<div class="col-lg-3 pull-right d-none d-lg-block" style="padding: 10px">
+<img src="tpl/krsystem/img/swiateczne-promocje.png" width="200" height="120" alt="">
+<br><br>
+<a href="konfigurator_pc.html"><img src="tpl/krsystem/img/konfigurator_pc.png" width="200" height="170" alt=""></a>
+</div>
+</div>
+</div>
+</li>
+<li class="selectable"><a href="#">Apple</a>
+<div class="container">
+<div class="row shadow">
+<div class="col-lg-3">
+<h2><a href="http://www.krsystem.pl/laptopy_macbook-katid-1553.html#start#start">laptopy MacBook</a></h2>
+<ul>
+<li><a href="http://www.krsystem.pl/macbook-katid-1549.html#start#start">MacBook</a></li>
+<li><a href="http://www.krsystem.pl/macbook_air-katid-1550.html#start#start">MacBook Air</a></li>
+<li><a href="http://www.krsystem.pl/macbook_pro-katid-1551.html#start#start">MacBook Pro</a></li>
+</ul>
+<h2><a href="http://www.krsystem.pl/komputery_mac-katid-1572.html#start#start">komputery Mac</a></h2>
+<ul>
+<li><a href="http://www.krsystem.pl/imac-katid-1552.html#start#start">iMac</a></li>
+<li><a href="http://www.krsystem.pl/imac_pro-katid-1677.html#start#start">iMac Pro</a></li>
+<li><a href="http://www.krsystem.pl/mac_pro-katid-1557.html#start#start">Mac Pro</a></li>
+<li><a href="http://www.krsystem.pl/mac_mini-katid-1558.html#start#start">Mac mini</a></li>
+</ul>
+<h2><a href="http://www.krsystem.pl/tablety_ipad-katid-1554.html#start#start">tablety iPad</a></h2>
+<ul>
+<li><a href="http://www.krsystem.pl/ipad_pro-katid-1560.html#start#start">iPad Pro</a></li>
+<li><a href="http://www.krsystem.pl/ipad-katid-1650.html#start#start">iPad</a></li>
+<li><a href="http://www.krsystem.pl/ipad_mini_4-katid-1562.html#start#start">iPad mini 4</a></li>
+</ul>
+</div>
+<div class="col-lg-3">
+<h2><a href="http://www.krsystem.pl/smartfony_iphone-katid-1555.html#start#start">smartfony iPhone</a></h2>
+<ul>
+<li><a href="http://www.krsystem.pl/iphone_x-katid-1678.html#start#start">iPhone X, XR, XS, XS Max</a></li>
+<li><a href="http://www.krsystem.pl/iphone_8-katid-1679.html#start#start">iPhone 8</a></li>
+<li><a href="http://www.krsystem.pl/iphone_7-katid-1618.html#start#start">iPhone 7</a></li>
+<li><a href="http://www.krsystem.pl/iphone_6s-katid-1565.html#start#start">iPhone 6s</a></li>
+<li><a href="http://www.krsystem.pl/iphone_se-katid-1567.html#start#start">iPhone SE</a></li>
+</ul>
+<h2><a href="http://www.krsystem.pl/smartwatche_watch-katid-1569.html#start#start">smartwatche Watch</a></h2>
+<ul>
+<li><a href="http://www.krsystem.pl/apple_watch_series_3-katid-1680.html#start#start">Apple Watch Series 3</a></li>
+<li><a href="http://www.krsystem.pl/apple_watch_nike-katid-1681.html#start#start">Apple Watch Nike+</a></li>
+<li><a href="http://www.krsystem.pl/apple_watch_series_1-katid-1682.html#start#start">Apple Watch Series 1</a></li>
+</ul>
+<h2><a href="http://www.krsystem.pl/odtwarzacze_tv-katid-1570.html#start#start">odtwarzacze TV</a></h2>
+<ul>
+<li><a href="http://www.krsystem.pl/apple_tv_4k-katid-1683.html#start#start">Apple TV 4K</a></li>
+<li><a href="http://www.krsystem.pl/apple_tv-katid-1684.html#start#start">Apple TV</a></li>
+</ul>
+</div>
+<div class="col-lg-3">
+<h2><a href="http://www.krsystem.pl/akcesoria_do_produktow_apple-katid-1556.html#start#start">akcesoria do produktów Apple</a></h2>
+<ul>
+<li><a href="http://www.krsystem.pl/laptopy_macbook-katid-1571.html#start#start">laptopy MacBook</a></li>
+<li><a href="http://www.krsystem.pl/komputery_mac-katid-1685.html#start#start">komputery Mac</a></li>
+<li><a href="http://www.krsystem.pl/tablety_ipad-katid-1686.html#start#start">tablety iPad</a></li>
+<li><a href="http://www.krsystem.pl/smartfony_iphone-katid-1687.html#start#start">smartfony iPhone</a></li>
+<li><a href="http://www.krsystem.pl/smartwatche_watch-katid-1688.html#start#start">smartwatche Watch</a></li>
+<li><a href="http://www.krsystem.pl/odtwarzacze_tv-katid-1689.html#start#start">odtwarzacze TV</a></li>
+</ul>
+</div>
+<div class="col-lg-3 pull-right d-none d-lg-block" style="padding: 10px">
+<img src="tpl/krsystem/img/swiateczne-promocje.png" width="200" height="120" alt="">
+<br><br>
+<a href="konfigurator_pc.html"><img src="tpl/krsystem/img/konfigurator_pc.png" width="200" height="170" alt=""></a>
+</div>
+</div>
+</div>
+</li>
+<li><a href="uslugi-katid-106.html">Usługi</a></li>
+<li class="selectable"><a href="uslugi-katid-1482.html">KASY FISKALNE</a>
+<div class="container">
+<div class="row shadow">
+<div class="col-lg-3">
+<h2><a href="http://www.krsystem.pl/kasy_fiskalne-katid-1573.html#start">Kasy fiskalne</a></h2>
+<ul>
+<li><a href="http://www.krsystem.pl/aclas-katid-1587.html#start">Aclas</a></li>
+<li><a href="http://www.krsystem.pl/elcom-katid-1630.html#start#start">Elcom</a></li>
+<li><a href="http://www.krsystem.pl/elzab-katid-1588.html#start">Elzab</a></li>
+<li><a href="http://www.krsystem.pl/farex-katid-1589.html#start">Farex</a></li>
+<li><a href="http://www.krsystem.pl/posnet-katid-1590.html#start">Posnet</a></li>
+</ul>
+<h2><a href="http://www.krsystem.pl/drukarki_fiskalne-katid-1574.html#start">Drukarki fiskalne</a></h2>
+<ul>
+<li><a href="http://www.krsystem.pl/elzab-katid-1584.html#start">Elzab</a></li>
+<li><a href="http://www.krsystem.pl/farex-katid-1585.html#start">Farex</a></li>
+<li><a href="http://www.krsystem.pl/posnet-katid-1586.html#start">Posnet</a></li>
+</ul>
+<h2><a href="http://www.krsystem.pl/drukarki_etykiet-katid-1601.html#start">Drukarki etykiet</a></h2>
+<ul>
+<li><a href="http://www.krsystem.pl/dymo-katid-1603.html#start#start">Dymo</a></li>
+<li><a href="http://www.krsystem.pl/zebra-katid-1604.html#start#start">Zebra</a></li>
+<li><a href="http://www.krsystem.pl/godex-katid-1617.html#start#start">Godex</a></li>
+</ul>
+</div>
+<div class="col-lg-3">
+<h2><a href="http://www.krsystem.pl/czytniki_kodow-katid-1576.html#start">Czytniki kodów</a></h2>
+<ul>
+<li><a href="http://www.krsystem.pl/aclas-katid-1596.html#start">Aclas</a></li>
+<li><a href="http://www.krsystem.pl/datalogic-katid-1597.html#start">Datalogic</a></li>
+<li><a href="http://www.krsystem.pl/motorola-katid-1598.html#start">Motorola</a></li>
+<li><a href="http://www.krsystem.pl/newland-katid-1612.html#start#start">Newland</a></li>
+<li><a href="http://www.krsystem.pl/zebex-katid-1605.html#start#start">Zebex</a></li>
+<li><a href="http://www.krsystem.pl/zebex-katid-1627.html#start#start">Symbol</a></li>
+</ul>
+<h2><a href="http://www.krsystem.pl/wagi-katid-1577.html#start">Wagi</a></h2>
+<ul>
+<li><a href="http://www.krsystem.pl/aclas-katid-1600.html#start">Aclas</a></li>
+<li><a href="##start">Elzab</a></li>
+<li><a href="##start">Posnet</a></li>
+</ul>
+<h2><a href="http://www.krsystem.pl/szuflady-katid-1575.html#start">Szuflady</a></h2>
+<ul>
+<li><a href="http://www.krsystem.pl/aclas-katid-1592.html#start">Aclas</a></li>
+<li><a href="http://www.krsystem.pl/elzab-katid-1591.html#start">Elzab</a></li>
+<li><a href="http://www.krsystem.pl/farex-katid-1593.html#start">Farex</a></li>
+<li><a href="http://www.krsystem.pl/posnet-katid-1594.html#start">Posnet</a></li>
+</ul>
+</div>
+<div class="col-md-6 pull-right d-none d-lg-block kasy-fiskalne">
+<div>
+<h3>Najtańsze kasy fiskalne oraz&nbsp;drukarki fiskalne</h3>
+<ul>
+<li>Pomagamy w uzyskaniu zwrotu z Urzędu Skarbowego.</li>
+<li>Fiskalizacja i szkolenie gratis.</li>
+<li>Dostawa do klienta gratis.</li>
+</ul>
+<p>Masz wątpliwości? Zadzwoń:</p>
+<h3 class="likeh3">
+<img width="12" height="20" alt="" src="tpl/krsystem/img/telefon.png">
+12 633 33 45
+</h3>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li><a href="kontakt.html">Kontakt</a></li>
+</ul>
+</div>
+<div class="col-lg-2 col-md-3 col-sm-4 telefon">
+<a href="tel:+48126333345">
+<img src="tpl/krsystem/img/telefon.png" width="12" height="20" alt="">
+12 633 33 45</a>
+</div>
+</div>
+</div> <!-- /container -->
+</div>
+<div class="container opacity">
+<div class="row">
+<div class="col-md-12 mybreadcrumb d-none d-md-block">
+<ul class="span12"><li class="home"><a href="index.html">&nbsp;</a></li><li><a href="podzespoly__akcesoria-katid-33.html#start">Podzespoły / akcesoria</a></li><li class="last">Karty Graficzne</li></ul>
+</div>
+</div>
+</div>
+<div class="container produkt-list">
+<div class="row">
+<div class="col-lg-3 sidebar">
+<div class="naglowek " id="naglowek-size">
+<h1>Karty Graficzne</h1>
+</div>
+<div class="naglowek " style="margin: 0px -15px">
+<div class="pointer filtry-switch">
+<i class="fa fa-filter" aria-hidden="true"></i>
+<span class="filtry-switch-item show">Pokaż więcej filtrów</span>
+<span class="filtry-switch-item">Ukryj filtry</span>
+</div>
+</div>
+<div class="filtry filtry-res">
+<form action="index.php" id="katwyszukiwanie" method="post" enctype="multipart/form-data">
+<div id="prodsearch"><input type="hidden" name="go" value="search"><input type="hidden" id="ajaxpager" value="1"><input type="hidden" name="szukaj" value=""><input type="hidden" name="kat" value="47"><input type="hidden" name="kadid" value="47" /><h2>Zakres cenowy</h2>
+<div class="">
+<input style="width: 95%;display: none;"  type="text" class="span2" value="" data-slider-min="0" data-slider-max="59010" data-slider-step="10" data-slider-value="[0,59010]" data-slider-tooltip="hide" id="sl1" >
+<div>
+<div class="sl_left"  style="width: 100px;float: left;"><span >0</span> zł</div>
+<div class="sl_right" style="width: 100px;float: right;text-align: right;"><span >59010</span> zł</div>
+</div>
+</div>
+<div  style="clear: both;">
+<input id="dostepne" name="dostepne"   value="1"  class="css-checkbox"   type="checkbox"><label class="css-label"  for="dostepne">Tylko dostępne</label>
+</div>
+<div >
+<input id="hity" name="hity"   value="1"  class="css-checkhit"   type="checkbox"><label class="css-labelhit"  for="hity" style="color: #FA412F">Tylko HIT</label>
+</div><input type="hidden" name="cena_z_1" 6 value="" /> 
+<input type="hidden" name="cena_z_2" 6 value="" /> 
+<h2>Producent:</h2><div class="filter_element"><div class="scrolable"><div class="filter_element_all">&#10003; Wszystkie</div><div class="filter_element_zero">&#935; Wyczyść</div><div ><input type="checkbox"  name="producent[]" value="39" class="css-checkbox"  id="wlproducent39"  /> 
+<label class="css-label" name="producent_lbl_39" for="wlproducent39">4World</label></div><div ><input type="checkbox"  name="producent[]" value="19" class="css-checkbox"  id="wlproducent19"  /> 
+<label class="css-label" name="producent_lbl_19" for="wlproducent19">AMD</label></div><div ><input type="checkbox"  name="producent[]" value="138" class="css-checkbox"  id="wlproducent138"  /> 
+<label class="css-label" name="producent_lbl_138" for="wlproducent138">Asrock</label></div><div ><input type="checkbox"  name="producent[]" value="298" class="css-checkbox"  id="wlproducent298"  /> 
+<label class="css-label" name="producent_lbl_298" for="wlproducent298">Assmann</label></div><div ><input type="checkbox"  name="producent[]" value="3" class="css-checkbox"  id="wlproducent3"  /> 
+<label class="css-label" name="producent_lbl_3" for="wlproducent3">Asus</label></div><div ><input type="checkbox"  name="producent[]" value="238" class="css-checkbox"  id="wlproducent238"  /> 
+<label class="css-label" name="producent_lbl_238" for="wlproducent238">be quiet!</label></div><div ><input type="checkbox"  name="producent[]" value="90" class="css-checkbox"  id="wlproducent90"  /> 
+<label class="css-label" name="producent_lbl_90" for="wlproducent90">DELOCK</label></div><div ><input type="checkbox"  name="producent[]" value="64" class="css-checkbox"  id="wlproducent64"  /> 
+<label class="css-label" name="producent_lbl_64" for="wlproducent64">EVGA</label></div><div ><input type="checkbox"  name="producent[]" value="65" class="css-checkbox"  id="wlproducent65"  /> 
+<label class="css-label" name="producent_lbl_65" for="wlproducent65">Gainward</label></div><div ><input type="checkbox"  name="producent[]" value="37" class="css-checkbox"  id="wlproducent37"  /> 
+<label class="css-label" name="producent_lbl_37" for="wlproducent37">Galaxy</label></div><div ><input type="checkbox"  name="producent[]" value="21" class="css-checkbox"  id="wlproducent21"  /> 
+<label class="css-label" name="producent_lbl_21" for="wlproducent21">Gigabyte</label></div><div ><input type="checkbox"  name="producent[]" value="314" class="css-checkbox"  id="wlproducent314"  /> 
+<label class="css-label" name="producent_lbl_314" for="wlproducent314">Inno3D</label></div><div ><input type="checkbox"  name="producent[]" value="13" class="css-checkbox"  id="wlproducent13"  /> 
+<label class="css-label" name="producent_lbl_13" for="wlproducent13">MSI</label></div><div ><input type="checkbox"  name="producent[]" value="66" class="css-checkbox"  id="wlproducent66"  /> 
+<label class="css-label" name="producent_lbl_66" for="wlproducent66">Palit</label></div><div ><input type="checkbox"  name="producent[]" value="87" class="css-checkbox"  id="wlproducent87"  /> 
+<label class="css-label" name="producent_lbl_87" for="wlproducent87">Panasonic</label></div><div ><input type="checkbox"  name="producent[]" value="181" class="css-checkbox"  id="wlproducent181"  /> 
+<label class="css-label" name="producent_lbl_181" for="wlproducent181">PNY</label></div><div ><input type="checkbox"  name="producent[]" value="264" class="css-checkbox"  id="wlproducent264"  /> 
+<label class="css-label" name="producent_lbl_264" for="wlproducent264">Powercolor</label></div><div ><input type="checkbox"  name="producent[]" value="38" class="css-checkbox"  id="wlproducent38"  /> 
+<label class="css-label" name="producent_lbl_38" for="wlproducent38">Sapphire</label></div><div ><input type="checkbox"  name="producent[]" value="141" class="css-checkbox"  id="wlproducent141"  /> 
+<label class="css-label" name="producent_lbl_141" for="wlproducent141">XFX</label></div><div ><input type="checkbox"  name="producent[]" value="231" class="css-checkbox"  id="wlproducent231"  /> 
+<label class="css-label" name="producent_lbl_231" for="wlproducent231">ZOTAC</label></div></div></div></div>
+<input type="hidden" name="prodsort" id="prodsort">
+<input type="hidden" name="wyswietl" id="wyswietlilosc">
+<input type="hidden" name="page" id="searchpage" value="">
+<input type="hidden" name="tryb" id="searchtryb">
+<input type="hidden" name="promocje" id="promocje" value="">
+<input type="hidden" name="pckonfig" id="pckonfig" value="">
+<input type="hidden" name="t" id="t" value="1669040085">
+</form>
+</div>
+</div>
+<div class="col-lg-9 main">
+<div class="naglowek podkategorie">
+<ul>
+</ul>
+<ul>
+<li><a href="akcesoria-katid-1490.html#start">Akcesoria</a></li>
+<li><a href="amd-katid-49.html#start">AMD</a></li>
+<li><a href="nvidia-katid-48.html#start">Nvidia</a></li>
+</ul>
+</div>
+<div id="prodlist"> 
+<div class="row sortbox">
+<div class="col-md-4">
+<span>Sortuj:</span>
+<select name="sortowanie"    id="sortowanie"  size="1"> 
+<option  value="cenaros">Cena rosnąco </option> 
+<option  selected="selected"  value="cenamal">Cena malejąco </option> 
+<option  value="promocje">Promocje </option> 
+</select>
+</div>
+<div class="col-md-4">
+<span>Pokaż:</span>
+<span id="wyswietl"><a class="" rel="10" href="index.php?go=iloschanege&var=10">10</a>
+<a rel="50" class="" href="index.php?go=iloschanege&var=50">50</a>
+<a rel="100" class="selected" href="index.php?go=iloschanege&var=100">100</a></span>
+</div>
+<div class="col-md-4 pull-right cmspager">
+<ul><li class="prev"><a  rel="" href="karty_graficzne-katid-47,.html">&nbsp;</a></li><li class="ashow"><span>1</span></li><li class="ashow"><a  rel="2" href="karty_graficzne-katid-47,2.html">2</a></li><li class="ashow"><a  rel="3" href="karty_graficzne-katid-47,3.html">3</a></li><li><a  rel="4" href="karty_graficzne-katid-47,4.html">4</a></li><li><a  rel="5" href="karty_graficzne-katid-47,5.html">5</a></li><li class="next"><a  rel="2" href="karty_graficzne-katid-47,2.html">&nbsp;</a></li></ul>					</div>
+</div>
+<div class=" product-horizontal" style="padding: 0">
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="Tesla V100-32 Module" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_053040/53040_tesla_v100.png&amp;w=200');">
+<a href="tesla_v10032_module-item-53040.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Tesla V100-32 Module</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="tesla_v10032_module-item-53040.html" >
+59 000,<small>00 zł</small></a>
+<button rel="53040" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="PNY Quadro GV100 32GB HBM" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_054280/54280_gv100.png&amp;w=200');">
+<a href="pny_quadro_gv100_32gb_hbm-item-54280.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">PNY Quadro GV100 32GB HBM</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="pny_quadro_gv100_32gb_hbm-item-54280.html" >
+57 790,<small>00 zł</small></a>
+<button rel="54280" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row brakproduktu">
+<div class="col-md-2">
+<div title="Karta PNY Quadro K6000 + 2x HD SDI OUT + 4x SDI IN" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_047589/47589_quadro_k6000.png&amp;w=200');">
+<a href="karta_pny_quadro_k6000__2x_hd_sdi_out__4x_sdi_in-item-47589.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Karta PNY Quadro K6000 + 2x HD SDI OUT + 4x SDI IN</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+50 499,<small>00 zł</small>
+<div class="prodniedostepny">Chwilowo niedostępny</div>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="PNY NVIDIA A100 TCSA100M-PB" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_064934/64934_item259025910000.jpg&amp;w=200');">
+<a href="pny_nvidia_a100_tcsa100mpb-item-64934.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">PNY NVIDIA A100 TCSA100M-PB</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="pny_nvidia_a100_tcsa100mpb-item-64934.html" >
+50 430,<small>00 zł</small></a>
+<button rel="64934" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="Tesla V100-16 Module" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_049500/&amp;w=200');">
+<a href="tesla_v10016_module-item-49500.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Tesla V100-16 Module</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="tesla_v10016_module-item-49500.html" >
+44 100,<small>00 zł</small></a>
+<button rel="49500" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="Karta PNY Quadro K6000 + 2x HD SDI OUT" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_047590/47590_vcqk6000sdi.png&amp;w=200');">
+<a href="karta_pny_quadro_k6000__2x_hd_sdi_out-item-47590.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Karta PNY Quadro K6000 + 2x HD SDI OUT</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="karta_pny_quadro_k6000__2x_hd_sdi_out-item-47590.html" >
+39 949,<small>00 zł</small></a>
+<button rel="47590" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="RADEON INSTINCT MI100 32GB/SERVER GRAPHIC CARD" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_068471/68471_87926543_0365290993.jpg&amp;w=200');">
+<a href="radeon_instinct_mi100_32gbserver_graphic_card-item-68471.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">RADEON INSTINCT MI100 32GB/SERVER GRAPHIC CARD</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="radeon_instinct_mi100_32gbserver_graphic_card-item-68471.html" >
+38 266,<small>53 zł</small></a>
+<button rel="68471" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="Karta graficzna Tesla P40 Module" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_049501/&amp;w=200');">
+<a href="karta_graficzna_tesla_p40_module-item-49501.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Karta graficzna Tesla P40 Module</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="karta_graficzna_tesla_p40_module-item-49501.html" >
+31 500,<small>00 zł</small></a>
+<button rel="49501" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="PNY TESLA P100-16 TCSP100M-16" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_045279/45279_pny_p100.png&amp;w=200');">
+<a href="pny_tesla_p10016_tcsp100m16-item-45279.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">PNY TESLA P100-16 TCSP100M-16</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="pny_tesla_p10016_tcsp100m16-item-45279.html" >
+30 999,<small>00 zł</small></a>
+<button rel="45279" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="PNY NVIDIA Quadro RTX 8000, 48GB GDDR6 (384 Bit), 4xDP, VirtualLink" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_056256/&amp;w=200');">
+<a href="pny_nvidia_quadro_rtx_8000_48gb_gddr6_384_bit_4xdp_virtuallink-item-56256.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">PNY NVIDIA Quadro RTX 8000, 48GB GDDR6 (384 Bit), 4xDP, VirtualLink</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="pny_nvidia_quadro_rtx_8000_48gb_gddr6_384_bit_4xdp_virtuallink-item-56256.html" >
+30 750,<small>00 zł</small></a>
+<button rel="56256" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="PNY NVIDIA A40 48 GB GDDR6 " class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_065553/65553_a40_hr.png&amp;w=200');">
+<a href="pny_nvidia_a40_48_gb_gddr6-item-65553.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">PNY NVIDIA A40 48 GB GDDR6 </h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="pny_nvidia_a40_48_gb_gddr6-item-65553.html" >
+29 212,<small>50 zł</small></a>
+<button rel="65553" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="PNY NVIDIA Quadro GP100, 16GB HBM2, DVI-I DL, 4xDP (3xDP to DVI SL)" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_047545/47545_vcqgp100.jpg&amp;w=200');">
+<a href="pny_nvidia_quadro_gp100_16gb_hbm2_dvii_dl_4xdp_3xdp_to_dvi_sl-item-47545.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">PNY NVIDIA Quadro GP100, 16GB HBM2, DVI-I DL, 4xDP (3xDP to DVI SL)</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="pny_nvidia_quadro_gp100_16gb_hbm2_dvii_dl_4xdp_3xdp_to_dvi_sl-item-47545.html" >
+29 157,<small>00 zł</small></a>
+<button rel="47545" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="AMD RADEON INSTINCT MI100 32GB Server ACCELERATOR Bulk" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_068943/68943_100506116.jpg&amp;w=200');">
+<a href="amd_radeon_instinct_mi100_32gb_server_accelerator_bulk-item-68943.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">AMD RADEON INSTINCT MI100 32GB Server ACCELERATOR Bulk</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="amd_radeon_instinct_mi100_32gb_server_accelerator_bulk-item-68943.html" >
+27 825,<small>00 zł</small></a>
+<button rel="68943" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row brakproduktu">
+<div class="col-md-2">
+<div title="PANASONIC PT-DW830EKJ Projektor DLP 1280x800 8500lm" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_068572/68572_7b5987836d13444fa790bb3779b7f444.jpg&amp;w=200');">
+<a href="panasonic_ptdw830ekj_projektor_dlp_1280x800_8500lm-item-68572.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">PANASONIC PT-DW830EKJ Projektor DLP 1280x800 8500lm</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+27 746,<small>98 zł</small>
+<div class="prodniedostepny">Chwilowo niedostępny</div>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row brakproduktu">
+<div class="col-md-2">
+<div title="Karta graficzna PNY Quadro M6000SYNC" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_047593/47593_vcqm6000sync.png&amp;w=200');">
+<a href="karta_graficzna_pny_quadro_m6000sync-item-47593.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Karta graficzna PNY Quadro M6000SYNC</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+27 737,<small>00 zł</small>
+<div class="prodniedostepny">Chwilowo niedostępny</div>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="PNY NVIDIA TESLA M40 24GB TCSM40M-24GB-PB" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_045281/45281.jpg&amp;w=200');">
+<a href="pny_nvidia_tesla_m40_24gb_tcsm40m24gbpb-item-45281.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">PNY NVIDIA TESLA M40 24GB TCSM40M-24GB-PB</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="pny_nvidia_tesla_m40_24gb_tcsm40m24gbpb-item-45281.html" >
+27 500,<small>00 zł</small></a>
+<button rel="45281" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="PNY RTX A6000  48GB  realizacja 2 dni" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_065552/65552_item259028110000.jpg&amp;w=200');">
+<a href="pny_rtx_a6000__48gb__realizacja_2_dni-item-65552.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">PNY RTX A6000  48GB  realizacja 2 dni</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="pny_rtx_a6000__48gb__realizacja_2_dni-item-65552.html" >
+26 785,<small>71 zł</small></a>
+<button rel="65552" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="PNY TESLA P100 TCSP100M-12" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_045280/45280_pny_p100.png&amp;w=200');">
+<a href="pny_tesla_p100_tcsp100m12-item-45280.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">PNY TESLA P100 TCSP100M-12</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="pny_tesla_p100_tcsp100m12-item-45280.html" >
+25 999,<small>00 zł</small></a>
+<button rel="45280" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="Karta graficzna AMD FirePro S9300X2 8GB Passive L2R Reverse" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_049512/&amp;w=200');">
+<a href="karta_graficzna_amd_firepro_s9300x2_8gb_passive_l2r_reverse-item-49512.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Karta graficzna AMD FirePro S9300X2 8GB Passive L2R Reverse</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="karta_graficzna_amd_firepro_s9300x2_8gb_passive_l2r_reverse-item-49512.html" >
+25 361,<small>00 zł</small></a>
+<button rel="49512" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="Karta graficzna AMD FirePro S9300X2 8GB Passive R2L Standard" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_049511/&amp;w=200');">
+<a href="karta_graficzna_amd_firepro_s9300x2_8gb_passive_r2l_standard-item-49511.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Karta graficzna AMD FirePro S9300X2 8GB Passive R2L Standard</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="karta_graficzna_amd_firepro_s9300x2_8gb_passive_r2l_standard-item-49511.html" >
+25 361,<small>00 zł</small></a>
+<button rel="49511" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="Karta graficzna PNY Tesla M60 VDI Module R2L" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_049508/&amp;w=200');">
+<a href="karta_graficzna_pny_tesla_m60_vdi_module_r2l-item-49508.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Karta graficzna PNY Tesla M60 VDI Module R2L</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="karta_graficzna_pny_tesla_m60_vdi_module_r2l-item-49508.html" >
+25 253,<small>00 zł</small></a>
+<button rel="49508" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="Karta graficzna PNY Tesla M60 VDI Module L2R" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_049507/&amp;w=200');">
+<a href="karta_graficzna_pny_tesla_m60_vdi_module_l2r-item-49507.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Karta graficzna PNY Tesla M60 VDI Module L2R</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="karta_graficzna_pny_tesla_m60_vdi_module_l2r-item-49507.html" >
+25 253,<small>00 zł</small></a>
+<button rel="49507" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="Karta Graficzna AMD Radeon Pro SSG" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_054938/54938_afpssgpb.jpg&amp;w=200');">
+<a href="karta_graficzna_amd_radeon_pro_ssg-item-54938.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Karta Graficzna AMD Radeon Pro SSG</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="karta_graficzna_amd_radeon_pro_ssg-item-54938.html" >
+24 999,<small>00 zł</small></a>
+<button rel="54938" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="NVIDIA Quadro P6000 24GB VCQP6000" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_045274/45274.jpg&amp;w=200');">
+<a href="nvidia_quadro_p6000_24gb_vcqp6000-item-45274.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">NVIDIA Quadro P6000 24GB VCQP6000</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="nvidia_quadro_p6000_24gb_vcqp6000-item-45274.html" >
+24 579,<small>00 zł</small></a>
+<button rel="45274" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="PNY TESLA M40 TCSM40M-12" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_045282/45282_pny_m40.png&amp;w=200');">
+<a href="pny_tesla_m40_tcsm40m12-item-45282.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">PNY TESLA M40 TCSM40M-12</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="pny_tesla_m40_tcsm40m12-item-45282.html" >
+23 999,<small>00 zł</small></a>
+<button rel="45282" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="Karta graficzna PNY Tesla M60 Card (Short)" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_049506/&amp;w=200');">
+<a href="karta_graficzna_pny_tesla_m60_card_short-item-49506.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Karta graficzna PNY Tesla M60 Card (Short)</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="karta_graficzna_pny_tesla_m60_card_short-item-49506.html" >
+23 330,<small>00 zł</small></a>
+<button rel="49506" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="Karta graficzna PNY Tesla M60 Card (Long)" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_049505/&amp;w=200');">
+<a href="karta_graficzna_pny_tesla_m60_card_long-item-49505.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Karta graficzna PNY Tesla M60 Card (Long)</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="karta_graficzna_pny_tesla_m60_card_long-item-49505.html" >
+23 330,<small>00 zł</small></a>
+<button rel="49505" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="PNY Tesla K80M Module TCSK80M" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_042116/42116_tcsk80m.png&amp;w=200');">
+<a href="pny_tesla_k80m_module_tcsk80m-item-42116.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">PNY Tesla K80M Module TCSK80M</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="pny_tesla_k80m_module_tcsk80m-item-42116.html" >
+22 900,<small>00 zł</small></a>
+<button rel="42116" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row brakproduktu">
+<div class="col-md-2">
+<div title="PNY Quadro M6000 24GB" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_042513/42513_m6000.png&amp;w=200');">
+<a href="pny_quadro_m6000_24gb-item-42513.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">PNY Quadro M6000 24GB</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+21 999,<small>00 zł</small>
+<div class="prodniedostepny">Chwilowo niedostępny</div>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="Karta graficzna AMD FirePro S9170 32GB Passive" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_049513/&amp;w=200');">
+<a href="karta_graficzna_amd_firepro_s9170_32gb_passive-item-49513.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Karta graficzna AMD FirePro S9170 32GB Passive</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="karta_graficzna_amd_firepro_s9170_32gb_passive-item-49513.html" >
+21 168,<small>00 zł</small></a>
+<button rel="49513" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="PNY NVIDIA Quadro RTX 6000, 24GB GDDR6 " class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_056138/56138_vcqrtx6000pb.png&amp;w=200');">
+<a href="pny_nvidia_quadro_rtx_6000_24gb_gddr6-item-56138.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">PNY NVIDIA Quadro RTX 6000, 24GB GDDR6 </h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="pny_nvidia_quadro_rtx_6000_24gb_gddr6-item-56138.html" >
+20 910,<small>00 zł</small></a>
+<button rel="56138" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="Karta PNY Quadro K4200 + 2x HD SDI OUT" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_047614/47614_vcqk4200sdi.png&amp;w=200');">
+<a href="karta_pny_quadro_k4200__2x_hd_sdi_out-item-47614.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Karta PNY Quadro K4200 + 2x HD SDI OUT</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="karta_pny_quadro_k4200__2x_hd_sdi_out-item-47614.html" >
+20 800,<small>00 zł</small></a>
+<button rel="47614" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="PNY NVIDIA Quadro K6000 " class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_041856/41856_vcqk6000.png&amp;w=200');">
+<a href="pny_nvidia_quadro_k6000-item-41856.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">PNY NVIDIA Quadro K6000 </h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="pny_nvidia_quadro_k6000-item-41856.html" >
+19 900,<small>00 zł</small></a>
+<button rel="41856" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row brakproduktu">
+<div class="col-md-2">
+<div title="PNY Quadro M6000 VCQM6000" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_042094/42094_pny_quadro_m6000.png&amp;w=200');">
+<a href="pny_quadro_m6000_vcqm6000-item-42094.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">PNY Quadro M6000 VCQM6000</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+19 500,<small>00 zł</small>
+<div class="prodniedostepny">Chwilowo niedostępny</div>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row brakproduktu">
+<div class="col-md-2">
+<div title="NVIDIA Quadro RTX 6000 NA MAGAZYNIE " class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_055965/55965_vcqrtx6000.png&amp;w=200');">
+<a href="nvidia_quadro_rtx_6000_na_magazynie-item-55965.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">NVIDIA Quadro RTX 6000 NA MAGAZYNIE </h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+17 599,<small>00 zł</small>
+<div class="prodniedostepny">Chwilowo niedostępny</div>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="Karta graficzna AMD FirePro S7150X2 16GB Passive Reverse Airflow" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_049514/&amp;w=200');">
+<a href="karta_graficzna_amd_firepro_s7150x2_16gb_passive_reverse_airfl-item-49514.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Karta graficzna AMD FirePro S7150X2 16GB Passive Reverse Airflow</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="karta_graficzna_amd_firepro_s7150x2_16gb_passive_reverse_airfl-item-49514.html" >
+16 954,<small>00 zł</small></a>
+<button rel="49514" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="Karta graficzna AMD FirePro S7150X2 16GB Passive Standard Airflow" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_049516/&amp;w=200');">
+<a href="karta_graficzna_amd_firepro_s7150x2_16gb_passive_standard_airf-item-49516.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Karta graficzna AMD FirePro S7150X2 16GB Passive Standard Airflow</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="karta_graficzna_amd_firepro_s7150x2_16gb_passive_standard_airf-item-49516.html" >
+16 888,<small>00 zł</small></a>
+<button rel="49516" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="PNY Tesla K40 Module" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_049504/&amp;w=200');">
+<a href="pny_tesla_k40_module-item-49504.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">PNY Tesla K40 Module</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="pny_tesla_k40_module-item-49504.html" >
+16 500,<small>00 zł</small></a>
+<button rel="49504" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row brakproduktu">
+<div class="col-md-2">
+<div title="PNY Tesla K40C TCSK40CARD" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_042115/42115_tcsk40card.png&amp;w=200');">
+<a href="pny_tesla_k40c_tcsk40card-item-42115.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">PNY Tesla K40C TCSK40CARD</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+16 300,<small>00 zł</small>
+<div class="prodniedostepny">Chwilowo niedostępny</div>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row brakproduktu">
+<div class="col-md-2">
+<div title="Karta VGA Gainward GeForce RTX 3090 Phantom 24GB GDDR6X 384bit W MAGAZYNIE!!!" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_065992/KGGWNV709020.jpg&amp;w=200');">
+<a href="karta_vga_gainward_geforce_rtx_3090_phantom_24gb_gddr6x_384bit-item-65992.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Karta VGA Gainward GeForce RTX 3090 Phantom 24GB GDDR6X 384bit W MAGAZYNIE!!!</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+13 995,<small>00 zł</small>
+<div class="prodniedostepny">Chwilowo niedostępny</div>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="Karta graficzna PNY Quadro M5000SYNC" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_047612/47612_vcqm5000sync.png&amp;w=200');">
+<a href="karta_graficzna_pny_quadro_m5000sync-item-47612.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Karta graficzna PNY Quadro M5000SYNC</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="karta_graficzna_pny_quadro_m5000sync-item-47612.html" >
+13 717,<small>00 zł</small></a>
+<button rel="47612" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row brakproduktu">
+<div class="col-md-2">
+<div title="ASUS GeForce RTX 3090 TUF OC - 24GB 90YV0FD1-M0NM00" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_066746/66746_90yv0fd1m0nm00.png&amp;w=200');">
+<a href="asus_geforce_rtx_3090_tuf_oc__24gb_90yv0fd1m0nm00-item-66746.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">ASUS GeForce RTX 3090 TUF OC - 24GB 90YV0FD1-M0NM00</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+13 499,<small>00 zł</small>
+<div class="prodniedostepny">Chwilowo niedostępny</div>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row brakproduktu">
+<div class="col-md-2">
+<div title="Gigabyte GeForce RTX 4090 AORUS XTREME WATERFORCE 24G " class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_068969/68969_4719331311490.jpg&amp;w=200');">
+<a href="gigabyte_geforce_rtx_4090_aorus_xtreme_waterforce_24g-item-68969.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Gigabyte GeForce RTX 4090 AORUS XTREME WATERFORCE 24G </h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+12 990,<small>00 zł</small>
+<div class="prodniedostepny">Chwilowo niedostępny</div>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row brakproduktu">
+<div class="col-md-2">
+<div title="MSI GeForce RTX 4090 SUPRIM LIQUID X 24G 24GB HDMI+3xDP" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_068960/68960_grrtx4090supliqux24g1.jpg&amp;w=200');">
+<a href="msi_geforce_rtx_4090_suprim_liquid_x_24g_24gb_hdmi3xdp-item-68960.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">MSI GeForce RTX 4090 SUPRIM LIQUID X 24G 24GB HDMI+3xDP</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+12 500,<small>00 zł</small>
+<div class="prodniedostepny">Chwilowo niedostępny</div>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="Karta graficzna PNY Tesla M6 VDI MXM Module (blade servers)" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_049510/&amp;w=200');">
+<a href="karta_graficzna_pny_tesla_m6_vdi_mxm_module_blade_servers-item-49510.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Karta graficzna PNY Tesla M6 VDI MXM Module (blade servers)</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="karta_graficzna_pny_tesla_m6_vdi_mxm_module_blade_servers-item-49510.html" >
+12 497,<small>00 zł</small></a>
+<button rel="49510" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="PNY Quadro A5000 24GB DDR6 VCNRTXA5000-BLK OEM" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_066609/66609.jpg&amp;w=200');">
+<a href="pny_quadro_a5000_24gb_ddr6_vcnrtxa5000blk_oem-item-66609.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">PNY Quadro A5000 24GB DDR6 VCNRTXA5000-BLK OEM</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="pny_quadro_a5000_24gb_ddr6_vcnrtxa5000blk_oem-item-66609.html" >
+12 099,<small>00 zł</small></a>
+<button rel="66609" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row brakproduktu">
+<div class="col-md-2">
+<div title="Gigabyte RTX 4090 GAMING OC 24G  GV-N4090GAMING OC-24GD" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_068888/68888_rtx.jpg&amp;w=200');">
+<a href="gigabyte_rtx_4090_gaming_oc_24g__gvn4090gaming_oc24gd-item-68888.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Gigabyte RTX 4090 GAMING OC 24G  GV-N4090GAMING OC-24GD</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+11 999,<small>00 zł</small>
+<div class="prodniedostepny">Chwilowo niedostępny</div>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row brakproduktu">
+<div class="col-md-2">
+<div title=" MSI GeForce RTX 4090 GAMING TRIO 24G" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_068973/68973_geforce_rtx_4090_gaming_trio_24g.jpg&amp;w=200');">
+<a href="msi_geforce_rtx_4090_gaming_trio_24g-item-68973.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2"> MSI GeForce RTX 4090 GAMING TRIO 24G</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+11 599,<small>00 zł</small>
+<div class="prodniedostepny">Chwilowo niedostępny</div>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row brakproduktu">
+<div class="col-md-2">
+<div title="MSI GeForce RTX 4090 GAMING X TRIO 24G - Dostepna od reki!!!" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_068900/68900_4090_gaming_x_trio_24g.png&amp;w=200');">
+<a href="msi_geforce_rtx_4090_gaming_x_trio_24g__dostepna_od_reki-item-68900.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">MSI GeForce RTX 4090 GAMING X TRIO 24G - Dostepna od reki!!!</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+11 500,<small>00 zł</small>
+<div class="prodniedostepny">Chwilowo niedostępny</div>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="MSI GeForce RTX 4090 VENTUS 3X 24G OC" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_068972/68972_rtx_4090_ventus_3x_24g_oc.jpg&amp;w=200');">
+<a href="msi_geforce_rtx_4090_ventus_3x_24g_oc-item-68972.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">MSI GeForce RTX 4090 VENTUS 3X 24G OC</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="msi_geforce_rtx_4090_ventus_3x_24g_oc-item-68972.html" >
+11 299,<small>00 zł</small></a>
+<button rel="68972" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row brakproduktu">
+<div class="col-md-2">
+<div title="Zotac RTX 3080 Trinity OC 10G GDDR6X 320bit 3DP/HDMI - W MAGAZYNIE" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_066072/66072.jpg&amp;w=200');">
+<a href="zotac_rtx_3080_trinity_oc_10g_gddr6x_320bit_3dphdmi__w_magazyn-item-66072.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Zotac RTX 3080 Trinity OC 10G GDDR6X 320bit 3DP/HDMI - W MAGAZYNIE</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+11 299,<small>00 zł</small>
+<div class="prodniedostepny">Chwilowo niedostępny</div>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row brakproduktu">
+<div class="col-md-2">
+<div title="PNY Quadro RTX A5000 24GB DDR6 VCNRTXA5000-BLK - W MAGAZYNIE!!!" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_066610/66610.jpg&amp;w=200');">
+<a href="pny_quadro_rtx_a5000_24gb_ddr6_vcnrtxa5000blk__w_magazynie-item-66610.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">PNY Quadro RTX A5000 24GB DDR6 VCNRTXA5000-BLK - W MAGAZYNIE!!!</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+11 099,<small>00 zł</small>
+<div class="prodniedostepny">Chwilowo niedostępny</div>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row brakproduktu">
+<div class="col-md-2">
+<div title="PNY GeForce RTX 4090 24GB XLR8 Gaming VERTO EPIC-X RGB Triple Fan" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_068914/68914_vcg409024tfxxpb1.png&amp;w=200');">
+<a href="pny_geforce_rtx_4090_24gb_xlr8_gaming_verto_epicx_rgb_triple_f-item-68914.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">PNY GeForce RTX 4090 24GB XLR8 Gaming VERTO EPIC-X RGB Triple Fan</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+10 999,<small>00 zł</small>
+<div class="prodniedostepny">Chwilowo niedostępny</div>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row brakproduktu">
+<div class="col-md-2">
+<div title="Zotac RTX 4090 TRINITY OC 24GB - W MAGAZYNIE!!!" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_068913/68913_ocd.jpg&amp;w=200');">
+<a href="zotac_rtx_4090_trinity_oc_24gb__w_magazynie-item-68913.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Zotac RTX 4090 TRINITY OC 24GB - W MAGAZYNIE!!!</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+10 999,<small>00 zł</small>
+<div class="prodniedostepny">Chwilowo niedostępny</div>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row brakproduktu">
+<div class="col-md-2">
+<div title="Palit GeForce RTX 4090 GameRock " class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_068899/68899_rtx4090_gamerock.png&amp;w=200');">
+<a href="palit_geforce_rtx_4090_gamerock-item-68899.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Palit GeForce RTX 4090 GameRock </h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+10 699,<small>00 zł</small>
+<div class="prodniedostepny">Chwilowo niedostępny</div>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row brakproduktu">
+<div class="col-md-2">
+<div title="ASUS Turbo GeForce RTX 3090 24GB GDDR6X HDMI 3xDP" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_068431/&amp;w=200');">
+<a href="asus_turbo_geforce_rtx_3090_24gb_gddr6x_hdmi_3xdp-item-68431.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">ASUS Turbo GeForce RTX 3090 24GB GDDR6X HDMI 3xDP</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+10 589,<small>08 zł</small>
+<div class="prodniedostepny">Chwilowo niedostępny</div>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row brakproduktu">
+<div class="col-md-2">
+<div title="Karta VGA Palit GeForce RTX 4090 GameRock OC 24GB GDDR6X 384bit HDMI+3xDP PCIe4.0" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_068951/68951_towarobraz.jpg&amp;w=200');">
+<a href="karta_vga_palit_geforce_rtx_4090_gamerock_oc_24gb_gddr6x_384bi-item-68951.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Karta VGA Palit GeForce RTX 4090 GameRock OC 24GB GDDR6X 384bit HDMI+3xDP PCIe4.0</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+10 499,<small>00 zł</small>
+<div class="prodniedostepny">Chwilowo niedostępny</div>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row brakproduktu">
+<div class="col-md-2">
+<div title="MSI RTX 3090 SUPRIM X 24GB GDDR6X 384bit 3DP/HDMI " class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_067905/67905.jpg&amp;w=200');">
+<a href="msi_rtx_3090_suprim_x_24gb_gddr6x_384bit_3dphdmi-item-67905.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">MSI RTX 3090 SUPRIM X 24GB GDDR6X 384bit 3DP/HDMI </h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+10 449,<small>00 zł</small>
+<div class="prodniedostepny">Chwilowo niedostępny</div>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="Karta graficzna AMD FirePro S7150 8GB Active" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_049517/&amp;w=200');">
+<a href="karta_graficzna_amd_firepro_s7150_8gb_active-item-49517.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Karta graficzna AMD FirePro S7150 8GB Active</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="karta_graficzna_amd_firepro_s7150_8gb_active-item-49517.html" >
+10 199,<small>00 zł</small></a>
+<button rel="49517" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="Karta graficzna AMD FirePro S7150 8GB Passive" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_049518/&amp;w=200');">
+<a href="karta_graficzna_amd_firepro_s7150_8gb_passive-item-49518.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Karta graficzna AMD FirePro S7150 8GB Passive</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="karta_graficzna_amd_firepro_s7150_8gb_passive-item-49518.html" >
+10 179,<small>00 zł</small></a>
+<button rel="49518" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="Karta graficzna Tesla P4 Module" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_049502/&amp;w=200');">
+<a href="karta_graficzna_tesla_p4_module-item-49502.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Karta graficzna Tesla P4 Module</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="karta_graficzna_tesla_p4_module-item-49502.html" >
+9 700,<small>00 zł</small></a>
+<button rel="49502" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row brakproduktu">
+<div class="col-md-2">
+<div title="Gigabyte GeForce RTX 3080 AORUS XTREME WaterForce WB 10GB GDDR6X 320bit W MAGAZYNIE!!!" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_065941/65941.jpg&amp;w=200');">
+<a href="gigabyte_geforce_rtx_3080_aorus_xtreme_waterforce_wb_10gb_gddr-item-65941.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Gigabyte GeForce RTX 3080 AORUS XTREME WaterForce WB 10GB GDDR6X 320bit W MAGAZYNIE!!!</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+9 599,<small>00 zł</small>
+<div class="prodniedostepny">Chwilowo niedostępny</div>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row brakproduktu">
+<div class="col-md-2">
+<div title="Gigabyte GeForce RTX 3090 TURBO 24G NA MAGAZYNIE" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_064730/KGGBNV709040.jpg&amp;w=200');">
+<a href="gigabyte_geforce_rtx_3090_turbo_24g_na_magazynie-item-64730.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Gigabyte GeForce RTX 3090 TURBO 24G NA MAGAZYNIE</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+9 555,<small>00 zł</small>
+<div class="prodniedostepny">Chwilowo niedostępny</div>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="NVIDIA Quadro RTX 5000" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_055966/55966_vcqrtx5000.png&amp;w=200');">
+<a href="nvidia_quadro_rtx_5000-item-55966.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">NVIDIA Quadro RTX 5000</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="nvidia_quadro_rtx_5000-item-55966.html" >
+9 537,<small>00 zł</small></a>
+<button rel="55966" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="PNY NVIDIA Quadro K5000 for Mac VCQK5000MAC-PB" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_042100/42100_pnyprofessionalgraphicscardsquadrok5000macgr.png&amp;w=200');">
+<a href="pny_nvidia_quadro_k5000_for_mac_vcqk5000macpb-item-42100.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">PNY NVIDIA Quadro K5000 for Mac VCQK5000MAC-PB</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="pny_nvidia_quadro_k5000_for_mac_vcqk5000macpb-item-42100.html" >
+9 400,<small>00 zł</small></a>
+<button rel="42100" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row brakproduktu">
+<div class="col-md-2">
+<div title="Karta VGA Gainward GeForce RTX 3080 Ti Phantom 12GB GDDR6X 384bit LHR - W MAGAZYNIE!!!" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_066950/KGGWNV708510.jpg&amp;w=200');">
+<a href="karta_vga_gainward_geforce_rtx_3080_ti_phantom_12gb_gddr6x_384-item-66950.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Karta VGA Gainward GeForce RTX 3080 Ti Phantom 12GB GDDR6X 384bit LHR - W MAGAZYNIE!!!</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+9 399,<small>00 zł</small>
+<div class="prodniedostepny">Chwilowo niedostępny</div>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row brakproduktu">
+<div class="col-md-2">
+<div title="KFA2 GeForce RTX? 3080 Ti SG 12GB GDDR6X 384-bit LHR - W MAGAZYNIE!!!" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_066508/66508_38iom5md99dk.png&amp;w=200');">
+<a href="kfa2_geforce_rtx_3080_ti_sg_12gb_gddr6x_384bit_lhr__w_magazyni-item-66508.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">KFA2 GeForce RTX? 3080 Ti SG 12GB GDDR6X 384-bit LHR - W MAGAZYNIE!!!</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+9 359,<small>00 zł</small>
+<div class="prodniedostepny">Chwilowo niedostępny</div>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row brakproduktu">
+<div class="col-md-2">
+<div title="Palit GeForce RTX 3090 GamingPro OC 24GB GDDR6X 384bit W MAGAZYNIE!!!" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_064980/64980.jpg&amp;w=200');">
+<a href="palit_geforce_rtx_3090_gamingpro_oc_24gb_gddr6x_384bit_w_magaz-item-64980.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Palit GeForce RTX 3090 GamingPro OC 24GB GDDR6X 384bit W MAGAZYNIE!!!</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+8 999,<small>00 zł</small>
+<div class="prodniedostepny">Chwilowo niedostępny</div>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="Karta graficzna PNY Quadro M4000SYNC" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_047615/47615_vcqm4000sync.png&amp;w=200');">
+<a href="karta_graficzna_pny_quadro_m4000sync-item-47615.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Karta graficzna PNY Quadro M4000SYNC</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="karta_graficzna_pny_quadro_m4000sync-item-47615.html" >
+8 950,<small>00 zł</small></a>
+<button rel="47615" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row brakproduktu">
+<div class="col-md-2">
+<div title="Zotac GeForce RTX 3080 AMP Holo 10G GDDR6X 320bit 3DP/HDMI - W MAGAZYNIE!!!" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_064957/64957.jpg&amp;w=200');">
+<a href="zotac_geforce_rtx_3080_amp_holo_10g_gddr6x_320bit_3dphdmi__w_m-item-64957.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Zotac GeForce RTX 3080 AMP Holo 10G GDDR6X 320bit 3DP/HDMI - W MAGAZYNIE!!!</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+8 859,<small>00 zł</small>
+<div class="prodniedostepny">Chwilowo niedostępny</div>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row brakproduktu">
+<div class="col-md-2">
+<div title="Zotac GeForce RTX 3080Ti AMP Extreme Holo 12GB GDDR6X 384bit 3DP/HDMI " class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_066628/66628.jpg&amp;w=200');">
+<a href="zotac_geforce_rtx_3080ti_amp_extreme_holo_12gb_gddr6x_384bit_3-item-66628.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Zotac GeForce RTX 3080Ti AMP Extreme Holo 12GB GDDR6X 384bit 3DP/HDMI </h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+8 799,<small>00 zł</small>
+<div class="prodniedostepny">Chwilowo niedostępny</div>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="Karta graficzna Quadro A4500 20GB DDR6 VCNRTXA4500-SB " class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_068423/68423.jpg&amp;w=200');">
+<a href="karta_graficzna_quadro_a4500_20gb_ddr6_vcnrtxa4500sb-item-68423.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Karta graficzna Quadro A4500 20GB DDR6 VCNRTXA4500-SB </h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="karta_graficzna_quadro_a4500_20gb_ddr6_vcnrtxa4500sb-item-68423.html" >
+8 733,<small>00 zł</small></a>
+<button rel="68423" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="Karta graficzna Quadro RTX A4500 20GB DDR6 VCNRTXA4500-PB " class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_068422/68422.jpg&amp;w=200');">
+<a href="karta_graficzna_quadro_rtx_a4500_20gb_ddr6_vcnrtxa4500pb-item-68422.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Karta graficzna Quadro RTX A4500 20GB DDR6 VCNRTXA4500-PB </h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="karta_graficzna_quadro_rtx_a4500_20gb_ddr6_vcnrtxa4500pb-item-68422.html" >
+8 733,<small>00 zł</small></a>
+<button rel="68422" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="INNO3D GEFORCE RTX 3090 ICHILL X3 - W MAGAZYNIE!!!" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_064977/64977_inno3d_geforce_rtx_3090_ichill_x3.jpg&amp;w=200');">
+<a href="inno3d_geforce_rtx_3090_ichill_x3__w_magazynie-item-64977.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">INNO3D GEFORCE RTX 3090 ICHILL X3 - W MAGAZYNIE!!!</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+8 659,<small>00 zł</small>
+<div class="prodniedostepny">Chwilowo niedostępny</div>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="TESLA M4 TCSM4M" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_045283/45283_pny_m4.jpg&amp;w=200');">
+<a href="tesla_m4_tcsm4m-item-45283.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">TESLA M4 TCSM4M</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="tesla_m4_tcsm4m-item-45283.html" >
+8 600,<small>00 zł</small></a>
+<button rel="45283" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="ASUS GeForce RTX 4080 ROG STRIX Gaming OC 16GB" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_068985/68985_grrostrtx40816ggaoc1.jpg&amp;w=200');">
+<a href="asus_geforce_rtx_4080_rog_strix_gaming_oc_16gb-item-68985.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">ASUS GeForce RTX 4080 ROG STRIX Gaming OC 16GB</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="asus_geforce_rtx_4080_rog_strix_gaming_oc_16gb-item-68985.html" >
+8 399,<small>00 zł</small></a>
+<button rel="68985" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row brakproduktu">
+<div class="col-md-2">
+<div title="Asus RTX 3090 ROG Strix OC 24GB NA MAGAZYNIE" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_068256/68256.jpg&amp;w=200');">
+<a href="asus_rtx_3090_rog_strix_oc_24gb_na_magazynie-item-68256.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Asus RTX 3090 ROG Strix OC 24GB NA MAGAZYNIE</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+8 199,<small>00 zł</small>
+<div class="prodniedostepny">Chwilowo niedostępny</div>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row brakproduktu">
+<div class="col-md-2">
+<div title="Karta VGA MSI GeForce RTX 3080 Ti VENTUS 3X 12G 12GB GDDR6X 384bit HDMI+3xDP PCIe4.0" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_066713/KGMINV708530.jpg&amp;w=200');">
+<a href="karta_vga_msi_geforce_rtx_3080_ti_ventus_3x_12g_12gb_gddr6x_38-item-66713.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Karta VGA MSI GeForce RTX 3080 Ti VENTUS 3X 12G 12GB GDDR6X 384bit HDMI+3xDP PCIe4.0</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+8 188,<small>00 zł</small>
+<div class="prodniedostepny">Chwilowo niedostępny</div>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row brakproduktu">
+<div class="col-md-2">
+<div title="KFA2 Nvidia GeForce RTX 3090 SG 24GB GDDR6X 384Bit 3xDP HDMI 1-Click OC" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_067081/67081_39nsm5md1gnk.png&amp;w=200');">
+<a href="kfa2_nvidia_geforce_rtx_3090_sg_24gb_gddr6x_384bit_3xdp_hdmi_1-item-67081.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">KFA2 Nvidia GeForce RTX 3090 SG 24GB GDDR6X 384Bit 3xDP HDMI 1-Click OC</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+8 054,<small>75 zł</small>
+<div class="prodniedostepny">Chwilowo niedostępny</div>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row brakproduktu">
+<div class="col-md-2">
+<div title="INNO3D GeForce RTX 3090 X3 24GB GDDR6X 384-bit 3xDP+HDMI" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_067109/_n30903246x1880va44.png&amp;w=200');">
+<a href="inno3d_geforce_rtx_3090_x3_24gb_gddr6x_384bit_3xdphdmi-item-67109.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">INNO3D GeForce RTX 3090 X3 24GB GDDR6X 384-bit 3xDP+HDMI</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+7 883,<small>87 zł</small>
+<div class="prodniedostepny">Chwilowo niedostępny</div>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row brakproduktu">
+<div class="col-md-2">
+<div title="INNO3D GEFORCE RTX 3080 TI X3 OC" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_066992/66992_n308t3126xx1810va44.png&amp;w=200');">
+<a href="inno3d_geforce_rtx_3080_ti_x3_oc-item-66992.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">INNO3D GEFORCE RTX 3080 TI X3 OC</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+7 773,<small>60 zł</small>
+<div class="prodniedostepny">Chwilowo niedostępny</div>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="INNO3D GEFORCE RTX 4080 16GB ICHILL X3" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_068975/68975_c40803166xx187049h.png&amp;w=200');">
+<a href="inno3d_geforce_rtx_4080_16gb_ichill_x3-item-68975.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">INNO3D GEFORCE RTX 4080 16GB ICHILL X3</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="inno3d_geforce_rtx_4080_16gb_ichill_x3-item-68975.html" >
+7 699,<small>00 zł</small></a>
+<button rel="68975" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="Palit Karta graficzna GeForce RTX 4080 GAMEROCK 16GB GDDR6X 256bit HDMI/3DP " class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_068986/68986_image_846456_1710051_w1200_h1200_d71e8138e796dda194f0739&amp;w=200');">
+<a href="palit_karta_graficzna_geforce_rtx_4080_gamerock_16gb_gddr6x_25-item-68986.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Palit Karta graficzna GeForce RTX 4080 GAMEROCK 16GB GDDR6X 256bit HDMI/3DP </h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="palit_karta_graficzna_geforce_rtx_4080_gamerock_16gb_gddr6x_25-item-68986.html" >
+7 444,<small>24 zł</small></a>
+<button rel="68986" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="ASUS Turbo GeForce RTX 3080 Ti 12GB GDDR6X 2xHDMI 3xDP" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_068403/68403_turbortx3080ti12g.jpg&amp;w=200');">
+<a href="asus_turbo_geforce_rtx_3080_ti_12gb_gddr6x_2xhdmi_3xdp-item-68403.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">ASUS Turbo GeForce RTX 3080 Ti 12GB GDDR6X 2xHDMI 3xDP</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="asus_turbo_geforce_rtx_3080_ti_12gb_gddr6x_2xhdmi_3xdp-item-68403.html" >
+7 252,<small>76 zł</small></a>
+<button rel="68403" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="MSI GeForce RTX 3090 GAMING X TRIO 24GB GDDR6X 384bit 3DP/HDMI " class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_067904/67904.jpg&amp;w=200');">
+<a href="msi_geforce_rtx_3090_gaming_x_trio_24gb_gddr6x_384bit_3dphdmi-item-67904.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">MSI GeForce RTX 3090 GAMING X TRIO 24GB GDDR6X 384bit 3DP/HDMI </h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="msi_geforce_rtx_3090_gaming_x_trio_24gb_gddr6x_384bit_3dphdmi-item-67904.html" >
+7 242,<small>24 zł</small></a>
+<button rel="67904" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row brakproduktu">
+<div class="col-md-2">
+<div title="XFX SPEEDSTER SWFT319 RX 6800XT 16GB RX-68XTAQFD9 - W MAGAZYNIE!!!" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_066751/66751_rx68xtaqfd9.jpeg&amp;w=200');">
+<a href="xfx_speedster_swft319_rx_6800xt_16gb_rx68xtaqfd9__w_magazynie-item-66751.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">XFX SPEEDSTER SWFT319 RX 6800XT 16GB RX-68XTAQFD9 - W MAGAZYNIE!!!</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+7 099,<small>00 zł</small>
+<div class="prodniedostepny">Chwilowo niedostępny</div>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row brakproduktu">
+<div class="col-md-2">
+<div title="MSI Geforce RTX 3080 SUPRIM X 10G LHR" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_066389/_111.jpg&amp;w=200');">
+<a href="msi_geforce_rtx_3080_suprim_x_10g_lhr-item-66389.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">MSI Geforce RTX 3080 SUPRIM X 10G LHR</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+7 099,<small>00 zł</small>
+<div class="prodniedostepny">Chwilowo niedostępny</div>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row brakproduktu">
+<div class="col-md-2">
+<div title="Karta graficzna GeForce RTX 2080 Ti 11GB VCG2080T11TFMPB-O" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_061756/61756.jpg&amp;w=200');">
+<a href="karta_graficzna_geforce_rtx_2080_ti_11gb_vcg2080t11tfmpbo-item-61756.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Karta graficzna GeForce RTX 2080 Ti 11GB VCG2080T11TFMPB-O</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+7 007,<small>36 zł</small>
+<div class="prodniedostepny">Chwilowo niedostępny</div>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="PNY Quadro M5000 VCQM5000" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_041561/41561_pny_quadro_m5000.jpg&amp;w=200');">
+<a href="pny_quadro_m5000_vcqm5000-item-41561.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">PNY Quadro M5000 VCQM5000</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="pny_quadro_m5000_vcqm5000-item-41561.html" >
+6 999,<small>00 zł</small></a>
+<button rel="41561" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row brakproduktu">
+<div class="col-md-2">
+<div title="ASUS GeForce RTX 3070 TURBO 8GB - OEM - W MAGAZYNIE!!! " class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_065116/_turbortx30708g.png&amp;w=200');">
+<a href="asus_geforce_rtx_3070_turbo_8gb__oem__w_magazynie-item-65116.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">ASUS GeForce RTX 3070 TURBO 8GB - OEM - W MAGAZYNIE!!! </h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+6 899,<small>00 zł</small>
+<div class="prodniedostepny">Chwilowo niedostępny</div>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row brakproduktu">
+<div class="col-md-2">
+<div title="Gainward GeForce RTX 3070 Phantom 8GB GDDR6 256bit OEM W MAGAZYNIE!!!" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_064963/KGGWNV707020.jpg&amp;w=200');">
+<a href="gainward_geforce_rtx_3070_phantom_8gb_gddr6_256bit_oem_w_magaz-item-64963.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Gainward GeForce RTX 3070 Phantom 8GB GDDR6 256bit OEM W MAGAZYNIE!!!</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+6 899,<small>00 zł</small>
+<div class="prodniedostepny">Chwilowo niedostępny</div>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row brakproduktu">
+<div class="col-md-2">
+<div title="Zotac GeForce RTX 3070 Twin Edge OC 8GB White Edition GDDR6 - W MAGAZYNIE!!!" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_064959/64959.jpg&amp;w=200');">
+<a href="zotac_geforce_rtx_3070_twin_edge_oc_8gb_white_edition_gddr6__w-item-64959.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Zotac GeForce RTX 3070 Twin Edge OC 8GB White Edition GDDR6 - W MAGAZYNIE!!!</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+6 799,<small>00 zł</small>
+<div class="prodniedostepny">Chwilowo niedostępny</div>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="PNY GeForce RTX3090 24GB XLR8 TRIPLE FAN - NA MAGAZYNIE!!!" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_064944/64944.jpg&amp;w=200');">
+<a href="pny_geforce_rtx3090_24gb_xlr8_triple_fan__na_magazynie-item-64944.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">PNY GeForce RTX3090 24GB XLR8 TRIPLE FAN - NA MAGAZYNIE!!!</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="pny_geforce_rtx3090_24gb_xlr8_triple_fan__na_magazynie-item-64944.html" >
+6 559,<small>59 zł</small></a>
+<button rel="64944" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row brakproduktu">
+<div class="col-md-2">
+<div title="Gigabyte GeForce RTX 3080 AORUS XTREME 10GB LHR GDDR6X 320bit 3DP/HDMI " class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_066491/66491.jpg&amp;w=200');">
+<a href="gigabyte_geforce_rtx_3080_aorus_xtreme_10gb_lhr_gddr6x_320bit_-item-66491.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Gigabyte GeForce RTX 3080 AORUS XTREME 10GB LHR GDDR6X 320bit 3DP/HDMI </h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+6 559,<small>00 zł</small>
+<div class="prodniedostepny">Chwilowo niedostępny</div>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row brakproduktu">
+<div class="col-md-2">
+<div title="Sapphire RX 6800 XT PULSE 16GB 256bit GDDR6 - W MAGAZYNIE!!!" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_066767/66767.jpg&amp;w=200');">
+<a href="sapphire_rx_6800_xt_pulse_16gb_256bit_gddr6__w_magazynie-item-66767.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Sapphire RX 6800 XT PULSE 16GB 256bit GDDR6 - W MAGAZYNIE!!!</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+6 499,<small>00 zł</small>
+<div class="prodniedostepny">Chwilowo niedostępny</div>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row brakproduktu">
+<div class="col-md-2">
+<div title="Gainward GeForce RTX 3080 Phantom+ NED3080U19IA-1020M LHR" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_066486/66486_ned3080u19ia1020m.png&amp;w=200');">
+<a href="gainward_geforce_rtx_3080_phantom_ned3080u19ia1020m_lhr-item-66486.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Gainward GeForce RTX 3080 Phantom+ NED3080U19IA-1020M LHR</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+6 439,<small>00 zł</small>
+<div class="prodniedostepny">Chwilowo niedostępny</div>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row brakproduktu">
+<div class="col-md-2">
+<div title="Gainward GeForce RTX? 3080 Phantom+ &quot;GS&quot; LHR" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_066427/66427_ned3080h19ia1020m.png&amp;w=200');">
+<a href="gainward_geforce_rtx_3080_phantom_gs_lhr-item-66427.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Gainward GeForce RTX? 3080 Phantom+ &quot;GS&quot; LHR</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+6 439,<small>00 zł</small>
+<div class="prodniedostepny">Chwilowo niedostępny</div>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row brakproduktu">
+<div class="col-md-2">
+<div title="XFX SPEEDSTER SWFT319 RX 6800 CORE 16GB RX-68XLAQFD9 " class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_066927/66927_test.jpeg&amp;w=200');">
+<a href="xfx_speedster_swft319_rx_6800_core_16gb_rx68xlaqfd9-item-66927.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">XFX SPEEDSTER SWFT319 RX 6800 CORE 16GB RX-68XLAQFD9 </h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+6 399,<small>00 zł</small>
+<div class="prodniedostepny">Chwilowo niedostępny</div>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row brakproduktu">
+<div class="col-md-2">
+<div title="Palit GeForce RTX 3080 GameRock 10GB GDDR6X 320bit 3DP/HDMI " class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_066093/66093.jpg&amp;w=200');">
+<a href="palit_geforce_rtx_3080_gamerock_10gb_gddr6x_320bit_3dphdmi-item-66093.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Palit GeForce RTX 3080 GameRock 10GB GDDR6X 320bit 3DP/HDMI </h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+6 399,<small>00 zł</small>
+<div class="prodniedostepny">Chwilowo niedostępny</div>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row brakproduktu">
+<div class="col-md-2">
+<div title="GIGABYTE Radeon RX 6900 XT GAMING OC 16GB GDDR6 256Bit 2xHDMI 2xDP" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_067650/&amp;w=200');">
+<a href="gigabyte_radeon_rx_6900_xt_gaming_oc_16gb_gddr6_256bit_2xhdmi_-item-67650.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">GIGABYTE Radeon RX 6900 XT GAMING OC 16GB GDDR6 256Bit 2xHDMI 2xDP</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+6 322,<small>04 zł</small>
+<div class="prodniedostepny">Chwilowo niedostępny</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row sortbox  sortbox-down">
+<div class="col-md-8 pull-right cmspager">
+<ul><li class="prev"><a  rel="" href="karty_graficzne-katid-47,.html">&nbsp;</a></li><li class="ashow"><span>1</span></li><li class="ashow"><a  rel="2" href="karty_graficzne-katid-47,2.html">2</a></li><li class="ashow"><a  rel="3" href="karty_graficzne-katid-47,3.html">3</a></li><li><a  rel="4" href="karty_graficzne-katid-47,4.html">4</a></li><li><a  rel="5" href="karty_graficzne-katid-47,5.html">5</a></li><li class="next"><a  rel="2" href="karty_graficzne-katid-47,2.html">&nbsp;</a></li></ul>					</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="container promocje" style="margin-top: 15px">
+<div class="row">
+<div class="col-sm-6 col-lg-3 promocja-sml" onclick="location='index.php?go=search&promocje=1#start'">
+<div class="verticalalign"><a href="index.php?go=search&promocje=1">
+<h2>Promocja</h2>
+<div class="element"></div>
+</a></div>
+</div>
+<div class="col-sm-6 col-lg-3 product-sml"><a href="kasa_fiskalna_farex_online_pro_300_lanwifi_fiskalizacja_i_szko-item-62246.html">
+<div title="KASA FISKALNA FAREX ONline PRO 300 LAN/WiFi FISKALIZACJA I SZKOLENIE GRATIS!!! " class="prodimg" style="background-image: url(inc/cms_img.php?img=../gfx/sklep/PR_062246/_farexpro300.jpg&amp;w=200)"></div>
+<h2>KASA FISKALNA FAREX ONline PRO 300 LAN/WiFi FISKALIZACJA I SZKOLENIE GRATIS!!! </h2>
+<div class="cena">1 499,<small>00 zł</small></div>
+<div class="gradient"></div>
+</a>
+</div>
+<div class="col-sm-6 col-lg-2 product-sml"><a href="corsair_cc9011174ww_corsair_icue_220t_rgb_airflow_mid_tower_at-item-62646.html">
+<div title="CORSAIR CC-9011174-WW Corsair iCUE 220T RGB Airflow Mid Tower ATX Smart Case, TG" class="prodimg" style="background-image: url(inc/cms_img.php?img=../gfx/sklep/PR_062646/62646_cc9011174ww.jpg&amp;w=200)"></div>
+<h2>CORSAIR CC-9011174-WW Corsair iCUE 220T RGB Airflow Mid Tower ATX Smart Case, TG</h2>
+<div class="cena">572,<small>02 zł</small></div>
+<div class="gradient"></div>
+</a>
+</div>
+<div class="col-sm-6 col-lg-2 product-sml"><a href="toner_do_brother_tn3380_tbtn3380n_bk_100_nowy-item-66107.html">
+<div title="Toner do Brother TN3380 TB-TN3380N BK 100% nowy" class="prodimg" style="background-image: url(inc/cms_img.php?img=../gfx/sklep/PR_066107/66107.jpg&amp;w=200)"></div>
+<h2>Toner do Brother TN3380 TB-TN3380N BK 100% nowy</h2>
+<div class="cena">51,<small>00 zł</small></div>
+<div class="gradient"></div>
+</a>
+</div>
+<div class="col-sm-6 col-lg-2 product-sml"><a href="gigabyte_x670_aorus_elite_ax-item-68815.html">
+<div title="Gigabyte X670 AORUS ELITE AX" class="prodimg" style="background-image: url(inc/cms_img.php?img=../gfx/sklep/PR_068815/68815_x670_aorus_elite_ax01.png&amp;w=200)"></div>
+<h2>Gigabyte X670 AORUS ELITE AX</h2>
+<div class="cena">1 511,<small>67 zł</small></div>
+<div class="gradient"></div>
+</a>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+	$(document).ready(function () {
+
+		$("#dostepne").prop("checked", true);
+		ajaxsearch();
+	});
+</script>
+<div id="footer">
+<div class="container">
+<div class="row">
+<div class="col-md-7">
+<h1>Informacje</h1>
+<div class="row">
+<div class="col-md-4">
+<ul>
+<li><a href="regulamin_sklepu.html" class="main">Regulamin sklepu</a></li>
+<li><a href="kgo.html" class="main">KGO</a></li>
+<li>O KR System</li>
+<li><a href="polityka_cookies_polityka_prywatnosci.html" class="main">Polityka Prywatności</a></li>
+</ul>
+</div>
+<div class="col-md-4">
+<ul>
+<li><a href="index.php?go=mobile" class="main">Aplikacje mobilne</a></li>
+<li><a href="raty.html" class="main">Zakupy na raty</a></li>
+<li><a href="zapytanie_ofertowe.html">Zapytania ofertowe</a></li>
+<li><a href="koszty_wysylki.html" class="main">Koszty transportu</a></li>
+</ul>
+</div>
+<div class="col-md-4">
+<ul>
+<li><a href="index.php?go=loginin" />Panel klienta</a></li>
+<li><a href="http://allegro.pl/listing/user/listing.php?us_id=22601130" class="main">Oferta Allegro</a></li>
+<li><a href="index.php?go=reklamacje">Reklamacje i zwroty</a></li>
+<li><a href="kontakt.html" class="main">Kontakt</a></li>
+</ul>
+</div>
+<div class="col-md-2">&nbsp;</div>
+</div>
+</div>
+<div class="col-md-5">
+<h2>Newsletter</h2>
+<p>Chcesz otrzymywać na adres e-mail informacje o nowościach, zapowiedziach, promocjach? Zamów bezpłatny
+newsletter!</p>
+<form action="">
+<input type="" placeholder="Twój adres e-mail" />
+<button>&nbsp;</button>
+</form>
+</div>
+</div>
+</div>
+<div style="border-top: 1px solid #EFECEA;margin-bottom: 20px"></div>
+<div class="container">
+<div class="row">
+<div class="col-md-2">
+<a class="logo" href="index.html"><img src="tpl/krsystem/img/logo.png" width="125" height="40" alt=""></a>
+</div>
+<div class="col-md-5">
+<div class="row">
+<div class="col-md-12 telefon">
+<img src="tpl/krsystem/img/telefon.png" width="12" height="20" alt="">
+<div style="margin-top: -30px;margin-left: 20px"><a style="color:inherit" href="tel:+48600763712"><small>600 763 712</small></a><br>
+<a style="color:inherit" href="tel:+48126333345">12 633 33 45</a></div>
+<div class="row">
+<div class="col-6">
+<p>e-mail: <a href="mailto:biuro@krsystem.pl">biuro@krsystem.pl</a><br>
+gg: <a href="gg:9284987">9284987</a></p>
+</div>
+<div class="col-6">
+<p><a style="color:inherit" href="https://goo.gl/maps/AfKvuMf29FvqTcpM6">Ul. Karmelicka 20<br>
+31-128 Kraków</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-5">
+<div class="row">
+<div class="col-6">
+<table cellpadding="0" cellspacing="0">
+<tr>
+<td><img src="tpl/krsystem/img/zegar.png" width="21" height="21" alt=""></td>
+<td>PN-PT</td>
+<td>10:00 - 18:00</td>
+</tr>
+</table>
+</div>
+<div class="col-6">
+<a href="https://ewniosek.credit-agricole.pl/eWniosek/procedure.jsp?PARAM_TYPE=RAT&PARAM_PROFILE=PSP0860599"
+class="window"><img src="https://ewniosek.credit-agricole.pl/eWniosek/res/CA_grafika/raty_120x44_duckblue.png"
+alt="">
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="footer2" class="container" style="margin: 20px auto">
+<div class="row">
+<div class="col-md-5 stopka">
+<img src="tpl/krsystem/img/platnosc.png" width="323" height="89" alt="">
+<div> <b>Wszelkie prawa zastrzeżone 2020 &copy; KR System</b><br />
+Realizacja: <a title="Tworzenie stron www,  Projektowanie stron internetowych, CMS, Zarządzanie Treścią." target="_blank"
+href="https://www.magnis.pl">magnis.pl</a></div>
+</div>
+<div class="col-md-7">
+<img class="eu" src="tpl/krsystem/img/unia2.png" width="540" height="74" alt="">
+<div style="border-bottom: 1px solid #B9B9B9;border-top: 1px solid #B9B9B9;text-align: center;padding: 3px;margin: 5px 0;font-size: 12px">
+&#8222;Dotacje na innowacje &#8211; Inwestujemy w waszą przyszłość&#8221;
+</div>
+</div>
+</div>
+</div>
+<div id="facebook_div">
+<div class="fb_btn"><i class="fa fa-facebook"></i></div>
+<div class="fb_container">
+<div><div id="fb-root"></div>
+<script src="https://connect.facebook.net/pl_PL/all.js#xfbml=1"></script>
+<fb:like-box href="https://facebook.com/Kr-System-sklep-komputerowy-104190811384893/" width="295" show_faces="true" border_color="" stream="false" header="true"></fb:like-box>
+</div>
+</div>
+</div>
+<div id="cook">
+<div style="padding: 10px 0;margin: 0 auto;width: calc(100% - 30px);text-align: left;padding-right: 100px;position: relative;">Używamy
+cookies i podobnych technologii m.in. w celach: sprzedaży, reklamy, statystyk. Korzystanie z witryny bez zmiany
+ustawień Twojej przeglądarki oznacza, że będą one umieszczane w Twoim urządzeniu końcowym. Pamiętaj, że zawsze
+możesz zmienić te ustawienia. Szczegóły znajdziesz w <a href="polityka_cookies_polityka_prywatnosci.html"><u>Polityce
+Prywatności</u></a>.<div id="closecook" style="position: absolute;left: calc(100% - 80px);top: 10px;background: #434343;color:white;padding: 3px 10px;cursor:pointer"><b>ZAMKNIJ</b></div>
+</div>
+</div>
+<!-- JavaScript  -->
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.1/jquery-ui.min.js"></script>
+<script src="https://maps.google.com/maps/api/js?v=3&amp;key=AIzaSyDhwq94bZJVAIxPXsX1zZJy-4M-vcjO8Kw&amp;libraries=places"></script>
+<script src="tpl/krsystem/js/app.js?6464564"></script>
+<script type="text/javascript">
+		
+
+		function PoliczRate(koszyk) {
+			window.open(
+				'https://wniosek.eraty.pl/symulator/oblicz/numerSklepu/15705/typProduktu/0/wartoscTowarow/' +
+				koszyk, 'Policz_rate',
+				'width=680,height=500,directories=no,location=no,menubar=no,resizable=yes,scrollbars=yes,status=no,toolbar=no');
+		} 
+	</script>
+</body>
+</html>

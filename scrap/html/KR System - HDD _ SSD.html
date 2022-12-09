@@ -1,0 +1,2448 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1, user-scalable=no">
+<meta charset="utf-8">
+<title>KR System - HDD / SSD</title>
+<meta name="Keywords" content="HDD / SSD" />
+<meta name="Description" content="HDD / SSD" />
+<style>
+body {opacity:1;transition: opacity .5s ease-in-out;} body.fade-out{opacity:0;transition: opacity .5s ease-in-out;}
+</style>
+<link rel="stylesheet" href="tpl/krsystem/css/bootstrap.min.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">	
+<link href="tpl/krsystem/css/style.css?6456546" rel="stylesheet" type="text/css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<!-- Ikony -->
+<link rel="shortcut icon" href="favicon.ico">
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-3207883-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script type="text/javascript">
+function recordOutboundLink(link, category, action) {
+  try {
+    var pageTracker=_gat._getTracker("UA-3207883-1");
+    pageTracker._trackEvent(category, action);
+    setTimeout('document.location = "' + link.href + '"', 100)
+  }catch(err){}
+}
+</script>
+</head>
+<body class="fade-out">
+<div class="main-kategorie-feader" style="width: 100%;height: 100%;background: black;opacity: 0.30;position: fixed;z-index: 1;display: none;cursor: pointer;">
+</div>
+<div class="main-kategorie-all container" style="max-height:100vh; overflow-y: auto; left:50vw;transform: translateX(-50%);background: rgba(255,255,255,.9);padding: 0 20px;padding-bottom: 40px;position: fixed;z-index: 1;display: none;">
+<div style="padding: 20px;text-align: center;">
+<div style="text-align: right;padding: 20px 0;">
+<div style="cursor: pointer;display: inline-block;" class="main-kategorie-zamknij"><img src="tpl/krsystem/img/modal-zamknij.png"
+width="27" height="27" alt=""> Zamknij</div>
+</div>
+<h1>Wybierz kategorię</h1>
+<div class="row">
+<div class="col-6 col-sm-3 col-md-2" onclick="location='laptopy-katid-1.html#start'">
+<div class="mainkat mainkat-laptopy"> </div>
+<div>Laptopy</div>
+</div>
+<div class="col-6 col-sm-3 col-md-2" onclick="location='komputery_gotowe-katid-327.html#start'">
+<div class="mainkat mainkat-komputery"> </div>
+<div>Komputery</div>
+</div>
+<div class="col-6 col-sm-3 col-md-2" onclick="location='podzespoly__akcesoria-katid-33.html#start'">
+<div class="mainkat mainkat-podzespoly"> </div>
+<div>Podzespoły</div>
+</div>
+<div class="col-6 col-sm-3 col-md-2" onclick="location='sieci-katid-94.html#start'">
+<div class="mainkat mainkat-sieci"> </div>
+<div>Sieci</div>
+</div>
+<div class="col-6 col-sm-3 col-md-2" onclick="location='konsole__gsm__gps-katid-23.html#start'">
+<div class="mainkat mainkat-telefony"> </div>
+<div>Telefony/GPS</div>
+</div>
+<div class="col-6 col-sm-3 col-md-2" onclick="location='rtv-katid-595.html#start'">
+<div class="mainkat mainkat-rtv"> </div>
+<div>RTV</div>
+</div>
+<div class="col-6 col-sm-3 col-md-2" onclick="location='drukarki__plotery__skanery-katid-31.html#start'">
+<div class="mainkat mainkat-drukarki"> </div>
+<div>Drukarki</div>
+</div>
+<div class="col-6 col-sm-3 col-md-2" onclick="location='oprogramowanie-katid-89.html#start'">
+<div class="mainkat mainkat-oprogramowanie"> </div>
+<div>Oprogramowanie</div>
+</div>
+<div class="col-6 col-sm-3 col-md-2" onclick="location='monitory-katid-910.html#start'">
+<div class="mainkat mainkat-monitory"> </div>
+<div>Monitory</div>
+</div>
+<div class="col-6 col-sm-3 col-md-2" onclick="location='aparaty__kamery-katid-88.html#start'">
+<div class="mainkat mainkat-aparaty"> </div>
+<div>Aparaty i kamery</div>
+</div>
+<div class="col-6 col-sm-3 col-md-2" onclick="location='uslugi-katid-106.html#start'">
+<div class="mainkat mainkat-uslugi"> </div>
+<div>Usługi</div>
+</div>
+<div class="col-6 col-sm-3 col-md-2" onclick="location='agd-katid-803.html#start'">
+<div class="mainkat mainkat-agd"> </div>
+<div>AGD</div>
+</div>
+<div class="col-6 col-sm-3 col-md-2" onclick="location='tablety-katid-806.html#start'">
+<div class="mainkat mainkat-tablety"> </div>
+<div>Tablety</div>
+</div>
+<div class="col-6 col-sm-3 col-md-2" onclick="location='art_biurowe__drukarki__eksploatacja-katid-623.html#start'">
+<div class="mainkat mainkat-biuro"> </div>
+<div>Biuro</div>
+</div>
+</div>
+</div>
+</div>
+<div id="header">
+<div class="container">
+<div class="row main opacity">
+<div class="col-md-12">
+<div class="row align-items-center">
+<div class="col-6 col-sm-6 col-md-3 col-lg-2">
+<a class="logo" href="index.html"><img src="tpl/krsystem/img/logo.png" alt="KR System - sklep internetowy"></a>
+</div>
+<div class="col-6 d-sm-none align-self-stretch">
+<div style="background: #3FBDE6;height: 100%;text-align: center;display: flex; ">
+<button class="toggle-mainmenu d-inline-block d-sm-none" style="width:100%">
+<i class="fa fa-bars"></i>
+MENU
+</button>
+</div>
+</div>
+<div class="col-sm-6 col-md-5 col-lg-6">
+<form action="index.php#start" method="get">
+<input class="" placeholder="Wpisz czego szukasz" id="" name="szukaj" value="" type=""><select class="select"
+id="wyszikiwanie" name="kat" style="vertical-align: middle;">
+<option label="Wszystkie" value="0">Wszystkie</option>
+<option label="Projektory i akcesoria" value="126">Projektory i akcesoria</option>
+<option label="Aparaty fotograficzne" value="88">Aparaty fotograficzne</option>
+<option label="Apple" value="1547">Apple</option>
+<option label="Laptopy" value="1">Laptopy</option>
+<option label="Komputery gotowe" value="327">Komputery gotowe</option>
+<option label="Konsole / GSM / GPS" value="23">Konsole / GSM / GPS</option>
+<option label="Podzespoły / akcesoria" value="33">Podzespoły / akcesoria</option>
+<option label="Sieci" value="94">Sieci</option>
+<option label="Oprogramowanie" value="89">Oprogramowanie</option>
+<option label="Art. biurowe / Drukarki / Eksploatacja" value="623">Art. biurowe / Drukarki / Eksploatacja</option>
+<option label="Drony" value="1489">Drony</option>
+<option label="Monitory" value="910">Monitory</option>
+<option label="MSI" value="1669">MSI</option>
+<option label="Urządzenia fiskalne" value="1482">Urządzenia fiskalne</option>
+<option label="Usługi" value="106">Usługi</option>
+<option label="RTV" value="595">RTV</option>
+<option label="TABLETY" value="806">TABLETY</option>
+<option label="Sterylizatory" value="1199">Sterylizatory</option>
+<option label="Pozostałe" value="1391">Pozostałe</option>
+<option label="Nintendo" value="1652">Nintendo</option>
+<option label="Xiaomi" value="1716">Xiaomi</option>
+</select><button class="button"> <i class="fa fa-search"></i> </button>
+<input type="hidden" name="go" value="szukanie" />
+</form>
+</div>
+<div class="col-sm-12 col-md-4">
+<div class="koszyk">
+<div class="koszykshow" >
+<i class="fa fa-shopping-basket"></i>
+<span
+class="ilosc ">0</span>
+<div class="koszykcontent shadow">
+<div>
+<h2 class="brak">Brak produktów w koszyku</h2>
+<h2 style="display: none;">Zawartość koszyka</h2>
+<table class="koszykzawartosc" style="display: none;">
+<tr>
+<td><button onclick="location='index.php?go=koszyk'">Pokaż koszyk</button></td>
+<td class="razem"><span class="razemvar">0</span> <small>zł</small></td>
+</tr>
+</table>
+</div>
+</div>
+<div class="koszykcontentadd"></div>
+</div>
+<div class="user">
+<a href="index.php?go=loginin" /><b>Zaloguj się</b></a><br>
+<a href="index.php?go=signin">Zarejestruj się</a>
+</div>
+</div>
+</div>
+</div>			
+</div>
+</div>
+<div class="row navigation opacity">
+<button class="toggle-mainmenu d-none  d-sm-inline-block d-lg-none" style="margin-left: 15px">
+<i class="fa fa-bars"></i>
+MENU
+</button>
+<div id="mainmenu" class="col-lg-10 col-md-9 col-sm-8 text-center text-lg-left">
+<button class="toggle-mainmenu d-inline-block d-lg-none">
+<i class="fa fa-bars"></i>
+MENU
+</button>
+<ul class="text-left">
+<li class="selectable"><a href="laptopy-katid-1.html">Komputery</a>
+<div class="container">
+<div class="row shadow">
+<div class="col-lg-3">
+<h2><a href="http://www.krsystem.pl/laptopy-katid-1.html#his,szukaj=&go=search&kat=&grupa=1&kadid=1&szukaj=&dostepne=1&cena_z_1=&cena_z_2=&prodsort=&wyswietl=&page=&tryb=ajax&promocje=&pckonfig=&t=0.7345007618050264#start">LAPTOPY</a></h2>
+<ul>
+<li><a href="http://www.krsystem.pl/index.php?szukaj=&go=lapsearch&grupa=1&kadid=1&szukaj=&dostepne=1&cena_z_1=&cena_z_2=&c_var_1_w[]=10%60%60&c_var_1_w[]=11%60%60-12%60%60&prodsort=&wyswietl=&page=&tryb=&promocje=#start">10-12 cali - netbooki</a></li>
+<li><a href="http://www.krsystem.pl/index.php?szukaj=&go=lapsearch&grupa=1&kadid=1&szukaj=&dostepne=1&cena_z_1=&cena_z_2=&c_var_1_w[]=13%60%60-14%60%60&prodsort=&wyswietl=&page=&tryb=&promocje=#start">13-14  cali</a></li>
+<li><a href="http://www.krsystem.pl/index.php?szukaj=&go=lapsearch&grupa=1&kadid=1&szukaj=&dostepne=1&cena_z_1=&cena_z_2=&c_var_1_w[]=15%60%60-16%60%60&prodsort=&wyswietl=&page=&tryb=&promocje=#start">15-16 cali</a></li>
+<li><a href="http://www.krsystem.pl/index.php?szukaj=&go=lapsearch&grupa=1&kadid=1&szukaj=&dostepne=1&cena_z_1=&cena_z_2=&c_var_1_w[]=17%60%60-18%60%60&c_var_1_w[]=18%60%60-19%60%60&c_var_1_w[]=20%60%60-21%60%60&c_var_1_w[]=22%60%60-23%60%60&c_var_1_w[]=24%60%60-25%60%60&prodsort=&wyswietl=&page=&tryb=&promocje=#start">17 cali i większe</a></li>
+</ul>
+<h2><a href="http://www.krsystem.pl/index.php?szukaj=ultrabook&go=lapsearch&grupa=1&kadid=1&szukaj=ultrabook&dostepne=1&cena_z_1=&cena_z_2=&prodsort=&wyswietl=&page=1&tryb=&promocje=#start">ULTRABOOKI</a></h2>
+<ul>
+<li><a href="http://www.krsystem.pl/index.php?szukaj=ultrabook&go=lapsearch&grupa=1&kadid=1&szukaj=ultrabook&dostepne=1&cena_z_1=&cena_z_2=&c_var_1_w[]=11%60%60-12%60%60&prodsort=&wyswietl=&page=1&tryb=&promocje=#start">11-12 cali</a></li>
+<li><a href="http://www.krsystem.pl/index.php?szukaj=ultrabook&go=lapsearch&grupa=1&kadid=1&szukaj=ultrabook&dostepne=1&cena_z_1=&cena_z_2=&c_var_1_w[]=13%60%60-14%60%60&prodsort=&wyswietl=&page=1&tryb=&promocje=#start">13-14 cali</a></li>
+<li><a href="http://www.krsystem.pl/index.php?szukaj=ultrabook&go=lapsearch&grupa=1&kadid=1&szukaj=ultrabook&dostepne=1&cena_z_1=&cena_z_2=&c_var_1_w[]=15%60%60-16%60%60&prodsort=&wyswietl=&page=1&tryb=&promocje=#start">15-16 cali</a></li>
+</ul>
+</div>
+<div class="col-lg-3">
+<h2><a href="http://www.krsystem.pl/komputery_gotowe-katid-327.html#start#start">KOMPUTERY</a></h2>
+<ul>
+<li><a href="http://www.krsystem.pl/kr_system-katid-1403.html#start">Stacje Robocze</a></li>
+<li><a href="http://www.krsystem.pl/komputery_gotowe-katid-327.html#start#start">Stacjonarne</a></li>
+<li><a href="http://www.krsystem.pl/index.php?go=search&szukaj=oferta%3D22664%2C19594%2C22018%2C22016%2C22012%2C20534%2C220541%3DMini+PC&kat=0&dostepne=1&cena_z_1=&cena_z_2=&prodsort=&wyswietl=&page=&tryb=&promocje=#start">Mini PC</a></li>
+<li><a href="http://www.krsystem.pl/allinone-katid-1392.html#start#start">All in One</a></li>
+</ul>
+<h2>SERWERY</h2>
+<ul>
+<li><a href="http://www.krsystem.pl/dell-katid-1620.html#start#start">Serwery Dell</a></li>
+<li><a href="http://www.krsystem.pl/lenovo-katid-1406.html#start#start">Serwery Lenovo</a></li>
+</ul>
+</div>
+<div class="col-lg-3">
+<h2>TABLETY</h2>
+<ul>
+<li><a href="http://www.krsystem.pl/index.php?go=search&szukaj=&kat=&kadid=807&dostepne=1&cena_z_1=&cena_z_2=&prodsort=&wyswietl=&page=&tryb=&promocje=#start">iOS</a></li>
+<li><a href="http://www.krsystem.pl/index.php?go=search&szukaj=&kat=&kadid=806&dostepne=1&cena_z_1=&cena_z_2=&producent[]=1&producent[]=3&producent[]=10&producent[]=121&producent[]=49&producent[]=54&producent[]=6&producent[]=118&producent[]=154&producent[]=62&producent[]=15&producent[]=11&producent[]=151&prodsort=&wyswietl=&page=&tryb=&promocje=#start">Android</a></li>
+<li><a href="http://www.krsystem.pl/index.php?go=search&szukaj=windows+8&kat=806&kadid=806&dostepne=1&cena_z_1=&cena_z_2=&prodsort=&wyswietl=&page=1&tryb=&promocje=#start">Windows</a></li>
+<li><a href="http://www.krsystem.pl/index.php?go=search&szukaj=&kat=&kadid=889&dostepne=1&cena_z_1=&cena_z_2=&prodsort=&wyswietl=&page=&tryb=&promocje=#start">Czytniki ebooków</a></li>
+</ul>
+</div>
+<div class="col-lg-3 pull-right d-none d-lg-block" style="padding: 10px">
+<img src="tpl/krsystem/img/swiateczne-promocje.png" width="200" height="120" alt="">
+<br><br>
+<a href="konfigurator_pc.html"><img src="tpl/krsystem/img/konfigurator_pc.png" width="200" height="170" alt=""></a>
+</div>
+</div>
+</div>
+</li>
+<li class="selectable"><a href="komputery_gotowe-katid-327.html">Sprzęt Komputerowy</a>
+<div class="container">
+<div class="row shadow">
+<div class="col-lg-3">
+<h2>PODZESPOŁY</h2>
+<ul>
+<li><a href="http://www.krsystem.pl/procesory_amd-katid-35.html#start">Procesory AMD</a></li>
+<li><a href="http://www.krsystem.pl/procesory_intel-katid-34.html#start">Procesory INTEL</a></li>
+<li><a href="http://www.krsystem.pl/plyty_glowne_amd-katid-38.html#start">Płyty główne AMD</a></li>
+<li><a href="http://www.krsystem.pl/plyty_glowne_intel-katid-39.html#start">Płyty główne INTEL</a></li>
+<li><a href="http://www.krsystem.pl/karty_graficzne-katid-47.html#start">Karty graficzne</a></li>
+<li><a href="http://www.krsystem.pl/hdd__ssd-katid-44.html#start">HDD / SSD</a></li>
+<li><a href="http://www.krsystem.pl/pamieci-katid-37.html#start">Pamięci</a></li>
+<li><a href="http://www.krsystem.pl/zasilacze-katid-58.html#start">Zasilacze</a></li>
+<li><a href="http://www.krsystem.pl/napedy-katid-56.html#start">Napędy</a></li>
+<li><a href="http://www.krsystem.pl/zasilacze-katid-58.html#start">Zasilacze</a></li>
+<li><a href="http://www.krsystem.pl/obudowy-katid-57.html#start">Obudowy</a></li>
+<li><a href="http://www.krsystem.pl/podzespoly__akcesoria-katid-33.html#start">więcej</a></li>
+</ul>
+</div>
+<div class="col-lg-3">
+<h2>DRUKARKI</h2>
+<ul>
+<li><a href="http://www.krsystem.pl/atramentowe-katid-148.html#start">Atramentowe</a></li>
+<li><a href="http://www.krsystem.pl/laserowe-katid-149.html#start">Laserowe</a></li>
+<li><a href="http://www.krsystem.pl/urzadzenia_wielofunkcyjne-katid-321.html#start">Urządzenia wielofunkcyjne</a></li>
+<li><a href="http://www.krsystem.pl/skanery-katid-280.html#start">Skanery</a></li>
+</ul>
+<h2>Sieci</h2>
+<ul>
+<li><a href="http://www.krsystem.pl/routery_bezprzewodowe-katid-119.html#start">Routery bezprzewodowe</a></li>
+<li><a href="http://www.krsystem.pl/routery_przewodowe-katid-120.html#start">Routery przewodowe</a></li>
+<li><a href="http://www.krsystem.pl/acces_point-katid-121.html#start">Acces pointy</a></li>
+<li><a href="http://www.krsystem.pl/karty_sieciowe-katid-122.html#start">Karty sieciowe</a></li>
+<li><a href="http://www.krsystem.pl/sieci-katid-94.html#start">więcej</a></li>
+</ul>
+</div>
+<div class="col-lg-3">
+<h2><a href="http://www.krsystem.pl/index.php?szukaj=&go=search&grupa=2&kadid=910#start">MONITORY</a></h2>
+<ul>
+<li><a href="http://www.krsystem.pl/index.php?szukaj=&go=search&kat=910&grupa=2&kadid=910&szukaj=&dostepne=1&cena_z_1=&cena_z_2=&c_var_7_w[]=19%2C5+i+mniej&prodsort=&wyswietl=&page=1&tryb=&promocje=&pckonfig=&t=0.4062645973372856#start">19,5 cala i mniej</a></li>
+<li><a href="http://www.krsystem.pl/index.php?szukaj=&go=search&kat=910&grupa=2&kadid=910&szukaj=&dostepne=1&cena_z_1=&cena_z_2=&c_var_7_w[]=20-22%2C5&prodsort=&wyswietl=&page=1&tryb=&promocje=&pckonfig=&t=0.6547656511241585#start">20-22,5 cala</a></li>
+<li><a href="http://www.krsystem.pl/index.php?szukaj=&go=search&kat=910&grupa=2&kadid=910&szukaj=&dostepne=1&cena_z_1=&cena_z_2=&c_var_7_w[]=23-25%2C5&prodsort=&wyswietl=&page=1&tryb=&promocje=&pckonfig=&t=0.8973653042479931#start">23-25,5 cala</a></li>
+<li><a href="http://www.krsystem.pl/index.php?szukaj=&go=search&kat=910&grupa=2&kadid=910&szukaj=&dostepne=1&cena_z_1=&cena_z_2=&c_var_7_w[]=26-28&prodsort=&wyswietl=&page=1&tryb=&promocje=&pckonfig=&t=0.8811283750538276#start">26-28 cala</a></li>
+<li><a href="http://www.krsystem.pl/index.php?szukaj=&go=search&kat=910&grupa=2&kadid=910&szukaj=&dostepne=1&cena_z_1=&cena_z_2=&c_var_7_w[]=29-31%2C5&prodsort=&wyswietl=&page=1&tryb=&promocje=&pckonfig=&t=0.336988911118419#start">29-31,5 cala</a></li>
+<li><a href="http://www.krsystem.pl/index.php?szukaj=&go=search&kat=910&grupa=2&kadid=910&szukaj=&dostepne=1&cena_z_1=&cena_z_2=&c_var_7_w[]=32+i+wi%C4%99cej&prodsort=&wyswietl=&page=1&tryb=&promocje=&pckonfig=&t=0.8985672102356024#start">32 cala i więcej</a></li>
+<li><a href="http://www.krsystem.pl/kalibracja_oslony_i_akcesoria-katid-1629.html#start#start">Kalibracja, osłony i akcesoria</a></li>
+</ul>
+</div>
+<div class="col-lg-3 pull-right d-none d-lg-block" style="padding: 10px">
+<img src="tpl/krsystem/img/swiateczne-promocje.png" width="200" height="120" alt="">
+<br><br>
+<a href="konfigurator_pc.html"><img src="tpl/krsystem/img/konfigurator_pc.png" width="200" height="170" alt=""></a>
+</div>
+</div>
+</div>
+</li>
+<li class="selectable"><a href="oprogramowanie-katid-89.html">Oprogramowanie</a>
+<div class="container">
+<div class="row shadow">
+<div class="col-lg-3">
+<h2><a href="http://www.krsystem.pl/index.php?go=search&szukaj=&kat=&kadid=175&dostepne=1&cena_z_1=&cena_z_2=&prodsort=&wyswietl=&page=&tryb=&promocje=#start">Antywirusowe</a></h2>
+<h2><a href="http://www.krsystem.pl/index.php?go=search&szukaj=&kat=174&kadid=174&dostepne=1&cena_z_1=&cena_z_2=&prodsort=&wyswietl=&page=&tryb=&promocje=#start">Biurowe</a></h2>
+<h2><a href="http://www.krsystem.pl/index.php?go=search&szukaj=&kat=&kadid=179&dostepne=1&cena_z_1=&cena_z_2=&prodsort=&wyswietl=&page=&tryb=&promocje=#start">Mapy GPS</a></h2>
+<h2><a href="http://www.krsystem.pl/index.php?go=search&szukaj=&kat=&kadid=178&dostepne=1&cena_z_1=&cena_z_2=&prodsort=&wyswietl=&page=&tryb=&promocje=#start">Graficzne</a></h2>
+<h2><a href="http://www.krsystem.pl/index.php?go=search&szukaj=insert&kat=89&kadid=89&dostepne=1&cena_z_1=&cena_z_2=&prodsort=&wyswietl=&page=&tryb=&promocje=#start">Sprzedaż / księgowość</a></h2>
+<h2><a href="http://www.krsystem.pl/index.php?go=search&szukaj=&kat=&kadid=171&dostepne=1&cena_z_1=&cena_z_2=&prodsort=&wyswietl=&page=&tryb=&promocje=#start">Systemy Operacyjne</a></h2>
+</div>
+<div class="col-lg-3 pull-right d-none d-lg-block" style="padding: 10px">
+<img src="tpl/krsystem/img/swiateczne-promocje.png" width="200" height="120" alt="">
+<br><br>
+<a href="konfigurator_pc.html"><img src="tpl/krsystem/img/konfigurator_pc.png" width="200" height="170" alt=""></a>
+</div>
+</div>
+</div>
+</li>
+<li class="selectable"><a href="#">Apple</a>
+<div class="container">
+<div class="row shadow">
+<div class="col-lg-3">
+<h2><a href="http://www.krsystem.pl/laptopy_macbook-katid-1553.html#start#start">laptopy MacBook</a></h2>
+<ul>
+<li><a href="http://www.krsystem.pl/macbook-katid-1549.html#start#start">MacBook</a></li>
+<li><a href="http://www.krsystem.pl/macbook_air-katid-1550.html#start#start">MacBook Air</a></li>
+<li><a href="http://www.krsystem.pl/macbook_pro-katid-1551.html#start#start">MacBook Pro</a></li>
+</ul>
+<h2><a href="http://www.krsystem.pl/komputery_mac-katid-1572.html#start#start">komputery Mac</a></h2>
+<ul>
+<li><a href="http://www.krsystem.pl/imac-katid-1552.html#start#start">iMac</a></li>
+<li><a href="http://www.krsystem.pl/imac_pro-katid-1677.html#start#start">iMac Pro</a></li>
+<li><a href="http://www.krsystem.pl/mac_pro-katid-1557.html#start#start">Mac Pro</a></li>
+<li><a href="http://www.krsystem.pl/mac_mini-katid-1558.html#start#start">Mac mini</a></li>
+</ul>
+<h2><a href="http://www.krsystem.pl/tablety_ipad-katid-1554.html#start#start">tablety iPad</a></h2>
+<ul>
+<li><a href="http://www.krsystem.pl/ipad_pro-katid-1560.html#start#start">iPad Pro</a></li>
+<li><a href="http://www.krsystem.pl/ipad-katid-1650.html#start#start">iPad</a></li>
+<li><a href="http://www.krsystem.pl/ipad_mini_4-katid-1562.html#start#start">iPad mini 4</a></li>
+</ul>
+</div>
+<div class="col-lg-3">
+<h2><a href="http://www.krsystem.pl/smartfony_iphone-katid-1555.html#start#start">smartfony iPhone</a></h2>
+<ul>
+<li><a href="http://www.krsystem.pl/iphone_x-katid-1678.html#start#start">iPhone X, XR, XS, XS Max</a></li>
+<li><a href="http://www.krsystem.pl/iphone_8-katid-1679.html#start#start">iPhone 8</a></li>
+<li><a href="http://www.krsystem.pl/iphone_7-katid-1618.html#start#start">iPhone 7</a></li>
+<li><a href="http://www.krsystem.pl/iphone_6s-katid-1565.html#start#start">iPhone 6s</a></li>
+<li><a href="http://www.krsystem.pl/iphone_se-katid-1567.html#start#start">iPhone SE</a></li>
+</ul>
+<h2><a href="http://www.krsystem.pl/smartwatche_watch-katid-1569.html#start#start">smartwatche Watch</a></h2>
+<ul>
+<li><a href="http://www.krsystem.pl/apple_watch_series_3-katid-1680.html#start#start">Apple Watch Series 3</a></li>
+<li><a href="http://www.krsystem.pl/apple_watch_nike-katid-1681.html#start#start">Apple Watch Nike+</a></li>
+<li><a href="http://www.krsystem.pl/apple_watch_series_1-katid-1682.html#start#start">Apple Watch Series 1</a></li>
+</ul>
+<h2><a href="http://www.krsystem.pl/odtwarzacze_tv-katid-1570.html#start#start">odtwarzacze TV</a></h2>
+<ul>
+<li><a href="http://www.krsystem.pl/apple_tv_4k-katid-1683.html#start#start">Apple TV 4K</a></li>
+<li><a href="http://www.krsystem.pl/apple_tv-katid-1684.html#start#start">Apple TV</a></li>
+</ul>
+</div>
+<div class="col-lg-3">
+<h2><a href="http://www.krsystem.pl/akcesoria_do_produktow_apple-katid-1556.html#start#start">akcesoria do produktów Apple</a></h2>
+<ul>
+<li><a href="http://www.krsystem.pl/laptopy_macbook-katid-1571.html#start#start">laptopy MacBook</a></li>
+<li><a href="http://www.krsystem.pl/komputery_mac-katid-1685.html#start#start">komputery Mac</a></li>
+<li><a href="http://www.krsystem.pl/tablety_ipad-katid-1686.html#start#start">tablety iPad</a></li>
+<li><a href="http://www.krsystem.pl/smartfony_iphone-katid-1687.html#start#start">smartfony iPhone</a></li>
+<li><a href="http://www.krsystem.pl/smartwatche_watch-katid-1688.html#start#start">smartwatche Watch</a></li>
+<li><a href="http://www.krsystem.pl/odtwarzacze_tv-katid-1689.html#start#start">odtwarzacze TV</a></li>
+</ul>
+</div>
+<div class="col-lg-3 pull-right d-none d-lg-block" style="padding: 10px">
+<img src="tpl/krsystem/img/swiateczne-promocje.png" width="200" height="120" alt="">
+<br><br>
+<a href="konfigurator_pc.html"><img src="tpl/krsystem/img/konfigurator_pc.png" width="200" height="170" alt=""></a>
+</div>
+</div>
+</div>
+</li>
+<li><a href="uslugi-katid-106.html">Usługi</a></li>
+<li class="selectable"><a href="uslugi-katid-1482.html">KASY FISKALNE</a>
+<div class="container">
+<div class="row shadow">
+<div class="col-lg-3">
+<h2><a href="http://www.krsystem.pl/kasy_fiskalne-katid-1573.html#start">Kasy fiskalne</a></h2>
+<ul>
+<li><a href="http://www.krsystem.pl/aclas-katid-1587.html#start">Aclas</a></li>
+<li><a href="http://www.krsystem.pl/elcom-katid-1630.html#start#start">Elcom</a></li>
+<li><a href="http://www.krsystem.pl/elzab-katid-1588.html#start">Elzab</a></li>
+<li><a href="http://www.krsystem.pl/farex-katid-1589.html#start">Farex</a></li>
+<li><a href="http://www.krsystem.pl/posnet-katid-1590.html#start">Posnet</a></li>
+</ul>
+<h2><a href="http://www.krsystem.pl/drukarki_fiskalne-katid-1574.html#start">Drukarki fiskalne</a></h2>
+<ul>
+<li><a href="http://www.krsystem.pl/elzab-katid-1584.html#start">Elzab</a></li>
+<li><a href="http://www.krsystem.pl/farex-katid-1585.html#start">Farex</a></li>
+<li><a href="http://www.krsystem.pl/posnet-katid-1586.html#start">Posnet</a></li>
+</ul>
+<h2><a href="http://www.krsystem.pl/drukarki_etykiet-katid-1601.html#start">Drukarki etykiet</a></h2>
+<ul>
+<li><a href="http://www.krsystem.pl/dymo-katid-1603.html#start#start">Dymo</a></li>
+<li><a href="http://www.krsystem.pl/zebra-katid-1604.html#start#start">Zebra</a></li>
+<li><a href="http://www.krsystem.pl/godex-katid-1617.html#start#start">Godex</a></li>
+</ul>
+</div>
+<div class="col-lg-3">
+<h2><a href="http://www.krsystem.pl/czytniki_kodow-katid-1576.html#start">Czytniki kodów</a></h2>
+<ul>
+<li><a href="http://www.krsystem.pl/aclas-katid-1596.html#start">Aclas</a></li>
+<li><a href="http://www.krsystem.pl/datalogic-katid-1597.html#start">Datalogic</a></li>
+<li><a href="http://www.krsystem.pl/motorola-katid-1598.html#start">Motorola</a></li>
+<li><a href="http://www.krsystem.pl/newland-katid-1612.html#start#start">Newland</a></li>
+<li><a href="http://www.krsystem.pl/zebex-katid-1605.html#start#start">Zebex</a></li>
+<li><a href="http://www.krsystem.pl/zebex-katid-1627.html#start#start">Symbol</a></li>
+</ul>
+<h2><a href="http://www.krsystem.pl/wagi-katid-1577.html#start">Wagi</a></h2>
+<ul>
+<li><a href="http://www.krsystem.pl/aclas-katid-1600.html#start">Aclas</a></li>
+<li><a href="##start">Elzab</a></li>
+<li><a href="##start">Posnet</a></li>
+</ul>
+<h2><a href="http://www.krsystem.pl/szuflady-katid-1575.html#start">Szuflady</a></h2>
+<ul>
+<li><a href="http://www.krsystem.pl/aclas-katid-1592.html#start">Aclas</a></li>
+<li><a href="http://www.krsystem.pl/elzab-katid-1591.html#start">Elzab</a></li>
+<li><a href="http://www.krsystem.pl/farex-katid-1593.html#start">Farex</a></li>
+<li><a href="http://www.krsystem.pl/posnet-katid-1594.html#start">Posnet</a></li>
+</ul>
+</div>
+<div class="col-md-6 pull-right d-none d-lg-block kasy-fiskalne">
+<div>
+<h3>Najtańsze kasy fiskalne oraz&nbsp;drukarki fiskalne</h3>
+<ul>
+<li>Pomagamy w uzyskaniu zwrotu z Urzędu Skarbowego.</li>
+<li>Fiskalizacja i szkolenie gratis.</li>
+<li>Dostawa do klienta gratis.</li>
+</ul>
+<p>Masz wątpliwości? Zadzwoń:</p>
+<h3 class="likeh3">
+<img width="12" height="20" alt="" src="tpl/krsystem/img/telefon.png">
+12 633 33 45
+</h3>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li><a href="kontakt.html">Kontakt</a></li>
+</ul>
+</div>
+<div class="col-lg-2 col-md-3 col-sm-4 telefon">
+<a href="tel:+48126333345">
+<img src="tpl/krsystem/img/telefon.png" width="12" height="20" alt="">
+12 633 33 45</a>
+</div>
+</div>
+</div> <!-- /container -->
+</div>
+<div class="container opacity">
+<div class="row">
+<div class="col-md-12 mybreadcrumb d-none d-md-block">
+<ul class="span12"><li class="home"><a href="index.html">&nbsp;</a></li><li><a href="podzespoly__akcesoria-katid-33.html#start">Podzespoły / akcesoria</a></li><li class="last">HDD / SSD</li></ul>
+</div>
+</div>
+</div>
+<div class="container produkt-list">
+<div class="row">
+<div class="col-lg-3 sidebar">
+<div class="naglowek " id="naglowek-size">
+<h1>HDD / SSD</h1>
+</div>
+<div class="naglowek " style="margin: 0px -15px">
+<div class="pointer filtry-switch">
+<i class="fa fa-filter" aria-hidden="true"></i>
+<span class="filtry-switch-item show">Pokaż więcej filtrów</span>
+<span class="filtry-switch-item">Ukryj filtry</span>
+</div>
+</div>
+<div class="filtry filtry-res">
+<form action="index.php" id="katwyszukiwanie" method="post" enctype="multipart/form-data">
+<div id="prodsearch"><input type="hidden" name="go" value="search"><input type="hidden" id="ajaxpager" value="1"><input type="hidden" name="szukaj" value=""><input type="hidden" name="kat" value="44"><input type="hidden" name="kadid" value="44" /><h2>Zakres cenowy</h2>
+<div class="">
+<input style="width: 95%;display: none;"  type="text" class="span2" value="" data-slider-min="0" data-slider-max="5756" data-slider-step="10" data-slider-value="[0,5756]" data-slider-tooltip="hide" id="sl1" >
+<div>
+<div class="sl_left"  style="width: 100px;float: left;"><span >0</span> zł</div>
+<div class="sl_right" style="width: 100px;float: right;text-align: right;"><span >5756</span> zł</div>
+</div>
+</div>
+<div  style="clear: both;">
+<input id="dostepne" name="dostepne"   value="1"  class="css-checkbox"   type="checkbox"><label class="css-label"  for="dostepne">Tylko dostępne</label>
+</div>
+<div >
+<input id="hity" name="hity"   value="1"  class="css-checkhit"   type="checkbox"><label class="css-labelhit"  for="hity" style="color: #FA412F">Tylko HIT</label>
+</div><input type="hidden" name="cena_z_1" 6 value="" /> 
+<input type="hidden" name="cena_z_2" 6 value="" /> 
+<h2>Producent:</h2><div class="filter_element"><div class="scrolable"><div class="filter_element_all">&#10003; Wszystkie</div><div class="filter_element_zero">&#935; Wyczyść</div><div ><input type="checkbox"  name="producent[]" value="132" class="css-checkbox"  id="wlproducent132"  /> 
+<label class="css-label" name="producent_lbl_132" for="wlproducent132">ADATA</label></div><div ><input type="checkbox"  name="producent[]" value="363" class="css-checkbox"  id="wlproducent363"  /> 
+<label class="css-label" name="producent_lbl_363" for="wlproducent363">APACER</label></div><div ><input type="checkbox"  name="producent[]" value="238" class="css-checkbox"  id="wlproducent238"  /> 
+<label class="css-label" name="producent_lbl_238" for="wlproducent238">be quiet!</label></div><div ><input type="checkbox"  name="producent[]" value="235" class="css-checkbox"  id="wlproducent235"  /> 
+<label class="css-label" name="producent_lbl_235" for="wlproducent235">Corsair</label></div><div ><input type="checkbox"  name="producent[]" value="236" class="css-checkbox"  id="wlproducent236"  /> 
+<label class="css-label" name="producent_lbl_236" for="wlproducent236">Crucial</label></div><div ><input type="checkbox"  name="producent[]" value="241" class="css-checkbox"  id="wlproducent241"  /> 
+<label class="css-label" name="producent_lbl_241" for="wlproducent241">Gembird</label></div><div ><input type="checkbox"  name="producent[]" value="21" class="css-checkbox"  id="wlproducent21"  /> 
+<label class="css-label" name="producent_lbl_21" for="wlproducent21">Gigabyte</label></div><div ><input type="checkbox"  name="producent[]" value="122" class="css-checkbox"  id="wlproducent122"  /> 
+<label class="css-label" name="producent_lbl_122" for="wlproducent122">GoodRam</label></div><div ><input type="checkbox"  name="producent[]" value="5" class="css-checkbox"  id="wlproducent5"  /> 
+<label class="css-label" name="producent_lbl_5" for="wlproducent5">HP</label></div><div ><input type="checkbox"  name="producent[]" value="237" class="css-checkbox"  id="wlproducent237"  /> 
+<label class="css-label" name="producent_lbl_237" for="wlproducent237">Integral</label></div><div ><input type="checkbox"  name="producent[]" value="18" class="css-checkbox"  id="wlproducent18"  /> 
+<label class="css-label" name="producent_lbl_18" for="wlproducent18">Intel</label></div><div ><input type="checkbox"  name="producent[]" value="20" class="css-checkbox"  id="wlproducent20"  /> 
+<label class="css-label" name="producent_lbl_20" for="wlproducent20">Kingston</label></div><div ><input type="checkbox"  name="producent[]" value="60" class="css-checkbox"  id="wlproducent60"  /> 
+<label class="css-label" name="producent_lbl_60" for="wlproducent60">Kingston</label></div><div ><input type="checkbox"  name="producent[]" value="368" class="css-checkbox"  id="wlproducent368"  /> 
+<label class="css-label" name="producent_lbl_368" for="wlproducent368">Kioxia</label></div><div ><input type="checkbox"  name="producent[]" value="367" class="css-checkbox"  id="wlproducent367"  /> 
+<label class="css-label" name="producent_lbl_367" for="wlproducent367">Lexar</label></div><div ><input type="checkbox"  name="producent[]" value="13" class="css-checkbox"  id="wlproducent13"  /> 
+<label class="css-label" name="producent_lbl_13" for="wlproducent13">MSI</label></div><div ><input type="checkbox"  name="producent[]" value="126" class="css-checkbox"  id="wlproducent126"  /> 
+<label class="css-label" name="producent_lbl_126" for="wlproducent126">Patriot Memory</label></div><div ><input type="checkbox"  name="producent[]" value="227" class="css-checkbox"  id="wlproducent227"  /> 
+<label class="css-label" name="producent_lbl_227" for="wlproducent227">Plextor</label></div><div ><input type="checkbox"  name="producent[]" value="181" class="css-checkbox"  id="wlproducent181"  /> 
+<label class="css-label" name="producent_lbl_181" for="wlproducent181">PNY</label></div><div ><input type="checkbox"  name="producent[]" value="15" class="css-checkbox"  id="wlproducent15"  /> 
+<label class="css-label" name="producent_lbl_15" for="wlproducent15">Samsung</label></div><div ><input type="checkbox"  name="producent[]" value="130" class="css-checkbox"  id="wlproducent130"  /> 
+<label class="css-label" name="producent_lbl_130" for="wlproducent130">SanDisk</label></div><div ><input type="checkbox"  name="producent[]" value="23" class="css-checkbox"  id="wlproducent23"  /> 
+<label class="css-label" name="producent_lbl_23" for="wlproducent23">Seagate</label></div><div ><input type="checkbox"  name="producent[]" value="366" class="css-checkbox"  id="wlproducent366"  /> 
+<label class="css-label" name="producent_lbl_366" for="wlproducent366">Silicon Power</label></div><div ><input type="checkbox"  name="producent[]" value="337" class="css-checkbox"  id="wlproducent337"  /> 
+<label class="css-label" name="producent_lbl_337" for="wlproducent337">Synology</label></div><div ><input type="checkbox"  name="producent[]" value="364" class="css-checkbox"  id="wlproducent364"  /> 
+<label class="css-label" name="producent_lbl_364" for="wlproducent364">TeamGroup</label></div><div ><input type="checkbox"  name="producent[]" value="2" class="css-checkbox"  id="wlproducent2"  /> 
+<label class="css-label" name="producent_lbl_2" for="wlproducent2">Toshiba</label></div><div ><input type="checkbox"  name="producent[]" value="131" class="css-checkbox"  id="wlproducent131"  /> 
+<label class="css-label" name="producent_lbl_131" for="wlproducent131">Transcend</label></div><div ><input type="checkbox"  name="producent[]" value="228" class="css-checkbox"  id="wlproducent228"  /> 
+<label class="css-label" name="producent_lbl_228" for="wlproducent228">WACOM</label></div><div ><input type="checkbox"  name="producent[]" value="82" class="css-checkbox"  id="wlproducent82"  /> 
+<label class="css-label" name="producent_lbl_82" for="wlproducent82">Western Digital</label></div></div></div></div>
+<input type="hidden" name="prodsort" id="prodsort">
+<input type="hidden" name="wyswietl" id="wyswietlilosc">
+<input type="hidden" name="page" id="searchpage" value="">
+<input type="hidden" name="tryb" id="searchtryb">
+<input type="hidden" name="promocje" id="promocje" value="">
+<input type="hidden" name="pckonfig" id="pckonfig" value="">
+<input type="hidden" name="t" id="t" value="1669040086">
+</form>
+</div>
+</div>
+<div class="col-lg-9 main">
+<div class="naglowek podkategorie">
+<ul>
+</ul>
+<ul>
+<li><a href="hitachi-katid-1193.html#start">Hitachi</a></li>
+<li><a href="hybrydowe-katid-1191.html#start">HYBRYDOWE</a></li>
+<li><a href="seagate-katid-45.html#start">Seagate</a></li>
+<li><a href="ssd-katid-370.html#start">SSD</a></li>
+<li><a href="toshiba-katid-997.html#start">Toshiba</a></li>
+<li><a href="western_digital-katid-160.html#start">Western Digital</a></li>
+</ul>
+</div>
+<div id="prodlist"> 
+<div class="row sortbox">
+<div class="col-md-4">
+<span>Sortuj:</span>
+<select name="sortowanie"    id="sortowanie"  size="1"> 
+<option  value="cenaros">Cena rosnąco </option> 
+<option  selected="selected"  value="cenamal">Cena malejąco </option> 
+<option  value="promocje">Promocje </option> 
+</select>
+</div>
+<div class="col-md-4">
+<span>Pokaż:</span>
+<span id="wyswietl"><a class="" rel="10" href="index.php?go=iloschanege&var=10">10</a>
+<a rel="50" class="" href="index.php?go=iloschanege&var=50">50</a>
+<a rel="100" class="selected" href="index.php?go=iloschanege&var=100">100</a></span>
+</div>
+<div class="col-md-4 pull-right cmspager">
+<ul><li class="prev"><a  rel="" href="hdd__ssd-katid-44,.html">&nbsp;</a></li><li class="ashow"><span>1</span></li><li class="ashow"><a  rel="2" href="hdd__ssd-katid-44,2.html">2</a></li><li class="ashow"><a  rel="3" href="hdd__ssd-katid-44,3.html">3</a></li><li><a  rel="4" href="hdd__ssd-katid-44,4.html">4</a></li><li><a  rel="5" href="hdd__ssd-katid-44,5.html">5</a></li><li><a  rel="6" href="hdd__ssd-katid-44,6.html">6</a></li><li class="next"><a  rel="2" href="hdd__ssd-katid-44,2.html">&nbsp;</a></li></ul>					</div>
+</div>
+<div class=" product-horizontal" style="padding: 0">
+<div style="clear:both;display: flex" class="product-med align-items-center row brakproduktu">
+<div class="col-md-2">
+<div title="Intel Optane SSD 905P Series 960GB, 1/2 Height PCIe x4, 20nm, 3D XPoint" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_054748/C1769344.jpg&amp;w=200');">
+<a href="intel_optane_ssd_905p_series_960gb_12_height_pcie_x4_20nm_3d_x-item-54748.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Intel Optane SSD 905P Series 960GB, 1/2 Height PCIe x4, 20nm, 3D XPoint</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+5 745,<small>92 zł</small>
+<div class="prodniedostepny">Chwilowo niedostępny</div>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="KINGSTON 7.68TB DC500R 2.5inch SATA3 SSD Enterprise Read-Centric" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_068580/68580_sedc500r7680g.jpg&amp;w=200');">
+<a href="kingston_7.68tb_dc500r_2.5inch_sata3_ssd_enterprise_readcentri-item-68580.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">KINGSTON 7.68TB DC500R 2.5inch SATA3 SSD Enterprise Read-Centric</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="kingston_7.68tb_dc500r_2.5inch_sata3_ssd_enterprise_readcentri-item-68580.html" >
+4 757,<small>26 zł</small></a>
+<button rel="68580" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="KINGSTON 7.68TB DC450R 2.5inch SATA3 SSD Entry Level Enterprise/Server" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_068579/68579_sedc450r7680g.jpg&amp;w=200');">
+<a href="kingston_7.68tb_dc450r_2.5inch_sata3_ssd_entry_level_enterpris-item-68579.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">KINGSTON 7.68TB DC450R 2.5inch SATA3 SSD Entry Level Enterprise/Server</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="kingston_7.68tb_dc450r_2.5inch_sata3_ssd_entry_level_enterpris-item-68579.html" >
+4 063,<small>51 zł</small></a>
+<button rel="68579" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="Samsung SSD 870QVO MZ-77Q8T0BW 8TB " class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_065164/65164.jpg&amp;w=200');">
+<a href="samsung_ssd_870qvo_mz77q8t0bw_8tb-item-65164.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Samsung SSD 870QVO MZ-77Q8T0BW 8TB </h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="samsung_ssd_870qvo_mz77q8t0bw_8tb-item-65164.html" >
+3 582,<small>45 zł</small></a>
+<button rel="65164" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="Synology HDD SATA 16TB HAT5300-16T 16TB SATA 7,2k 3,5&#039; 512e " class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_066718/66718.jpg&amp;w=200');">
+<a href="synology_hdd_sata_16tb_hat530016t_16tb_sata_72k_35_512e-item-66718.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Synology HDD SATA 16TB HAT5300-16T 16TB SATA 7,2k 3,5&#039; 512e </h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="synology_hdd_sata_16tb_hat530016t_16tb_sata_72k_35_512e-item-66718.html" >
+3 176,<small>24 zł</small></a>
+<button rel="66718" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="CORSAIR SSD MP600 PRO XT 4TB NVMe PCIe M.2" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_068028/68028_cssdf4000gbmp600pxt.jpg&amp;w=200');">
+<a href="corsair_ssd_mp600_pro_xt_4tb_nvme_pcie_m.2-item-68028.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">CORSAIR SSD MP600 PRO XT 4TB NVMe PCIe M.2</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="corsair_ssd_mp600_pro_xt_4tb_nvme_pcie_m.2-item-68028.html" >
+3 127,<small>29 zł</small></a>
+<button rel="68028" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="Kingston SSD KC3000 4096GB PCIe 4.0 NVMe M.2" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_068030/68030.jpg&amp;w=200');">
+<a href="kingston_ssd_kc3000_4096gb_pcie_4.0_nvme_m.2-item-68030.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Kingston SSD KC3000 4096GB PCIe 4.0 NVMe M.2</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="kingston_ssd_kc3000_4096gb_pcie_4.0_nvme_m.2-item-68030.html" >
+3 099,<small>42 zł</small></a>
+<button rel="68030" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="KINGSTON SEDC500M/3840G Kingston Data Center DC500M SSD SATA3 2,5 3840GB, R/W 555MBs/520MBs" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_062876/62876_sedc500m3840g.jpg&amp;w=200');">
+<a href="kingston_sedc500m3840g_kingston_data_center_dc500m_ssd_sata3_2-item-62876.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">KINGSTON SEDC500M/3840G Kingston Data Center DC500M SSD SATA3 2,5 3840GB, R/W 555MBs/520MBs</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="kingston_sedc500m3840g_kingston_data_center_dc500m_ssd_sata3_2-item-62876.html" >
+3 029,<small>65 zł</small></a>
+<button rel="62876" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row brakproduktu">
+<div class="col-md-2">
+<div title="Corsair 4TB MP600 CORE 4950/3950 M.2 NVMe PCIe Gen. 4 x4 " class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_068027/68027.jpg&amp;w=200');">
+<a href="corsair_4tb_mp600_core_49503950_m.2_nvme_pcie_gen._4_x4-item-68027.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Corsair 4TB MP600 CORE 4950/3950 M.2 NVMe PCIe Gen. 4 x4 </h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+3 016,<small>69 zł</small>
+<div class="prodniedostepny">Chwilowo niedostępny</div>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row brakproduktu">
+<div class="col-md-2">
+<div title="Seagate Firecuda 530 4TB PCIe M.2" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_068893/68893.jpg&amp;w=200');">
+<a href="seagate_firecuda_530_4tb_pcie_m.2-item-68893.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Seagate Firecuda 530 4TB PCIe M.2</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+2 933,<small>62 zł</small>
+<div class="prodniedostepny">Chwilowo niedostępny</div>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="Kingston SSD FURY Renegade 4000G PCIe 4.0 NVMe M.2" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_068031/68031.jpg&amp;w=200');">
+<a href="kingston_ssd_fury_renegade_4000g_pcie_4.0_nvme_m.2-item-68031.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Kingston SSD FURY Renegade 4000G PCIe 4.0 NVMe M.2</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="kingston_ssd_fury_renegade_4000g_pcie_4.0_nvme_m.2-item-68031.html" >
+2 919,<small>12 zł</small></a>
+<button rel="68031" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="CORSAIR SSD MP600 PRO XT 4TB NVMe PCIe M.2 Hydro X Edition" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_068029/68029_cssdf4000gbmp600phxt.jpg&amp;w=200');">
+<a href="corsair_ssd_mp600_pro_xt_4tb_nvme_pcie_m.2_hydro_x_edition-item-68029.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">CORSAIR SSD MP600 PRO XT 4TB NVMe PCIe M.2 Hydro X Edition</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="corsair_ssd_mp600_pro_xt_4tb_nvme_pcie_m.2_hydro_x_edition-item-68029.html" >
+2 813,<small>06 zł</small></a>
+<button rel="68029" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="Dysk Western Digital Ultrastar DC HC510 He12 12TB 3,5&quot; 256MB SAS 512e SE P3 DC HUH721212AL5204" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_064529/HDHGDSSE1230.jpg&amp;w=200');">
+<a href="dysk_western_digital_ultrastar_dc_hc510_he12_12tb_35_256mb_sas-item-64529.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Dysk Western Digital Ultrastar DC HC510 He12 12TB 3,5&quot; 256MB SAS 512e SE P3 DC HUH721212AL5204</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="dysk_western_digital_ultrastar_dc_hc510_he12_12tb_35_256mb_sas-item-64529.html" >
+2 769,<small>48 zł</small></a>
+<button rel="64529" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row brakproduktu">
+<div class="col-md-2">
+<div title="Intel Optane SSD 900P Series 480GB, 1/2 Height PCIe x4, 3D Xpoint" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_054386/C1769278.jpg&amp;w=200');">
+<a href="intel_optane_ssd_900p_series_480gb_12_height_pcie_x4_3d_xpoint-item-54386.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Intel Optane SSD 900P Series 480GB, 1/2 Height PCIe x4, 3D Xpoint</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+2 673,<small>96 zł</small>
+<div class="prodniedostepny">Chwilowo niedostępny</div>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="Silicon Power SSD XPOWER XS70 4TB 7300/6800MB/s M.2 PCIe 4x4 NVMe 1.4" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_067765/67765.jpg&amp;w=200');">
+<a href="silicon_power_ssd_xpower_xs70_4tb_73006800mbs_m.2_pcie_4x4_nvm-item-67765.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Silicon Power SSD XPOWER XS70 4TB 7300/6800MB/s M.2 PCIe 4x4 NVMe 1.4</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="silicon_power_ssd_xpower_xs70_4tb_73006800mbs_m.2_pcie_4x4_nvm-item-67765.html" >
+2 601,<small>92 zł</small></a>
+<button rel="67765" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="KINGSTON SEDC500R/3840G Kingston Data Center DC500R SSD SATA3 2,5 3840GB, R/W 555MBs/520MBs" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_068578/68578_sedc500r3840g.jpg&amp;w=200');">
+<a href="kingston_sedc500r3840g_kingston_data_center_dc500r_ssd_sata3_2-item-68578.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">KINGSTON SEDC500R/3840G Kingston Data Center DC500R SSD SATA3 2,5 3840GB, R/W 555MBs/520MBs</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="kingston_sedc500r3840g_kingston_data_center_dc500r_ssd_sata3_2-item-68578.html" >
+2 563,<small>00 zł</small></a>
+<button rel="68578" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="GOODRAM SSD IRDM PRO 4TB M.2 PCIe 4x4 NVMe 2280 7000/6850" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_067764/67764.jpg&amp;w=200');">
+<a href="goodram_ssd_irdm_pro_4tb_m.2_pcie_4x4_nvme_2280_70006850-item-67764.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">GOODRAM SSD IRDM PRO 4TB M.2 PCIe 4x4 NVMe 2280 7000/6850</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="goodram_ssd_irdm_pro_4tb_m.2_pcie_4x4_nvme_2280_70006850-item-67764.html" >
+2 509,<small>32 zł</small></a>
+<button rel="67764" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="WD WD181KFGX 3,5&quot; 18TB WD Red Pro? SATA III - NAS" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_065379/HDWDDUAE1810.jpg&amp;w=200');">
+<a href="wd_wd181kfgx_35_18tb_wd_red_pro_sata_iii__nas-item-65379.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">WD WD181KFGX 3,5&quot; 18TB WD Red Pro? SATA III - NAS</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="wd_wd181kfgx_35_18tb_wd_red_pro_sata_iii__nas-item-65379.html" >
+2 420,<small>64 zł</small></a>
+<button rel="65379" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="WD WD181KRYZ WD Gold Enterprise 3.5&quot; 18TB 7200 512MB SATA 6Gb/s" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_067941/67941_wd181kryz.jpg&amp;w=200');">
+<a href="wd_wd181kryz_wd_gold_enterprise_3.5_18tb_7200_512mb_sata_6gbs-item-67941.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">WD WD181KRYZ WD Gold Enterprise 3.5&quot; 18TB 7200 512MB SATA 6Gb/s</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="wd_wd181kryz_wd_gold_enterprise_3.5_18tb_7200_512mb_sata_6gbs-item-67941.html" >
+2 348,<small>39 zł</small></a>
+<button rel="67941" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="WD Red SN700 4TB M.2 2280 NVMe (3400/3100 MB/s) WDS400T1R0C" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_066782/PAWDSS640000.jpg&amp;w=200');">
+<a href="wd_red_sn700_4tb_m.2_2280_nvme_34003100_mbs_wds400t1r0c-item-66782.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">WD Red SN700 4TB M.2 2280 NVMe (3400/3100 MB/s) WDS400T1R0C</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="wd_red_sn700_4tb_m.2_2280_nvme_34003100_mbs_wds400t1r0c-item-66782.html" >
+2 340,<small>69 zł</small></a>
+<button rel="66782" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="Seagate IronWolf Pro 18TB SATA ST18000NE000 " class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_067906/67906.jpg&amp;w=200');">
+<a href="seagate_ironwolf_pro_18tb_sata_st18000ne000-item-67906.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Seagate IronWolf Pro 18TB SATA ST18000NE000 </h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="seagate_ironwolf_pro_18tb_sata_st18000ne000-item-67906.html" >
+2 311,<small>54 zł</small></a>
+<button rel="67906" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="Gigabyte AORUS RAID SSD 2TB PCI-Express 3.0x8 (6300/6000 MB/s) 3D TLC" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_066784/PAGBSS820010.jpg&amp;w=200');">
+<a href="gigabyte_aorus_raid_ssd_2tb_pciexpress_3.0x8_63006000_mbs_3d_t-item-66784.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Gigabyte AORUS RAID SSD 2TB PCI-Express 3.0x8 (6300/6000 MB/s) 3D TLC</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="gigabyte_aorus_raid_ssd_2tb_pciexpress_3.0x8_63006000_mbs_3d_t-item-66784.html" >
+2 276,<small>91 zł</small></a>
+<button rel="66784" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row brakproduktu">
+<div class="col-md-2">
+<div title="Dysk twardy Western Digital Ultrastar DC HC530, 3.5&#039;, 14TB, SATA/600, 7200RPM" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_058531/C2200570.jpg&amp;w=200');">
+<a href="dysk_twardy_western_digital_ultrastar_dc_hc530_3.5_14tb_sata60-item-58531.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Dysk twardy Western Digital Ultrastar DC HC530, 3.5&#039;, 14TB, SATA/600, 7200RPM</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+2 249,<small>37 zł</small>
+<div class="prodniedostepny">Chwilowo niedostępny</div>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="Dysk SSD WD Red SA500 4TB 2,5&quot; (560/530 MB/s) WDS400T1R0A" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_064249/PAWDSS040010.jpg&amp;w=200');">
+<a href="dysk_ssd_wd_red_sa500_4tb_25_560530_mbs_wds400t1r0a-item-64249.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Dysk SSD WD Red SA500 4TB 2,5&quot; (560/530 MB/s) WDS400T1R0A</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="dysk_ssd_wd_red_sa500_4tb_25_560530_mbs_wds400t1r0a-item-64249.html" >
+2 211,<small>54 zł</small></a>
+<button rel="64249" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="Samsung SSD 870EVO MZ-77E4T0B/EU 4TB " class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_067772/67772.jpg&amp;w=200');">
+<a href="samsung_ssd_870evo_mz77e4t0beu_4tb-item-67772.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Samsung SSD 870EVO MZ-77E4T0B/EU 4TB </h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="samsung_ssd_870evo_mz77e4t0beu_4tb-item-67772.html" >
+2 191,<small>38 zł</small></a>
+<button rel="67772" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="Adata XPG SPECTRIX S40G 4TB PCIe Gen3x4 M.2 2280 " class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_065168/65168.jpg&amp;w=200');">
+<a href="adata_xpg_spectrix_s40g_4tb_pcie_gen3x4_m.2_2280-item-65168.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Adata XPG SPECTRIX S40G 4TB PCIe Gen3x4 M.2 2280 </h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="adata_xpg_spectrix_s40g_4tb_pcie_gen3x4_m.2_2280-item-65168.html" >
+2 098,<small>16 zł</small></a>
+<button rel="65168" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="Toshiba X300, 3.5&#039;&#039;, 14TB, SATA/600, 7200RPM, 256MB cache" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_061028/C5511407.jpg&amp;w=200');">
+<a href="toshiba_x300_3.5_14tb_sata600_7200rpm_256mb_cache-item-61028.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Toshiba X300, 3.5&#039;&#039;, 14TB, SATA/600, 7200RPM, 256MB cache</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="toshiba_x300_3.5_14tb_sata600_7200rpm_256mb_cache-item-61028.html" >
+2 057,<small>41 zł</small></a>
+<button rel="61028" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row brakproduktu">
+<div class="col-md-2">
+<div title="APACER SSD AS2280P4U 1TB M.2 PCIe Gen3 x4 NVMe 3500/3000 MB/s" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_068012/68012_ap1tbas2280p4u1.jpg&amp;w=200');">
+<a href="apacer_ssd_as2280p4u_1tb_m.2_pcie_gen3_x4_nvme_35003000_mbs-item-68012.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">APACER SSD AS2280P4U 1TB M.2 PCIe Gen3 x4 NVMe 3500/3000 MB/s</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+2 052,<small>11 zł</small>
+<div class="prodniedostepny">Chwilowo niedostępny</div>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="Samsung 870QVO MZ-77Q4T0BW 4TB" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_066733/66733.jpg&amp;w=200');">
+<a href="samsung_870qvo_mz77q4t0bw_4tb-item-66733.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Samsung 870QVO MZ-77Q4T0BW 4TB</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="samsung_870qvo_mz77q4t0bw_4tb-item-66733.html" >
+1 949,<small>19 zł</small></a>
+<button rel="66733" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row brakproduktu">
+<div class="col-md-2">
+<div title="Team Group Dysk SSD Cardea Zero Z440 2TB M.2 PCIe Gen4 x4 NVMe, 5000/4400 MB/s" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_061099/C3343166.jpg&amp;w=200');">
+<a href="team_group_dysk_ssd_cardea_zero_z440_2tb_m.2_pcie_gen4_x4_nvme-item-61099.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Team Group Dysk SSD Cardea Zero Z440 2TB M.2 PCIe Gen4 x4 NVMe, 5000/4400 MB/s</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+1 901,<small>92 zł</small>
+<div class="prodniedostepny">Chwilowo niedostępny</div>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="Crucial SSD MX500 4TB 2.5 SATA3" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_066734/66734.jpg&amp;w=200');">
+<a href="crucial_ssd_mx500_4tb_2.5_sata3-item-66734.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Crucial SSD MX500 4TB 2.5 SATA3</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="crucial_ssd_mx500_4tb_2.5_sata3-item-66734.html" >
+1 893,<small>01 zł</small></a>
+<button rel="66734" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="WD Blue 3D NAND SSD 4TB SATA III 6Gb/s cased 6.9cm 2.5inch 7mm Bulk" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_065299/&amp;w=200');">
+<a href="wd_blue_3d_nand_ssd_4tb_sata_iii_6gbs_cased_6.9cm_2.5inch_7mm_-item-65299.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">WD Blue 3D NAND SSD 4TB SATA III 6Gb/s cased 6.9cm 2.5inch 7mm Bulk</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="wd_blue_3d_nand_ssd_4tb_sata_iii_6gbs_cased_6.9cm_2.5inch_7mm_-item-65299.html" >
+1 867,<small>14 zł</small></a>
+<button rel="65299" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="WD WD141KRYZ WD Gold 3.5&quot; 14TB 7200 512MB SATA 6Gb/s" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_062183/HDWDDSAE1400.jpg&amp;w=200');">
+<a href="wd_wd141kryz_wd_gold_3.5_14tb_7200_512mb_sata_6gbs-item-62183.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">WD WD141KRYZ WD Gold 3.5&quot; 14TB 7200 512MB SATA 6Gb/s</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="wd_wd141kryz_wd_gold_3.5_14tb_7200_512mb_sata_6gbs-item-62183.html" >
+1 854,<small>61 zł</small></a>
+<button rel="62183" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="WD Purple? Pro WD141PURP 14TB 3.5&quot; SATA III 512MB" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_067939/67939_wd141purp.jpg&amp;w=200');">
+<a href="wd_purple_pro_wd141purp_14tb_3.5_sata_iii_512mb-item-67939.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">WD Purple? Pro WD141PURP 14TB 3.5&quot; SATA III 512MB</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="wd_purple_pro_wd141purp_14tb_3.5_sata_iii_512mb-item-67939.html" >
+1 851,<small>70 zł</small></a>
+<button rel="67939" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="Dysk WD WD_BLACK D10 12TB USB3.0 for Xbox One" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_064537/HDWDDZGE1210.jpg&amp;w=200');">
+<a href="dysk_wd_wd_black_d10_12tb_usb3.0_for_xbox_one-item-64537.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Dysk WD WD_BLACK D10 12TB USB3.0 for Xbox One</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="dysk_wd_wd_black_d10_12tb_usb3.0_for_xbox_one-item-64537.html" >
+1 847,<small>34 zł</small></a>
+<button rel="64537" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row brakproduktu">
+<div class="col-md-2">
+<div title="Toshiba N300 HDWG21EEZSTA 3,5&#039; 14TB SATA 7200 256MB - NAS" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_067936/67936_hdwg21eezsta.jpg&amp;w=200');">
+<a href="toshiba_n300_hdwg21eezsta_35_14tb_sata_7200_256mb__nas-item-67936.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Toshiba N300 HDWG21EEZSTA 3,5&#039; 14TB SATA 7200 256MB - NAS</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+1 823,<small>95 zł</small>
+<div class="prodniedostepny">Chwilowo niedostępny</div>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="Seagate IronWolfPro, 3.5&#039;&#039;, 14TB, SATA/600, 7200RPM, 256MB cache" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_061043/C3901326.jpg&amp;w=200');">
+<a href="seagate_ironwolfpro_3.5_14tb_sata600_7200rpm_256mb_cache-item-61043.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Seagate IronWolfPro, 3.5&#039;&#039;, 14TB, SATA/600, 7200RPM, 256MB cache</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="seagate_ironwolfpro_3.5_14tb_sata600_7200rpm_256mb_cache-item-61043.html" >
+1 815,<small>50 zł</small></a>
+<button rel="61043" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="WD WD141KFGX 3,5&quot; 14TB WD Red Pro? SATA III - NAS" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_065380/HDWDDUAE1420.jpg&amp;w=200');">
+<a href="wd_wd141kfgx_35_14tb_wd_red_pro_sata_iii__nas-item-65380.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">WD WD141KFGX 3,5&quot; 14TB WD Red Pro? SATA III - NAS</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="wd_wd141kfgx_35_14tb_wd_red_pro_sata_iii__nas-item-65380.html" >
+1 808,<small>10 zł</small></a>
+<button rel="65380" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="Dysk Western Digital Ultrastar DC HC510 He10 8TB 3,5&quot; 256MB SATA 6Gb/s 512e ISE HUH721008ALE600" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_062178/HDHGDSAD8010.jpg&amp;w=200');">
+<a href="dysk_western_digital_ultrastar_dc_hc510_he10_8tb_35_256mb_sata-item-62178.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Dysk Western Digital Ultrastar DC HC510 He10 8TB 3,5&quot; 256MB SATA 6Gb/s 512e ISE HUH721008ALE600</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="dysk_western_digital_ultrastar_dc_hc510_he10_8tb_35_256mb_sata-item-62178.html" >
+1 807,<small>79 zł</small></a>
+<button rel="62178" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="WD WD140EFGX 3,5&quot; 14TB WD Red? Plus SATA" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_067942/67942_wd140efgx.jpg&amp;w=200');">
+<a href="wd_wd140efgx_35_14tb_wd_red_plus_sata-item-67942.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">WD WD140EFGX 3,5&quot; 14TB WD Red? Plus SATA</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="wd_wd140efgx_35_14tb_wd_red_plus_sata-item-67942.html" >
+1 759,<small>75 zł</small></a>
+<button rel="67942" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row brakproduktu">
+<div class="col-md-2">
+<div title="CORSAIR SSD MP600 PRO XT 2TB NVMe PCIe M.2" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_068025/68025_cssdf2000gbmp600pxt.jpg&amp;w=200');">
+<a href="corsair_ssd_mp600_pro_xt_2tb_nvme_pcie_m.2-item-68025.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">CORSAIR SSD MP600 PRO XT 2TB NVMe PCIe M.2</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+1 752,<small>21 zł</small>
+<div class="prodniedostepny">Chwilowo niedostępny</div>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="Dysk twardy WD Red Pro, 3.5&#039;&#039;, 12TB, SATA/600, 7200RPM, 256MB cache" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_058532/C3910613.jpg&amp;w=200');">
+<a href="dysk_twardy_wd_red_pro_3.5_12tb_sata600_7200rpm_256mb_cache-item-58532.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Dysk twardy WD Red Pro, 3.5&#039;&#039;, 12TB, SATA/600, 7200RPM, 256MB cache</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="dysk_twardy_wd_red_pro_3.5_12tb_sata600_7200rpm_256mb_cache-item-58532.html" >
+1 723,<small>99 zł</small></a>
+<button rel="58532" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="SEAGATE Surveillance AI Skyhawk 18TB HDD SATA 6Gb/s 256MB cache 8.9cm 3.5inch CMR Helium BLK" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_065339/&amp;w=200');">
+<a href="seagate_surveillance_ai_skyhawk_18tb_hdd_sata_6gbs_256mb_cache-item-65339.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">SEAGATE Surveillance AI Skyhawk 18TB HDD SATA 6Gb/s 256MB cache 8.9cm 3.5inch CMR Helium BLK</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="seagate_surveillance_ai_skyhawk_18tb_hdd_sata_6gbs_256mb_cache-item-65339.html" >
+1 700,<small>61 zł</small></a>
+<button rel="65339" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="Seagate IronWolfPro, 3.5&#039;&#039;, 12TB, SATA/600, 7200RPM, 256MB cache" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_061045/C3901365.jpg&amp;w=200');">
+<a href="seagate_ironwolfpro_3.5_12tb_sata600_7200rpm_256mb_cache-item-61045.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Seagate IronWolfPro, 3.5&#039;&#039;, 12TB, SATA/600, 7200RPM, 256MB cache</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="seagate_ironwolfpro_3.5_12tb_sata600_7200rpm_256mb_cache-item-61045.html" >
+1 700,<small>61 zł</small></a>
+<button rel="61045" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row brakproduktu">
+<div class="col-md-2">
+<div title="Seagate IronWolf, 3.5&#039;&#039;, 10TB, SATA/600, 7200RPM, 256MB cache NA MAGAZYNIE" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_044334/_st10000vn0004.jpg&amp;w=200');">
+<a href="seagate_ironwolf_3.5_10tb_sata600_7200rpm_256mb_cache_na_magaz-item-44334.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Seagate IronWolf, 3.5&#039;&#039;, 10TB, SATA/600, 7200RPM, 256MB cache NA MAGAZYNIE</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+1 694,<small>89 zł</small>
+<div class="prodniedostepny">Chwilowo niedostępny</div>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="Dysk SSD Silicon Power US70 2TB PCIe Gen4x4 NVMe (5000/4400 MB/s) M.2 2280" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_066791/PASRSS620020.jpg&amp;w=200');">
+<a href="dysk_ssd_silicon_power_us70_2tb_pcie_gen4x4_nvme_50004400_mbs_-item-66791.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Dysk SSD Silicon Power US70 2TB PCIe Gen4x4 NVMe (5000/4400 MB/s) M.2 2280</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="dysk_ssd_silicon_power_us70_2tb_pcie_gen4x4_nvme_50004400_mbs_-item-66791.html" >
+1 664,<small>52 zł</small></a>
+<button rel="66791" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="Dysk Adata SSD Ultimate SU630 3.84 TB 2.5 S3 520/450 MB/s" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_064294/64294.jpg&amp;w=200');">
+<a href="dysk_adata_ssd_ultimate_su630_3.84_tb_2.5_s3_520450_mbs-item-64294.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Dysk Adata SSD Ultimate SU630 3.84 TB 2.5 S3 520/450 MB/s</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="dysk_adata_ssd_ultimate_su630_3.84_tb_2.5_s3_520450_mbs-item-64294.html" >
+1 632,<small>70 zł</small></a>
+<button rel="64294" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="KINGSTON SEDC500M/1920G Kingston Data Center DC500M SSD SATA3 2,5 1920GB, R/W 555MBs/520MBs" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_062874/62874_sedc500m1920g.jpg&amp;w=200');">
+<a href="kingston_sedc500m1920g_kingston_data_center_dc500m_ssd_sata3_2-item-62874.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">KINGSTON SEDC500M/1920G Kingston Data Center DC500M SSD SATA3 2,5 1920GB, R/W 555MBs/520MBs</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="kingston_sedc500m1920g_kingston_data_center_dc500m_ssd_sata3_2-item-62874.html" >
+1 629,<small>70 zł</small></a>
+<button rel="62874" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="Dysk WD WD121KRYZ WD Gold 3.5&quot; 12TB " class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_049727/HDWDDSAE1200.jpg&amp;w=200');">
+<a href="dysk_wd_wd121kryz_wd_gold_3.5_12tb-item-49727.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Dysk WD WD121KRYZ WD Gold 3.5&quot; 12TB </h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="dysk_wd_wd121kryz_wd_gold_3.5_12tb-item-49727.html" >
+1 624,<small>04 zł</small></a>
+<button rel="49727" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="Dysk SSD MSI SPATIUM M480 2TB PCIe 4.0 NVMe M.2 2280 (7000/6800 MB/s) 3D NAND" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_066787/PAMISS620010.jpg&amp;w=200');">
+<a href="dysk_ssd_msi_spatium_m480_2tb_pcie_4.0_nvme_m.2_2280_70006800_-item-66787.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Dysk SSD MSI SPATIUM M480 2TB PCIe 4.0 NVMe M.2 2280 (7000/6800 MB/s) 3D NAND</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="dysk_ssd_msi_spatium_m480_2tb_pcie_4.0_nvme_m.2_2280_70006800_-item-66787.html" >
+1 620,<small>19 zł</small></a>
+<button rel="66787" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="Dysk SSD MSI SPATIUM M480 2TB PCIe 4.0 NVMe M.2 HS 2280 (7000/6800 MB/s) 3D NAND" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_066785/PAMISS620020.jpg&amp;w=200');">
+<a href="dysk_ssd_msi_spatium_m480_2tb_pcie_4.0_nvme_m.2_hs_2280_700068-item-66785.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Dysk SSD MSI SPATIUM M480 2TB PCIe 4.0 NVMe M.2 HS 2280 (7000/6800 MB/s) 3D NAND</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="dysk_ssd_msi_spatium_m480_2tb_pcie_4.0_nvme_m.2_hs_2280_700068-item-66785.html" >
+1 582,<small>79 zł</small></a>
+<button rel="66785" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="PATRIOT Viper VP4100 SSD 2TB M.2 2280 PCIe x4 NVMe 5000/4400MB/s" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_062634/62634_vp41002tbm28h.jpg&amp;w=200');">
+<a href="patriot_viper_vp4100_ssd_2tb_m.2_2280_pcie_x4_nvme_50004400mbs-item-62634.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">PATRIOT Viper VP4100 SSD 2TB M.2 2280 PCIe x4 NVMe 5000/4400MB/s</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="patriot_viper_vp4100_ssd_2tb_m.2_2280_pcie_x4_nvme_50004400mbs-item-62634.html" >
+1 540,<small>48 zł</small></a>
+<button rel="62634" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row brakproduktu">
+<div class="col-md-2">
+<div title="Corsair SSD 2TB Force MP600 M.2 NVMe PCIe Gen. 4x4 " class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_059479/C9801750.jpg&amp;w=200');">
+<a href="corsair_ssd_2tb_force_mp600_m.2_nvme_pcie_gen._4x4-item-59479.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Corsair SSD 2TB Force MP600 M.2 NVMe PCIe Gen. 4x4 </h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+1 538,<small>48 zł</small>
+<div class="prodniedostepny">Chwilowo niedostępny</div>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="SEAGATE Surveillance AI Skyhawk 16TB HDD SATA 6Gb/s 256MB cache 8.9cm 3.5inch CMR Helium BLK" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_065340/&amp;w=200');">
+<a href="seagate_surveillance_ai_skyhawk_16tb_hdd_sata_6gbs_256mb_cache-item-65340.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">SEAGATE Surveillance AI Skyhawk 16TB HDD SATA 6Gb/s 256MB cache 8.9cm 3.5inch CMR Helium BLK</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="seagate_surveillance_ai_skyhawk_16tb_hdd_sata_6gbs_256mb_cache-item-65340.html" >
+1 506,<small>47 zł</small></a>
+<button rel="65340" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="Samsung SSD 960 PRO NVMe M.2 512GB, 3500/2100MB/s, V-nand" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_046622/C7001221.jpg&amp;w=200');">
+<a href="samsung_ssd_960_pro_nvme_m.2_512gb_35002100mbs_vnand-item-46622.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Samsung SSD 960 PRO NVMe M.2 512GB, 3500/2100MB/s, V-nand</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="samsung_ssd_960_pro_nvme_m.2_512gb_35002100mbs_vnand-item-46622.html" >
+1 495,<small>00 zł</small></a>
+<button rel="46622" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="WD Purple Pro 10TB 3,5 256MB SATAIII/72000rpm" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_066721/66721.jpg&amp;w=200');">
+<a href="wd_purple_pro_10tb_35_256mb_sataiii72000rpm-item-66721.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">WD Purple Pro 10TB 3,5 256MB SATAIII/72000rpm</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="wd_purple_pro_10tb_35_256mb_sataiii72000rpm-item-66721.html" >
+1 490,<small>76 zł</small></a>
+<button rel="66721" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="CORSAIR SSD MP600 PRO XT 2TB NVMe PCIe M.2 Hydro X Edition" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_068026/68026_cssdf2000gbmp600phxt.jpg&amp;w=200');">
+<a href="corsair_ssd_mp600_pro_xt_2tb_nvme_pcie_m.2_hydro_x_edition-item-68026.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">CORSAIR SSD MP600 PRO XT 2TB NVMe PCIe M.2 Hydro X Edition</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="corsair_ssd_mp600_pro_xt_2tb_nvme_pcie_m.2_hydro_x_edition-item-68026.html" >
+1 477,<small>49 zł</small></a>
+<button rel="68026" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="Dysk SSD SATA 800GB M2 2280 SNV3410-800G" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_068892/68892.jpg&amp;w=200');">
+<a href="dysk_ssd_sata_800gb_m2_2280_snv3410800g-item-68892.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Dysk SSD SATA 800GB M2 2280 SNV3410-800G</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="dysk_ssd_sata_800gb_m2_2280_snv3410800g-item-68892.html" >
+1 464,<small>46 zł</small></a>
+<button rel="68892" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row brakproduktu">
+<div class="col-md-2">
+<div title="Dysk twardy WD Red, 3.5&#039;&#039;, 10TB, SATA/600, 256MB cache" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_048215/C3910911.jpg&amp;w=200');">
+<a href="dysk_twardy_wd_red_3.5_10tb_sata600_256mb_cache-item-48215.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Dysk twardy WD Red, 3.5&#039;&#039;, 10TB, SATA/600, 256MB cache</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+1 430,<small>55 zł</small>
+<div class="prodniedostepny">Chwilowo niedostępny</div>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row brakproduktu">
+<div class="col-md-2">
+<div title="Toshiba N300 HDWG31GUZSVA 3,5&quot; 16TB SATA 7200 512MB BULK" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_067938/67938_hdwg31guzsva.jpg&amp;w=200');">
+<a href="toshiba_n300_hdwg31guzsva_35_16tb_sata_7200_512mb_bulk-item-67938.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Toshiba N300 HDWG31GUZSVA 3,5&quot; 16TB SATA 7200 512MB BULK</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+1 428,<small>20 zł</small>
+<div class="prodniedostepny">Chwilowo niedostępny</div>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="PATRIOT Viper VPN100 SSD 2TB M.2 PCIe x4 NVMe 3400/3000MB/s" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_062635/62635_vpn1002tbm28h.jpg&amp;w=200');">
+<a href="patriot_viper_vpn100_ssd_2tb_m.2_pcie_x4_nvme_34003000mbs-item-62635.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">PATRIOT Viper VPN100 SSD 2TB M.2 PCIe x4 NVMe 3400/3000MB/s</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="patriot_viper_vpn100_ssd_2tb_m.2_pcie_x4_nvme_34003000mbs-item-62635.html" >
+1 420,<small>23 zł</small></a>
+<button rel="62635" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="KINGSTON SEDC500R/1920G Kingston Data Center DC500R SSD SATA3 2,5 1920GB, R/W 555MBs/525MBs" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_068577/68577_sedc500r1920g.jpg&amp;w=200');">
+<a href="kingston_sedc500r1920g_kingston_data_center_dc500r_ssd_sata3_2-item-68577.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">KINGSTON SEDC500R/1920G Kingston Data Center DC500R SSD SATA3 2,5 1920GB, R/W 555MBs/525MBs</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="kingston_sedc500r1920g_kingston_data_center_dc500r_ssd_sata3_2-item-68577.html" >
+1 390,<small>10 zł</small></a>
+<button rel="68577" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="WD Red Plus 12TB SATA 6Gb/s 3.5inch 256MB cache 7200Rpm Internal HDD Bulk " class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_066719/66719.jpg&amp;w=200');">
+<a href="wd_red_plus_12tb_sata_6gbs_3.5inch_256mb_cache_7200rpm_interna-item-66719.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">WD Red Plus 12TB SATA 6Gb/s 3.5inch 256MB cache 7200Rpm Internal HDD Bulk </h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="wd_red_plus_12tb_sata_6gbs_3.5inch_256mb_cache_7200rpm_interna-item-66719.html" >
+1 388,<small>67 zł</small></a>
+<button rel="66719" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="Dysk twardy Toshiba X300, 3.5&#039;&#039;, 10TB, SATA/600, 7200RPM, 256MB cache, BOX" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_061031/C5511377.jpg&amp;w=200');">
+<a href="dysk_twardy_toshiba_x300_3.5_10tb_sata600_7200rpm_256mb_cache_-item-61031.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Dysk twardy Toshiba X300, 3.5&#039;&#039;, 10TB, SATA/600, 7200RPM, 256MB cache, BOX</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="dysk_twardy_toshiba_x300_3.5_10tb_sata600_7200rpm_256mb_cache_-item-61031.html" >
+1 369,<small>32 zł</small></a>
+<button rel="61031" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="Seagate SkyHawkAI 12TB 3,5&#039;&#039;256MB ST12000VE001" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_065378/65378.jpg&amp;w=200');">
+<a href="seagate_skyhawkai_12tb_35256mb_st12000ve001-item-65378.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Seagate SkyHawkAI 12TB 3,5&#039;&#039;256MB ST12000VE001</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="seagate_skyhawkai_12tb_35256mb_st12000ve001-item-65378.html" >
+1 365,<small>66 zł</small></a>
+<button rel="65378" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="WD WD6003FZBX 3.5&quot; 6TB WD Black 256MB 7200 SATA III" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_059539/HDWDDDAD6090.jpg&amp;w=200');">
+<a href="wd_wd6003fzbx_3.5_6tb_wd_black_256mb_7200_sata_iii-item-59539.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">WD WD6003FZBX 3.5&quot; 6TB WD Black 256MB 7200 SATA III</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="wd_wd6003fzbx_3.5_6tb_wd_black_256mb_7200_sata_iii-item-59539.html" >
+1 330,<small>86 zł</small></a>
+<button rel="59539" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="Dysk SSD Intel DC S4510 Series (960GB, 2.5in SATA 6Gb/s, 3D2, TLC) Generic Single Pack" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_064289/64289.jpg&amp;w=200');">
+<a href="dysk_ssd_intel_dc_s4510_series_960gb_2.5in_sata_6gbs_3d2_tlc_g-item-64289.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Dysk SSD Intel DC S4510 Series (960GB, 2.5in SATA 6Gb/s, 3D2, TLC) Generic Single Pack</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="dysk_ssd_intel_dc_s4510_series_960gb_2.5in_sata_6gbs_3d2_tlc_g-item-64289.html" >
+1 316,<small>30 zł</small></a>
+<button rel="64289" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row brakproduktu">
+<div class="col-md-2">
+<div title="Silicon Power SSD XPOWER XS70 2TB 7300/6800MB/s M.2 PCIe 4x4 NVMe 1.4" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_067783/67783.jpg&amp;w=200');">
+<a href="silicon_power_ssd_xpower_xs70_2tb_73006800mbs_m.2_pcie_4x4_nvm-item-67783.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Silicon Power SSD XPOWER XS70 2TB 7300/6800MB/s M.2 PCIe 4x4 NVMe 1.4</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+1 305,<small>96 zł</small>
+<div class="prodniedostepny">Chwilowo niedostępny</div>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row brakproduktu">
+<div class="col-md-2">
+<div title="Seagate IronWolf, 3.5&#039;&#039;, 12TB, SATA/600, 7200RPM, 256MB cache" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_061047/C3901398.jpg&amp;w=200');">
+<a href="seagate_ironwolf_3.5_12tb_sata600_7200rpm_256mb_cache-item-61047.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Seagate IronWolf, 3.5&#039;&#039;, 12TB, SATA/600, 7200RPM, 256MB cache</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+1 302,<small>19 zł</small>
+<div class="prodniedostepny">Chwilowo niedostępny</div>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row brakproduktu">
+<div class="col-md-2">
+<div title="Dysk SSD Seagate Firecuda 520 2TB PCIe M.2 " class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_064296/64296.jpg&amp;w=200');">
+<a href="dysk_ssd_seagate_firecuda_520_2tb_pcie_m.2-item-64296.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Dysk SSD Seagate Firecuda 520 2TB PCIe M.2 </h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+1 298,<small>58 zł</small>
+<div class="prodniedostepny">Chwilowo niedostępny</div>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="Dysk WD WD101EFBX 3,5&quot; 10TB WD Red? Plus SATA" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_065383/HDWDDDAE1040.jpg&amp;w=200');">
+<a href="dysk_wd_wd101efbx_35_10tb_wd_red_plus_sata-item-65383.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Dysk WD WD101EFBX 3,5&quot; 10TB WD Red? Plus SATA</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="dysk_wd_wd101efbx_35_10tb_wd_red_plus_sata-item-65383.html" >
+1 293,<small>96 zł</small></a>
+<button rel="65383" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="Dysk SEAGATE EXOS? Enterprise Capacity ST14000NM001G 14TB X16 3.5? SATA 512E" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_064534/HDSTDSAE1420.jpg&amp;w=200');">
+<a href="dysk_seagate_exos_enterprise_capacity_st14000nm001g_14tb_x16_3-item-64534.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Dysk SEAGATE EXOS? Enterprise Capacity ST14000NM001G 14TB X16 3.5? SATA 512E</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="dysk_seagate_exos_enterprise_capacity_st14000nm001g_14tb_x16_3-item-64534.html" >
+1 292,<small>56 zł</small></a>
+<button rel="64534" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="SAMSUNG 980 PRO SSD 2TB M.2 NVMe PCIe 4.0" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_066100/&amp;w=200');">
+<a href="samsung_980_pro_ssd_2tb_m.2_nvme_pcie_4.0-item-66100.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">SAMSUNG 980 PRO SSD 2TB M.2 NVMe PCIe 4.0</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="samsung_980_pro_ssd_2tb_m.2_nvme_pcie_4.0-item-66100.html" >
+1 278,<small>44 zł</small></a>
+<button rel="66100" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="Corsair SSD 2TB MP400 Series 3480/3000 MB/s PCIe M.2" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_066474/66474.jpg&amp;w=200');">
+<a href="corsair_ssd_2tb_mp400_series_34803000_mbs_pcie_m.2-item-66474.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Corsair SSD 2TB MP400 Series 3480/3000 MB/s PCIe M.2</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="corsair_ssd_2tb_mp400_series_34803000_mbs_pcie_m.2-item-66474.html" >
+1 277,<small>93 zł</small></a>
+<button rel="66474" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="Goodram SSD IRDM PRO 2TB M.2 PCIe 4x4 NVMe 2280 7000/6850" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_067775/67775.jpg&amp;w=200');">
+<a href="goodram_ssd_irdm_pro_2tb_m.2_pcie_4x4_nvme_2280_70006850-item-67775.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Goodram SSD IRDM PRO 2TB M.2 PCIe 4x4 NVMe 2280 7000/6850</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="goodram_ssd_irdm_pro_2tb_m.2_pcie_4x4_nvme_2280_70006850-item-67775.html" >
+1 242,<small>53 zł</small></a>
+<button rel="67775" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="Dysk WD WD102KRYZ WD Gold 3.5&quot; 10TB 7200 256MB SATA 6Gb/s" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_062179/HDWDDSAE1020.jpg&amp;w=200');">
+<a href="dysk_wd_wd102kryz_wd_gold_3.5_10tb_7200_256mb_sata_6gbs-item-62179.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Dysk WD WD102KRYZ WD Gold 3.5&quot; 10TB 7200 256MB SATA 6Gb/s</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="dysk_wd_wd102kryz_wd_gold_3.5_10tb_7200_256mb_sata_6gbs-item-62179.html" >
+1 241,<small>07 zł</small></a>
+<button rel="62179" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="Toshiba N300 HDWG21EUZSVA 3,5&#039; 14TB SATA 7200 256MB - NAS BULK" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_067935/67935_hdwg21euzsva.jpg&amp;w=200');">
+<a href="toshiba_n300_hdwg21euzsva_35_14tb_sata_7200_256mb__nas_bulk-item-67935.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Toshiba N300 HDWG21EUZSVA 3,5&#039; 14TB SATA 7200 256MB - NAS BULK</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="toshiba_n300_hdwg21euzsva_35_14tb_sata_7200_256mb__nas_bulk-item-67935.html" >
+1 235,<small>15 zł</small></a>
+<button rel="67935" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row brakproduktu">
+<div class="col-md-2">
+<div title="Intel SSD DC S3520 Series 480GB, M.2 80mm SATA 6Gb/s, 3D1, MLC" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_056018/C1769285.jpg&amp;w=200');">
+<a href="intel_ssd_dc_s3520_series_480gb_m.2_80mm_sata_6gbs_3d1_mlc-item-56018.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Intel SSD DC S3520 Series 480GB, M.2 80mm SATA 6Gb/s, 3D1, MLC</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+1 233,<small>52 zł</small>
+<div class="prodniedostepny">Chwilowo niedostępny</div>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="Gigabyte AORUS SSD 2TB M.2 2280 PCI-Express 4.0 x4 (5000/4400 MB/s) - W MAGAZYNIE!!!" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_059508/PAGBSS620010.jpg&amp;w=200');">
+<a href="gigabyte_aorus_ssd_2tb_m.2_2280_pciexpress_4.0_x4_50004400_mbs-item-59508.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Gigabyte AORUS SSD 2TB M.2 2280 PCI-Express 4.0 x4 (5000/4400 MB/s) - W MAGAZYNIE!!!</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="gigabyte_aorus_ssd_2tb_m.2_2280_pciexpress_4.0_x4_50004400_mbs-item-59508.html" >
+1 215,<small>25 zł</small></a>
+<button rel="59508" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row brakproduktu">
+<div class="col-md-2">
+<div title="SILICON POWER SSD P44US70 2TB M.2 PCIe Gen4 x4 NVMe 5000/4400 MB/s" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_065322/&amp;w=200');">
+<a href="silicon_power_ssd_p44us70_2tb_m.2_pcie_gen4_x4_nvme_50004400_m-item-65322.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">SILICON POWER SSD P44US70 2TB M.2 PCIe Gen4 x4 NVMe 5000/4400 MB/s</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+1 210,<small>02 zł</small>
+<div class="prodniedostepny">Chwilowo niedostępny</div>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row brakproduktu">
+<div class="col-md-2">
+<div title="CORSAIR Force Series MP600 2TB NVMe PCIe M.2 SSD" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_068022/68022_cssdf2000gbmp600r2.jpg&amp;w=200');">
+<a href="corsair_force_series_mp600_2tb_nvme_pcie_m.2_ssd-item-68022.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">CORSAIR Force Series MP600 2TB NVMe PCIe M.2 SSD</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+1 198,<small>36 zł</small>
+<div class="prodniedostepny">Chwilowo niedostępny</div>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="Samsung SSD 970 PRO NVMe M.2 PCIe 1TB, 3500/2700MB/s, V-NAND" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_054383/C7001275.jpg&amp;w=200');">
+<a href="samsung_ssd_970_pro_nvme_m.2_pcie_1tb_35002700mbs_vnand-item-54383.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Samsung SSD 970 PRO NVMe M.2 PCIe 1TB, 3500/2700MB/s, V-NAND</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="samsung_ssd_970_pro_nvme_m.2_pcie_1tb_35002700mbs_vnand-item-54383.html" >
+1 191,<small>41 zł</small></a>
+<button rel="54383" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="Gigabyte AORUS Gen4 SSD 2TB M.2 2280 PCI-Express 4.0 x4 (5000/4400 MB/s) 3D TLC" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_066790/PAGBSS620020.jpg&amp;w=200');">
+<a href="gigabyte_aorus_gen4_ssd_2tb_m.2_2280_pciexpress_4.0_x4_5000440-item-66790.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Gigabyte AORUS Gen4 SSD 2TB M.2 2280 PCI-Express 4.0 x4 (5000/4400 MB/s) 3D TLC</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="gigabyte_aorus_gen4_ssd_2tb_m.2_2280_pciexpress_4.0_x4_5000440-item-66790.html" >
+1 189,<small>41 zł</small></a>
+<button rel="66790" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="KINGSTON SEDC450R/1920G Kingston Data Center 1920G DC450R (Entry Level Enterprise/Server) 2.5 SATA SSD" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_062877/62877_sedc450r1920g.jpg&amp;w=200');">
+<a href="kingston_sedc450r1920g_kingston_data_center_1920g_dc450r_entry-item-62877.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">KINGSTON SEDC450R/1920G Kingston Data Center 1920G DC450R (Entry Level Enterprise/Server) 2.5 SATA SSD</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="kingston_sedc450r1920g_kingston_data_center_1920g_dc450r_entry-item-62877.html" >
+1 188,<small>16 zł</small></a>
+<button rel="62877" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="AORUS Gen4 7000s Premium 2TB M.2 2280 7000/6850MB/s" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_068024/68024.jpg&amp;w=200');">
+<a href="aorus_gen4_7000s_premium_2tb_m.2_2280_70006850mbs-item-68024.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">AORUS Gen4 7000s Premium 2TB M.2 2280 7000/6850MB/s</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="aorus_gen4_7000s_premium_2tb_m.2_2280_70006850mbs-item-68024.html" >
+1 185,<small>89 zł</small></a>
+<button rel="68024" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="Samsung SSD 870EVO MZ-77E2T0B/EU 2TB " class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_067797/67797.jpg&amp;w=200');">
+<a href="samsung_ssd_870evo_mz77e2t0beu_2tb-item-67797.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Samsung SSD 870EVO MZ-77E2T0B/EU 2TB </h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="samsung_ssd_870evo_mz77e2t0beu_2tb-item-67797.html" >
+1 185,<small>26 zł</small></a>
+<button rel="67797" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="Dysk twardy Western Digital Ultrastar DC HC320, 3.5&#039;, 8TB, SATA/600 ~ WD8003FRYZ" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_058528/C2200562.jpg&amp;w=200');">
+<a href="dysk_twardy_western_digital_ultrastar_dc_hc320_3.5_8tb_sata600-item-58528.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Dysk twardy Western Digital Ultrastar DC HC320, 3.5&#039;, 8TB, SATA/600 ~ WD8003FRYZ</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="dysk_twardy_western_digital_ultrastar_dc_hc320_3.5_8tb_sata600-item-58528.html" >
+1 184,<small>92 zł</small></a>
+<button rel="58528" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row brakproduktu">
+<div class="col-md-2">
+<div title="Patriot SSD Blast 960GB SATA III 6Gb/s, Speed 560/540MBs" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_044259/C0420737.jpg&amp;w=200');">
+<a href="patriot_ssd_blast_960gb_sata_iii_6gbs_speed_560540mbs-item-44259.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Patriot SSD Blast 960GB SATA III 6Gb/s, Speed 560/540MBs</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+1 182,<small>28 zł</small>
+<div class="prodniedostepny">Chwilowo niedostępny</div>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="Corsair Dysk SSD 2TB MP600 CORE 4950/3700 MB/s M.2 NVMe PCIe Gen. 4 x4 " class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_066475/66475.jpg&amp;w=200');">
+<a href="corsair_dysk_ssd_2tb_mp600_core_49503700_mbs_m.2_nvme_pcie_gen-item-66475.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Corsair Dysk SSD 2TB MP600 CORE 4950/3700 MB/s M.2 NVMe PCIe Gen. 4 x4 </h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="corsair_dysk_ssd_2tb_mp600_core_49503700_mbs_m.2_nvme_pcie_gen-item-66475.html" >
+1 178,<small>82 zł</small></a>
+<button rel="66475" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="Dysk Toshiba N300 HDWG11AEZSTA 3,5&#039; 10TB SATA 256MB NAS" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_059547/HDTODDAE1030.jpg&amp;w=200');">
+<a href="dysk_toshiba_n300_hdwg11aezsta_35_10tb_sata_256mb_nas-item-59547.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Dysk Toshiba N300 HDWG11AEZSTA 3,5&#039; 10TB SATA 256MB NAS</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="dysk_toshiba_n300_hdwg11aezsta_35_10tb_sata_256mb_nas-item-59547.html" >
+1 177,<small>21 zł</small></a>
+<button rel="59547" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="Kingston KC600 SERIES 2TB SATA3 2.5&#039; 550/520 MB/s " class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_065179/65179.jpg&amp;w=200');">
+<a href="kingston_kc600_series_2tb_sata3_2.5_550520_mbs-item-65179.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Kingston KC600 SERIES 2TB SATA3 2.5&#039; 550/520 MB/s </h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="kingston_kc600_series_2tb_sata3_2.5_550520_mbs-item-65179.html" >
+1 170,<small>54 zł</small></a>
+<button rel="65179" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="Samsung 970EVO PLUS MZ-V7S2T0BW 2 TB" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_066735/66735.jpg&amp;w=200');">
+<a href="samsung_970evo_plus_mzv7s2t0bw_2_tb-item-66735.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Samsung 970EVO PLUS MZ-V7S2T0BW 2 TB</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="samsung_970evo_plus_mzv7s2t0bw_2_tb-item-66735.html" >
+1 156,<small>53 zł</small></a>
+<button rel="66735" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="Dysk Toshiba N300 HDWG11AUZSVA 3,5&#039; 10TB SATA 256MB NAS BULK" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_065384/HDTODDAE1040.jpg&amp;w=200');">
+<a href="dysk_toshiba_n300_hdwg11auzsva_35_10tb_sata_256mb_nas_bulk-item-65384.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Dysk Toshiba N300 HDWG11AUZSVA 3,5&#039; 10TB SATA 256MB NAS BULK</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="dysk_toshiba_n300_hdwg11auzsva_35_10tb_sata_256mb_nas_bulk-item-65384.html" >
+1 143,<small>63 zł</small></a>
+<button rel="65384" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="TRANSCEND 2TB M.2 2280 PCIe Gen3x4 M-Key 3D TLC with Dram" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_068020/68020_ts2tmte220s.jpg&amp;w=200');">
+<a href="transcend_2tb_m.2_2280_pcie_gen3x4_mkey_3d_tlc_with_dram-item-68020.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">TRANSCEND 2TB M.2 2280 PCIe Gen3x4 M-Key 3D TLC with Dram</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="transcend_2tb_m.2_2280_pcie_gen3x4_mkey_3d_tlc_with_dram-item-68020.html" >
+1 140,<small>95 zł</small></a>
+<button rel="68020" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="Kingston SSD FURY Renegade 2000G PCIe 4.0 NVMe M.2" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_067779/67779.jpg&amp;w=200');">
+<a href="kingston_ssd_fury_renegade_2000g_pcie_4.0_nvme_m.2-item-67779.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Kingston SSD FURY Renegade 2000G PCIe 4.0 NVMe M.2</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="kingston_ssd_fury_renegade_2000g_pcie_4.0_nvme_m.2-item-67779.html" >
+1 113,<small>21 zł</small></a>
+<button rel="67779" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="Silicon Power XPOWER XS70 1TB 7300/6000MB/s M.2 PCIe 4x4 NVMe 1.4 " class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_067844/67844.jpg&amp;w=200');">
+<a href="silicon_power_xpower_xs70_1tb_73006000mbs_m.2_pcie_4x4_nvme_1.-item-67844.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Silicon Power XPOWER XS70 1TB 7300/6000MB/s M.2 PCIe 4x4 NVMe 1.4 </h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="silicon_power_xpower_xs70_1tb_73006000mbs_m.2_pcie_4x4_nvme_1.-item-67844.html" >
+1 101,<small>65 zł</small></a>
+<button rel="67844" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="WD Purple Pro 8TB 3,5 256MB SATAIII/72000rpm" class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_066722/66722.jpg&amp;w=200');">
+<a href="wd_purple_pro_8tb_35_256mb_sataiii72000rpm-item-66722.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">WD Purple Pro 8TB 3,5 256MB SATAIII/72000rpm</h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="wd_purple_pro_8tb_35_256mb_sataiii72000rpm-item-66722.html" >
+1 100,<small>85 zł</small></a>
+<button rel="66722" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="WD Red Pro, 3.5&#039;&#039;, 8TB, SATA/600, 7200RPM, 256MB cache " class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_058533/C3911004.jpg&amp;w=200');">
+<a href="wd_red_pro_3.5_8tb_sata600_7200rpm_256mb_cache-item-58533.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">WD Red Pro, 3.5&#039;&#039;, 8TB, SATA/600, 7200RPM, 256MB cache </h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="wd_red_pro_3.5_8tb_sata600_7200rpm_256mb_cache-item-58533.html" >
+1 098,<small>93 zł</small></a>
+<button rel="58533" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="Gigabyte SSD AORUS Gen4 7000s 2TB M.2 2280 7000/6850MB/s " class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_067782/67782.jpg&amp;w=200');">
+<a href="gigabyte_ssd_aorus_gen4_7000s_2tb_m.2_2280_70006850mbs-item-67782.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Gigabyte SSD AORUS Gen4 7000s 2TB M.2 2280 7000/6850MB/s </h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="gigabyte_ssd_aorus_gen4_7000s_2tb_m.2_2280_70006850mbs-item-67782.html" >
+1 097,<small>89 zł</small></a>
+<button rel="67782" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+<div style="clear:both;display: flex" class="product-med align-items-center row ">
+<div class="col-md-2">
+<div title="Crucial SSD P5 Plus 2TB M.2 NVMe 2280 PCIe 4.0 " class="prodimg" style="background-image: url('inc/cms_img.php?img=../gfx/sklep/PR_067787/67787.jpg&amp;w=200');">
+<a href="crucial_ssd_p5_plus_2tb_m.2_nvme_2280_pcie_4.0-item-67787.html" ></a>
+</div>
+</div>
+<div class="col-sm-8 col-md-7">
+<h2 class="prodmed-h2">Crucial SSD P5 Plus 2TB M.2 NVMe 2280 PCIe 4.0 </h2>
+</div>
+<div class="col-sm-4  col-md-3">
+<div class="cena">
+<a href="crucial_ssd_p5_plus_2tb_m.2_nvme_2280_pcie_4.0-item-67787.html" >
+1 094,<small>97 zł</small></a>
+<button rel="67787" class="dokoszyka">Dodaj do koszyka</button>
+</div>
+</div>
+</div>
+</div>
+<div class="row sortbox  sortbox-down">
+<div class="col-md-8 pull-right cmspager">
+<ul><li class="prev"><a  rel="" href="hdd__ssd-katid-44,.html">&nbsp;</a></li><li class="ashow"><span>1</span></li><li class="ashow"><a  rel="2" href="hdd__ssd-katid-44,2.html">2</a></li><li class="ashow"><a  rel="3" href="hdd__ssd-katid-44,3.html">3</a></li><li><a  rel="4" href="hdd__ssd-katid-44,4.html">4</a></li><li><a  rel="5" href="hdd__ssd-katid-44,5.html">5</a></li><li><a  rel="6" href="hdd__ssd-katid-44,6.html">6</a></li><li class="next"><a  rel="2" href="hdd__ssd-katid-44,2.html">&nbsp;</a></li></ul>					</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="container promocje" style="margin-top: 15px">
+<div class="row">
+<div class="col-sm-6 col-lg-3 promocja-sml" onclick="location='index.php?go=search&promocje=1#start'">
+<div class="verticalalign"><a href="index.php?go=search&promocje=1">
+<h2>Promocja</h2>
+<div class="element"></div>
+</a></div>
+</div>
+<div class="col-sm-6 col-lg-3 product-sml"><a href="kasa_fiskalna_farex_online_pro_300_lanwifi_fiskalizacja_i_szko-item-62246.html">
+<div title="KASA FISKALNA FAREX ONline PRO 300 LAN/WiFi FISKALIZACJA I SZKOLENIE GRATIS!!! " class="prodimg" style="background-image: url(inc/cms_img.php?img=../gfx/sklep/PR_062246/_farexpro300.jpg&amp;w=200)"></div>
+<h2>KASA FISKALNA FAREX ONline PRO 300 LAN/WiFi FISKALIZACJA I SZKOLENIE GRATIS!!! </h2>
+<div class="cena">1 499,<small>00 zł</small></div>
+<div class="gradient"></div>
+</a>
+</div>
+<div class="col-sm-6 col-lg-2 product-sml"><a href="corsair_cc9011174ww_corsair_icue_220t_rgb_airflow_mid_tower_at-item-62646.html">
+<div title="CORSAIR CC-9011174-WW Corsair iCUE 220T RGB Airflow Mid Tower ATX Smart Case, TG" class="prodimg" style="background-image: url(inc/cms_img.php?img=../gfx/sklep/PR_062646/62646_cc9011174ww.jpg&amp;w=200)"></div>
+<h2>CORSAIR CC-9011174-WW Corsair iCUE 220T RGB Airflow Mid Tower ATX Smart Case, TG</h2>
+<div class="cena">572,<small>02 zł</small></div>
+<div class="gradient"></div>
+</a>
+</div>
+<div class="col-sm-6 col-lg-2 product-sml"><a href="toner_do_brother_tn3380_tbtn3380n_bk_100_nowy-item-66107.html">
+<div title="Toner do Brother TN3380 TB-TN3380N BK 100% nowy" class="prodimg" style="background-image: url(inc/cms_img.php?img=../gfx/sklep/PR_066107/66107.jpg&amp;w=200)"></div>
+<h2>Toner do Brother TN3380 TB-TN3380N BK 100% nowy</h2>
+<div class="cena">51,<small>00 zł</small></div>
+<div class="gradient"></div>
+</a>
+</div>
+<div class="col-sm-6 col-lg-2 product-sml"><a href="gigabyte_x670_aorus_elite_ax-item-68815.html">
+<div title="Gigabyte X670 AORUS ELITE AX" class="prodimg" style="background-image: url(inc/cms_img.php?img=../gfx/sklep/PR_068815/68815_x670_aorus_elite_ax01.png&amp;w=200)"></div>
+<h2>Gigabyte X670 AORUS ELITE AX</h2>
+<div class="cena">1 511,<small>67 zł</small></div>
+<div class="gradient"></div>
+</a>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+	$(document).ready(function () {
+
+		$("#dostepne").prop("checked", true);
+		ajaxsearch();
+	});
+</script>
+<div id="footer">
+<div class="container">
+<div class="row">
+<div class="col-md-7">
+<h1>Informacje</h1>
+<div class="row">
+<div class="col-md-4">
+<ul>
+<li><a href="regulamin_sklepu.html" class="main">Regulamin sklepu</a></li>
+<li><a href="kgo.html" class="main">KGO</a></li>
+<li>O KR System</li>
+<li><a href="polityka_cookies_polityka_prywatnosci.html" class="main">Polityka Prywatności</a></li>
+</ul>
+</div>
+<div class="col-md-4">
+<ul>
+<li><a href="index.php?go=mobile" class="main">Aplikacje mobilne</a></li>
+<li><a href="raty.html" class="main">Zakupy na raty</a></li>
+<li><a href="zapytanie_ofertowe.html">Zapytania ofertowe</a></li>
+<li><a href="koszty_wysylki.html" class="main">Koszty transportu</a></li>
+</ul>
+</div>
+<div class="col-md-4">
+<ul>
+<li><a href="index.php?go=loginin" />Panel klienta</a></li>
+<li><a href="http://allegro.pl/listing/user/listing.php?us_id=22601130" class="main">Oferta Allegro</a></li>
+<li><a href="index.php?go=reklamacje">Reklamacje i zwroty</a></li>
+<li><a href="kontakt.html" class="main">Kontakt</a></li>
+</ul>
+</div>
+<div class="col-md-2">&nbsp;</div>
+</div>
+</div>
+<div class="col-md-5">
+<h2>Newsletter</h2>
+<p>Chcesz otrzymywać na adres e-mail informacje o nowościach, zapowiedziach, promocjach? Zamów bezpłatny
+newsletter!</p>
+<form action="">
+<input type="" placeholder="Twój adres e-mail" />
+<button>&nbsp;</button>
+</form>
+</div>
+</div>
+</div>
+<div style="border-top: 1px solid #EFECEA;margin-bottom: 20px"></div>
+<div class="container">
+<div class="row">
+<div class="col-md-2">
+<a class="logo" href="index.html"><img src="tpl/krsystem/img/logo.png" width="125" height="40" alt=""></a>
+</div>
+<div class="col-md-5">
+<div class="row">
+<div class="col-md-12 telefon">
+<img src="tpl/krsystem/img/telefon.png" width="12" height="20" alt="">
+<div style="margin-top: -30px;margin-left: 20px"><a style="color:inherit" href="tel:+48600763712"><small>600 763 712</small></a><br>
+<a style="color:inherit" href="tel:+48126333345">12 633 33 45</a></div>
+<div class="row">
+<div class="col-6">
+<p>e-mail: <a href="mailto:biuro@krsystem.pl">biuro@krsystem.pl</a><br>
+gg: <a href="gg:9284987">9284987</a></p>
+</div>
+<div class="col-6">
+<p><a style="color:inherit" href="https://goo.gl/maps/AfKvuMf29FvqTcpM6">Ul. Karmelicka 20<br>
+31-128 Kraków</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-5">
+<div class="row">
+<div class="col-6">
+<table cellpadding="0" cellspacing="0">
+<tr>
+<td><img src="tpl/krsystem/img/zegar.png" width="21" height="21" alt=""></td>
+<td>PN-PT</td>
+<td>10:00 - 18:00</td>
+</tr>
+</table>
+</div>
+<div class="col-6">
+<a href="https://ewniosek.credit-agricole.pl/eWniosek/procedure.jsp?PARAM_TYPE=RAT&PARAM_PROFILE=PSP0860599"
+class="window"><img src="https://ewniosek.credit-agricole.pl/eWniosek/res/CA_grafika/raty_120x44_duckblue.png"
+alt="">
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="footer2" class="container" style="margin: 20px auto">
+<div class="row">
+<div class="col-md-5 stopka">
+<img src="tpl/krsystem/img/platnosc.png" width="323" height="89" alt="">
+<div> <b>Wszelkie prawa zastrzeżone 2020 &copy; KR System</b><br />
+Realizacja: <a title="Tworzenie stron www,  Projektowanie stron internetowych, CMS, Zarządzanie Treścią." target="_blank"
+href="https://www.magnis.pl">magnis.pl</a></div>
+</div>
+<div class="col-md-7">
+<img class="eu" src="tpl/krsystem/img/unia2.png" width="540" height="74" alt="">
+<div style="border-bottom: 1px solid #B9B9B9;border-top: 1px solid #B9B9B9;text-align: center;padding: 3px;margin: 5px 0;font-size: 12px">
+&#8222;Dotacje na innowacje &#8211; Inwestujemy w waszą przyszłość&#8221;
+</div>
+</div>
+</div>
+</div>
+<div id="facebook_div">
+<div class="fb_btn"><i class="fa fa-facebook"></i></div>
+<div class="fb_container">
+<div><div id="fb-root"></div>
+<script src="https://connect.facebook.net/pl_PL/all.js#xfbml=1"></script>
+<fb:like-box href="https://facebook.com/Kr-System-sklep-komputerowy-104190811384893/" width="295" show_faces="true" border_color="" stream="false" header="true"></fb:like-box>
+</div>
+</div>
+</div>
+<div id="cook">
+<div style="padding: 10px 0;margin: 0 auto;width: calc(100% - 30px);text-align: left;padding-right: 100px;position: relative;">Używamy
+cookies i podobnych technologii m.in. w celach: sprzedaży, reklamy, statystyk. Korzystanie z witryny bez zmiany
+ustawień Twojej przeglądarki oznacza, że będą one umieszczane w Twoim urządzeniu końcowym. Pamiętaj, że zawsze
+możesz zmienić te ustawienia. Szczegóły znajdziesz w <a href="polityka_cookies_polityka_prywatnosci.html"><u>Polityce
+Prywatności</u></a>.<div id="closecook" style="position: absolute;left: calc(100% - 80px);top: 10px;background: #434343;color:white;padding: 3px 10px;cursor:pointer"><b>ZAMKNIJ</b></div>
+</div>
+</div>
+<!-- JavaScript  -->
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.1/jquery-ui.min.js"></script>
+<script src="https://maps.google.com/maps/api/js?v=3&amp;key=AIzaSyDhwq94bZJVAIxPXsX1zZJy-4M-vcjO8Kw&amp;libraries=places"></script>
+<script src="tpl/krsystem/js/app.js?6464564"></script>
+<script type="text/javascript">
+		
+
+		function PoliczRate(koszyk) {
+			window.open(
+				'https://wniosek.eraty.pl/symulator/oblicz/numerSklepu/15705/typProduktu/0/wartoscTowarow/' +
+				koszyk, 'Policz_rate',
+				'width=680,height=500,directories=no,location=no,menubar=no,resizable=yes,scrollbars=yes,status=no,toolbar=no');
+		} 
+	</script>
+</body>
+</html>
