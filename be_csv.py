@@ -6,23 +6,23 @@ import random
 import re
 
 categories_map = {
-    "Chłodzenie": 83,
-    "Zasilacze": 84,
-    "Karty graficzne": 85,
-    "Karty graficzne/Tesla": 94,
-    "Karty graficzne/Nvidia": 95,
-    "Karty graficzne/Amd": 96,
-    "Pamięci": 86,
-    "Akcesoria": 87,
-    "Procesory": 88,
-    "Procesory/Amd": 89,
-    "Procesory/Intel": 90,
-    "Płyty główne": 91,
-    "Płyty główne/Amd": 92,
-    "Płyty główne/Intel": 93,
-    "Dyski": 97,
-    "Dyski/Ssd": 98,
-    "Dyski/Hdd": 99,
+    "Chłodzenie": 3,
+    "Zasilacze": 4,
+    "Karty graficzne": 5,
+    "Karty graficzne/Tesla": 14,
+    "Karty graficzne/Nvidia": 15,
+    "Karty graficzne/Amd": 16,
+    "Pamięci": 6,
+    "Akcesoria": 7,
+    "Procesory": 8,
+    "Procesory/Amd": 9,
+    "Procesory/Intel": 10,
+    "Płyty główne": 11,
+    "Płyty główne/Amd": 12,
+    "Płyty główne/Intel": 13,
+    "Dyski": 17,
+    "Dyski/Ssd": 18,
+    "Dyski/Hdd": 19,
 }
 
 
@@ -46,7 +46,6 @@ class ProductEntry:
             x = str(categories_map[self.category]) + ',' + str(categories_map[self.category + '/' + self.subcategory])
             table.append(x)
         else:
-            print(str(categories_map[self.category]))
             table.append(str(categories_map[self.category]))
         my_float = self.price / 1.23
         table.append(f'{my_float:.2f}')  # price tax excluded
@@ -107,7 +106,7 @@ class ProductEntry:
         table.append("2022-12-17")
         table.append("2022-11-30")
         table.append(1)
-        table.append("http://some-prestashop/img_import/" + self.link.replace("html", "jpg"))
+        table.append("http://some_prestashop/img_import/" + self.link.replace("html", "jpg"))
         table.append(self.title)
         table.append(0)
         table.append("")
@@ -153,7 +152,7 @@ class Category:
         return table
 
 
-f = open("scrap.json")
+f = open("scrap/super_scrap.json")
 data = json.loads(f.read())
 products = []
 categories_ids = {}
