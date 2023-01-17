@@ -1,46 +1,40 @@
-version: '2'
+version: '3'
 
 services:
-  mysql:
-    container_name: some_mysql
-    image: mysql:5.7
-    restart: always
-    environment:
-      MYSQL_DATABASE: 'prestashop'
-      MYSQL_ROOT_PASSWORD: 'admin'
-    volumes:
-      - "./mysql/:/var/lib/mysql"
-        #ports:
-        # - 3306
-    networks:
-      - backend
+  #mysql:
+  #  container_name: some_mysql
+  #  image: mysql:5.7
+  #  restart: always
+  #  environment:
+  #    MYSQL_DATABASE: 'prestashop'
+  #    MYSQL_ROOT_PASSWORD: 'admin'
+  #  volumes:
+  #    - "./mysql/:/var/lib/mysql"
+  #  networks:
+  #    - backend
 
   presta:
-    container_name: some_prestashop
-    image: prestashop/prestashop
-    restart: always
+    container_name: prestashop
+    build:
+      context: ./prestashop/
+        #  volumes:
+        # - "/mnt/block-storage/students/17290/img/:/var/www/html/img_import/"
     environment:
-      DB_SERVER: 'some_mysql'
       PS_LANGUAGE: 'pl'
       PS_COUNTRY: 'PL'
       PS_ENABLE_SSL: 1
-        #ports:
-        #- 8000:80
-        #- 3000:443
-    volumes:
-      - "./.htaccess:/var/www/html/.htaccess"
     networks:
       - frontend
       - backend
-
-
+    deploy:
+      restart_policy:
+        max_attempts: 3
+        window: 120s
+     
   nginx:
-    container_name: some_nginx
-    image: nginx
-    volumes:
-      - "./nginx/conf.conf:/etc/nginx/conf.d/default.conf"
-      - "./nginx/cert/selfsigned.crt:/etc/nginx/cert/selfsigned.crt"
-      - "./nginx/cert/selfsigned.key:/etc/nginx/cert/selfsigned.key"
+    container_name: nginx
+    build:
+      context: ./nginx/
     ports:
       - 80:80
       - 443:443
@@ -48,9 +42,11 @@ services:
       - presta
     networks:
       - frontend
-
+    deploy:
+      restart_policy:
+        max_attempts: 3
+        window: 120s
+        
 networks:
   frontend:
   backend:
-
-

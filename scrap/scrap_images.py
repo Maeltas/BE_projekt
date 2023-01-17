@@ -14,7 +14,7 @@ class ProductEntry:
     link: str
 
 def save_image(product):
-    with open(f"img/{product.link.replace('.html', '.jpg')}", 'wb') as f:
+    with open(f"../prestashop/img/{product.link.replace('.html', '.jpg')}", 'wb') as f:
         r = requests.get(f"https://www.krsystem.pl/{product.image}", stream=True)
         for chunk in r:
             f.write(chunk)
