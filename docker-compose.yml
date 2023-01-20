@@ -18,10 +18,7 @@ services:
 
   presta:
     container_name: BE_165229_PS
-    build:
-      context: ./prestashop/
-        #volumes:
-        # - "/mnt/block-storage/students/BE_165229/prestashop/img/:/var/www/html/img_import/"
+    image: 10.40.71.55:5000/be_165229_ps
     environment:
       DB_SERVER: actina15.maas
       DB_NAME: BE_165229
