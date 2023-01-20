@@ -1,20 +1,20 @@
 version: '3'
 
 services:
-  mysql:
-    container_name: BE_165229_DB
-    image: mysql:5.7
-    environment:
-      MYSQL_DATABASE: BE_165229_DB
-      MYSQL_ROOT_PASSWORD: BE_165229_DB
-    volumes:
-      - "/mnt/block-storage/students/BE_165229/mysql/:/var/lib/mysql"
-    deploy:
-      replicas: 1
-      restart_policy:
-        max_attempts: 3
-        window: 120s
-        condition: on-failure
+  #mysql:
+  #  container_name: BE_165229_DB
+  #  image: mysql:5.7
+  #  environment:
+  #    MYSQL_DATABASE: BE_165229_DB
+  #    MYSQL_ROOT_PASSWORD: BE_165229_DB
+  #  volumes:
+  #    - "/mnt/block-storage/students/BE_165229/mysql/:/var/lib/mysql"
+  #  deploy:
+  #    replicas: 1
+  #    restart_policy:
+  #      max_attempts: 3
+  #      window: 120s
+  #      condition: on-failure
 
   presta:
     container_name: BE_165229_PS
@@ -23,16 +23,17 @@ services:
         #volumes:
         # - "/mnt/block-storage/students/BE_165229/prestashop/img/:/var/www/html/img_import/"
     environment:
-      DB_SERVER: BE_165229_DB
-      DB_NAME: BE_165229_DB
-      DB_USER: root
-      DB_PASSWD: BE_165229_DB
+      DB_SERVER: actina15.maas
+      DB_NAME: BE_165229
+      DB_USER: BE_165229
+      DB_PASSWD: BE_165229
+      ROOT_PASSWD: student
       PS_DOMAIN: localhost:16522
       PS_LANGUAGE: pl
-      PS_COUNTRY: PL
+      PS_COUNTRY: POL
       PS_FOLDER_ADMIN: control
       PS_ENABLE_SSL: 1
-      PS_ERASE_DB: 0
+      PS_INSTALL_DB: 0
       PS_INSTALL_AUTO: 1
     deploy:
       replicas: 1
