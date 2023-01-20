@@ -18,6 +18,7 @@ public class SeleniumTest {
     @Test
     public void componentTest() {
 
+        String address = "https://localhost:16522/";
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--ignore-ssl-errors=yes");
         options.addArguments("--ignore-certificate-errors");
@@ -28,9 +29,11 @@ public class SeleniumTest {
         options.setExperimentalOption("prefs", prefs);
         WebDriver driver = new ChromeDriver(options);
         WebElement buttonToClick;
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofMillis(5000));
-        driver.get("https://some_prestashop/");
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofMillis(10000));
+        driver.get(address);
         boolean title = true;
+        buttonToClick = driver.findElement(By.cssSelector("[href='"+address+"3-chlodzenie']"));
+        buttonToClick.click();
         buttonToClick = driver.findElement(By.cssSelector("[data-id-product='2']"));
         buttonToClick.click();
         buttonToClick = driver.findElement(By.cssSelector("[class='btn btn-touchspin js-touchspin bootstrap-touchspin-up']"));
@@ -41,7 +44,7 @@ public class SeleniumTest {
         wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(".//button[@class='btn btn-secondary']")));
         buttonToClick = driver.findElement(By.xpath(".//button[@class='btn btn-secondary']"));
         buttonToClick.click();
-        buttonToClick = driver.findElement(By.cssSelector("[href='https://some_prestashop/4-zasilacze']"));
+        buttonToClick = driver.findElement(By.cssSelector("[href='"+address+"4-Zasilacze']"));
         buttonToClick.click();
         buttonToClick = driver.findElement(By.cssSelector("[data-id-product='94']"));
         buttonToClick.click();
@@ -51,7 +54,7 @@ public class SeleniumTest {
         wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(".//button[@class='btn btn-secondary']")));
         buttonToClick = driver.findElement(By.xpath(".//button[@class='btn btn-secondary']"));
         buttonToClick.click();
-        buttonToClick = driver.findElement(By.cssSelector("[href='https://some_prestashop/3-chlodzenie']"));
+        buttonToClick = driver.findElement(By.cssSelector("[href='"+address+"3-chlodzenie']"));
         buttonToClick.click();
 //        buttonToClick = driver.findElement(By.cssSelector("[href='https://some_prestashop/brand/1-amd']"));
 //        buttonToClick.click();
@@ -67,7 +70,7 @@ public class SeleniumTest {
         wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(".//button[@class='btn btn-secondary']")));
         buttonToClick = driver.findElement(By.xpath(".//button[@class='btn btn-secondary']"));
         buttonToClick.click();
-        buttonToClick = driver.findElement(By.cssSelector("[href='https://some_prestashop/5-karty-graficzne']"));
+        buttonToClick = driver.findElement(By.cssSelector("[href='"+address+"5-karty-graficzne']"));
         buttonToClick.click();
 //        buttonToClick = driver.findElement(By.cssSelector("[href='https://some_prestashop/brand/4-nvidia']"));
 //        buttonToClick.click();
@@ -82,13 +85,13 @@ public class SeleniumTest {
         wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(".//button[@class='btn btn-secondary']")));
         buttonToClick = driver.findElement(By.xpath(".//button[@class='btn btn-secondary']"));
         buttonToClick.click();
-        buttonToClick = driver.findElement(By.cssSelector("[href='//some_prestashop/koszyk?action=show']"));
+        buttonToClick = driver.findElement(By.cssSelector("[href='//localhost:16522/cart?action=show']"));
         buttonToClick.click();
-        buttonToClick = driver.findElement(By.cssSelector("a[rel='nofollow'][href='https://some_prestashop/koszyk?delete=1&id_product=94&id_product_attribute=0&token=d362f4cca011fe6ac6677bce511c310b']"));
+        buttonToClick = driver.findElement(By.cssSelector("a[rel='nofollow'][href='"+address+"cart?delete=1&id_product=94&id_product_attribute=0&token=d362f4cca011fe6ac6677bce511c310b']"));
         buttonToClick.click();
-        buttonToClick = driver.findElement(By.cssSelector("[href='https://some_prestashop/logowanie?back=https%3A%2F%2Fsome_prestashop%2Fkoszyk%3Faction%3Dshow'"));
+        buttonToClick = driver.findElement(By.cssSelector("[href='"+address+"logowanie?back=https%3A%2F%2Fsome_prestashop%2Fcart%3Faction%3Dshow'"));
         buttonToClick.click();
-        buttonToClick = driver.findElement(By.cssSelector("[href='https://some_prestashop/index.php?controller=registration']"));
+        buttonToClick = driver.findElement(By.cssSelector("[href='"+address+"index.php?controller=registration']"));
         buttonToClick.click();
         buttonToClick = driver.findElement(By.cssSelector("#field-id_gender-1"));
         buttonToClick.click();
@@ -104,9 +107,9 @@ public class SeleniumTest {
         buttonToClick.click();
         buttonToClick = driver.findElement(By.cssSelector("button[type='submit']"));
         buttonToClick.click();
-        buttonToClick = driver.findElement(By.cssSelector("[href='//some_prestashop/koszyk?action=show']"));
+        buttonToClick = driver.findElement(By.cssSelector("[href='//localhost:16522/cart?action=show']"));
         buttonToClick.click();
-        buttonToClick = driver.findElement(By.cssSelector("[href='https://some_prestashop/zamówienie']"));
+        buttonToClick = driver.findElement(By.cssSelector("[href='"+address+"zamówienie']"));
         buttonToClick.click();
         buttonToClick = driver.findElement(By.cssSelector("#field-address1"));
         buttonToClick.sendKeys("Narutowicza 11");
@@ -124,11 +127,11 @@ public class SeleniumTest {
         buttonToClick.click();
         buttonToClick = driver.findElement(By.xpath(".//button[contains(text(),'Złóż zamówienie')]"));
         buttonToClick.click();
-        buttonToClick = driver.findElement(By.cssSelector("[href='https://some_prestashop/']"));
+        buttonToClick = driver.findElement(By.cssSelector("[href='"+address+"']"));
         buttonToClick.click();
-        buttonToClick = driver.findElement(By.cssSelector("[href='https://some_prestashop/moje-konto']"));
+        buttonToClick = driver.findElement(By.cssSelector("[href='"+address+"moje-konto']"));
         buttonToClick.click();
-        buttonToClick = driver.findElement(By.cssSelector("[href='https://some_prestashop/historia-zamowien']"));
+        buttonToClick = driver.findElement(By.cssSelector("[href='"+address+"historia-zamowien']"));
         buttonToClick.click();
         buttonToClick = driver.findElement(By.cssSelector(".view-order-details-link"));
         buttonToClick.click();
