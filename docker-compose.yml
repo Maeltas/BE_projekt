@@ -35,6 +35,8 @@ services:
       PS_ENABLE_SSL: 1
       PS_INSTALL_DB: 0
       PS_INSTALL_AUTO: 1
+    ports:
+      - 16522:443
     deploy:
       replicas: 1
       restart_policy:

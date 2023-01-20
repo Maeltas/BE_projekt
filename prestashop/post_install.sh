@@ -18,11 +18,11 @@ chown -R www-data:www-data /var/www/html/mails
 echo "changed mails owner"
 tar -xf /tmp/localization.tar.gz -C /var/www/html && rm /tmp/localization.tar.gz
 echo "copied localization"
-chown -R www-data:www-data /var/www/html/img/localization
+chown -R www-data:www-data /var/www/html/localization
 echo "changed localization owner"
 tar -xf /tmp/themes.tar.gz -C /var/www/html && rm /tmp/themes.tar.gz
 echo "copied themes"
-chown -R www-data:www-data /var/www/html/img/themes
+chown -R www-data:www-data /var/www/html/themes
 echo "changed themes owner"
 
 echo "post-install finished!"
